@@ -2,17 +2,19 @@
 
 雅思口语 Part 1 练习站：按「步骤 + 线索 + 素材」可控发挥，含录音识别与 AI 评分。
 
-## 本地打开
+## 在线访问
 
-可用任意静态服务，例如：
+https://raysu672-glitch.github.io/kouyulianxi/
+
+> 静态页可直接练题、看提示、听题目。录音转写 / AI 评分需本地主站 `local_server.py`（`/api/p4`、`/api/config`）。
+
+## 本地打开
 
 ```bash
 python -m http.server 8080
 ```
 
 浏览器访问：`http://127.0.0.1:8080/index.html`
-
-录音转写 / DeepSeek 评分需配合主站 `local_server.py`（`/api/p4/transcribe`、`/api/config`）。
 
 ## 结构
 
