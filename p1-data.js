@@ -65,13 +65,11 @@ const P1_DATA = {
           "q": "Have you ever sent handmade gifts to others?",
           "words": {
             "正面回答": [
-              "Exactly",
-              "just last month"
+              "Exactly"
             ],
             "来源或举例": [
               "a t-shirt",
-              "coat",
-              "pay with my phone"
+              "coat"
             ],
             "频次": [
               "from time to time"
@@ -181,10 +179,7 @@ const P1_DATA = {
           "title": "How do you improve your typing",
           "q": "How do you improve your typing?",
           "words": {
-            "正面回答": [
-              "In my childhood",
-              "in primary school"
-            ],
+            "正面回答": [],
             "来源或举例": [
               "shop online",
               "play video games"
@@ -336,15 +331,12 @@ const P1_DATA = {
           "q": "Have you ever had a really dedicated teacher?",
           "words": {
             "正面回答": [
-              "Definitely",
-              "a lot of rules"
+              "Definitely"
             ],
             "来源或举例": [
-              "e.g., no phones in the classroom"
+              "complete homework independently"
             ],
-            "频次": [
-              "we have to follow them daily"
-            ],
+            "频次": [],
             "感受": [
               "forces me to work hard at my studies",
               "complete homework independently"
@@ -358,15 +350,12 @@ const P1_DATA = {
           "q": "Have you ever had a really strict teacher?",
           "words": {
             "正面回答": [
-              "Definitely",
-              "a lot of rules"
+              "Definitely"
             ],
             "来源或举例": [
-              "e.g., no phones in the classroom"
+              "complete homework independently"
             ],
-            "频次": [
-              "we have to follow them daily"
-            ],
+            "频次": [],
             "感受": [
               "forces me to work hard at my studies",
               "complete homework independently"
@@ -577,9 +566,7 @@ const P1_DATA = {
             "正面回答": [
               "Yes, exactly"
             ],
-            "来源或举例": [
-              "borrowed real books from friends in dorms"
-            ],
+            "来源或举例": [],
             "频次": [
               "whenever necessary"
             ],
@@ -722,13 +709,9 @@ const P1_DATA = {
           "title": "What work do you do",
           "q": "What work do you do?",
           "words": {
-            "正面回答": [
-              "I am a student majoring in"
-            ],
+            "正面回答": [],
             "来源或举例": [
-              "Study",
-              "go to classes",
-              "listen to a lecture"
+              "go to classes"
             ],
             "频次": [
               "every weekday"
@@ -744,13 +727,9 @@ const P1_DATA = {
           "title": "What requirements did you need to meet to get your current job",
           "q": "What requirements did you need to meet to get your current job?",
           "words": {
-            "正面回答": [
-              "I am a student majoring in"
-            ],
+            "正面回答": [],
             "来源或举例": [
-              "Study",
-              "go to classes",
-              "listen to a lecture"
+              "go to classes"
             ],
             "频次": [
               "every weekday"
@@ -788,13 +767,9 @@ const P1_DATA = {
           "title": "Why did you choose to do that type of work",
           "q": "Why did you choose to do that type of work?",
           "words": {
-            "正面回答": [
-              "I am a student majoring in"
-            ],
+            "正面回答": [],
             "来源或举例": [
-              "Study",
-              "go to classes",
-              "listen to a lecture"
+              "go to classes"
             ],
             "频次": [
               "every weekday"
@@ -832,13 +807,9 @@ const P1_DATA = {
           "title": "Do you have any plans for your work in the next five years",
           "q": "Do you have any plans for your work in the next five years?",
           "words": {
-            "正面回答": [
-              "I am a student majoring in"
-            ],
+            "正面回答": [],
             "来源或举例": [
-              "Study",
-              "go to classes",
-              "listen to a lecture"
+              "go to classes"
             ],
             "频次": [
               "every weekday"
@@ -1470,13 +1441,8 @@ const P1_DATA = {
           "title": "What's the weather like where you live",
           "q": "What's the weather like where you live?",
           "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
+            "正面回答": [],
+            "来源或举例": [],
             "频次": [
               "in my daily life"
             ],
