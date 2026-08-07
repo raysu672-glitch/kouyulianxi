@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>口语 P1 练习</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=20260807b">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <nav class="top-nav">
+        <div class="nav-left">
+            <span class="nav-title">口语 P1 练习</span>
+            <span class="nav-subtitle" id="progressText">0 / 0 题</span>
+        </div>
+        <div class="nav-right">
+            <button class="nav-btn" id="modeToggle" title="切换顺序/随机">
+                <span id="modeIcon">📋</span>
+                <span id="modeText">顺序模式</span>
+            </button>
+            <button class="nav-btn" id="showDataBtn" title="查看已练数据">📊</button>
+        </div>
+    </nav>
+
+    <!-- 主内容区 -->
+    <main class="main-content">
+        <!-- 左侧：类别和题目 -->
+        <aside class="sidebar">
+            <div class="category-list" id="categoryList"></div>
+        </aside>
+
+        <!-- 中间：练习区 -->
+        <section class="practice-area" id="practiceArea">
+            <div class="empty-state" id="emptyState">
+                <div class="empty-icon">🎤</div>
+                <h2>选择左侧题目开始练习</h2>
+                <p>建议先按顺序练一遍，再切换随机模式</p>
+            </div>
+
+            <div class="practice-card" id="practiceCard" style="display: none;">
+                <div class="question-header">
+                    <span class="question-category" id="currentCategory"></span>
+                    <div class="question-row">
+                        <h2 class="question-title" id="currentTitle"></h2>
+                        <button type="button" class="btn-speak" id="speakQuestionBtn" title="听题目（自然英音）" aria-label="朗读题目">
+                            <span class="speak-icon" aria-hidden="true">🔊</span>
+                            <span class="speak-label">听题目</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="steps-container" id="stepsContainer"></div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-primary" id="startRecordBtn">
+                        <span>🎙️</span> 开始练习
+                    </button>
+                    <button class="btn btn-secondary" id="nextQuestionBtn">
+                        <span>➡️</span> 下一题
+                    </button>
+                </div>
+
+                <!-- AI 评分区域 -->
+                <div class="ai-section" id="aiSection" style="display: none;">
+                    <div class="ai-header">
+                        <h3>🤖 AI 雅思评分</h3>
+                        <button class="btn btn-sm btn-secondary" id="toggleApiConfig">⚙️ 配置 API</button>
+                    </div>
+                    
+                    <!-- API 配置面板 -->
+                    <div class="api-config" id="apiConfig" style="display: none;">
+                        <div class="config-item">
+                            <label>DeepSeek API Key</label>
+                            <input type="password" id="apiKeyInput" placeholder="sk-...">
+                            <button class="btn btn-sm btn-primary" id="saveApiKey">保存</button>
+                        </div>
+                        <div class="config-status" id="apiStatus">未配置</div>
+                    </div>
+
+                    <!-- 录音状态 -->
+                    <div class="recording-status" id="recordingStatus" style="display: none;">
+                        <div class="status-indicator" id="statusIndicator">🎙️ 正在录音...</div>
+                        <div class="transcript-preview" id="transcriptPreview"></div>
+                    </div>
+
+                    <!-- AI 分析按钮 -->
+                    <button class="btn btn-ai" id="aiEvaluateBtn" disabled>
+                        <span>✨</span> AI 评分
+                    </button>
+
+                    <!-- 评分结果 -->
+                    <div class="ai-result" id="aiResult" style="display: none;">
+                        <div class="loading" id="aiLoading" style="display: none;">
+                            <div class="spinner"></div>
+                            <p>AI 正在分析你的回答...</p>
+                        </div>
+                        <div class="result-content" id="resultContent"></div>
+                    </div>
+                </div>
+
+                <div class="feedback-area" id="feedbackArea" style="display: none;">
+                    <h3>练习反馈</h3>
+                    <div class="feedback-content" id="feedbackContent"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 右侧：数据面板（可折叠） -->
+        <aside class="data-panel" id="dataPanel">
+            <div class="panel-header">
+                <h3>练习数据</h3>
+                <button class="close-panel" id="closePanel">×</button>
+            </div>
+            <div class="panel-content" id="panelContent">
+                <div class="stat-item">
+                    <span class="stat-label">已练题目</span>
+                    <span class="stat-value" id="statCompleted">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">练习时长</span>
+                    <span class="stat-value" id="statTime">0秒</span>
+                </div>
+                <div class="history-list" id="historyList"></div>
+            </div>
+        </aside>
+    </main>
+
+    <script src="config.js?v=20260807b"></script>
+    <script src="p1-data.js?v=20260807b"></script>
+    <script src="app.js?v=20260807b"></script>
+</body>
+</html>
