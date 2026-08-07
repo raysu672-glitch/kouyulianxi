@@ -295,41 +295,25 @@ class P1Practice {
         stepsContainer.innerHTML = '';
         
         cat.steps.forEach((step, stepIndex) => {
-            const layer = this.getStepWordLayer(q, step);
+            const words = (q.words && q.words[step]) || [];
             const frame = this.getComplexFrame(cat, stepIndex);
             const stepDiv = document.createElement('div');
             stepDiv.className = 'step-item';
-
-            const clueChips = (layer.clue || []).map(w => `
-                <span class="word-chip clue" data-word="${this.escapeHtml(w)}" title="线索">${this.escapeHtml(w)}</span>
-            `).join('');
-            const materialChips = (layer.material || []).map(w => `
-                <span class="word-chip material" data-word="${this.escapeHtml(w)}" title="素材">${this.escapeHtml(w)}</span>
-            `).join('');
-
-            const clueHint = layer.clueHint
-                ? `<span class="clue-hint">${this.escapeHtml(layer.clueHint)}</span>`
-                : '';
-
             const frameHtml = frame ? `
                 <div class="complex-frame">
                     <div class="complex-frame-label">复合句参考 · ${this.escapeHtml(frame.name)}</div>
                     <div class="complex-frame-pattern">${this.escapeHtml(frame.pattern)}</div>
                     <div class="complex-frame-tip">${this.escapeHtml(frame.tip)}</div>
                 </div>` : '';
-
             stepDiv.innerHTML = `
                 <div class="step-header">
                     <div class="step-number">${stepIndex + 1}</div>
                     <div class="step-title">${this.escapeHtml(step)}</div>
                 </div>
-                <div class="tip-layer tip-clue">
-                    <div class="tip-layer-label">线索 ${clueHint}</div>
-                    <div class="step-words">${clueChips || '<span class="tip-empty">本题线索未单列词块</span>'}</div>
-                </div>
-                <div class="tip-layer tip-material">
-                    <div class="tip-layer-label">素材 <span class="tip-sub">可替换</span></div>
-                    <div class="step-words">${materialChips || '<span class="tip-empty">本步暂无额外素材</span>'}</div>
+                <div class="step-words">
+                    ${words.map(w => `
+                        <span class="word-chip" data-word="${this.escapeHtml(w)}">${this.escapeHtml(w)}</span>
+                    `).join('') || '<span class="tip-empty">本题此步暂无线索词块</span>'}
                 </div>
                 ${frameHtml}
             `;
@@ -350,15 +334,6 @@ class P1Practice {
         document.getElementById('startRecordBtn').innerHTML = '<span>🎙️</span> 开始练习';
         document.getElementById('startRecordBtn').style.background = '';
         document.getElementById('aiEvaluateBtn').disabled = true;
-    }
-
-    getStepWordLayer(q, step) {
-        if (q.wordLayers && q.wordLayers[step]) {
-            return q.wordLayers[step];
-        }
-        // 兼容旧数据：全部当作线索
-        const flat = (q.words && q.words[step]) || [];
-        return { clue: flat, clueHint: '', material: [] };
     }
 
     getComplexFrame(cat, stepIndex) {
@@ -1393,15 +1368,8 @@ class P1Practice {
     // 用本题四步提示词块写示范，并至少用一句复合句（which / since / I find）
     buildSampleFromTips(cat, q) {
         const steps = (cat && cat.steps) || [];
-        // 优先用线索词；不够再补素材（最少准备、先扣线索）
-        const chunksOf = (i) => {
-            const step = steps[i];
-            if (!step) return [];
-            const layer = this.getStepWordLayer(q, step);
-            return [...(layer.clue || []), ...(layer.material || [])]
-                .map(w => String(w).trim())
-                .filter(Boolean);
-        };
+        const wordsMap = (q && q.words) || {};
+        const chunksOf = (i) => (wordsMap[steps[i]] || []).map(w => String(w).trim()).filter(Boolean);
         
         const s0 = chunksOf(0);
         const s1 = chunksOf(1);
