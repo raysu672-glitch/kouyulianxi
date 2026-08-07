@@ -1,4 +1,4 @@
-// P1 data - 提示词=线索(本题)+素材(可替换)
+// P1 data - 事实陈述类词块仅来自口语P1线索/3月线索
 const P1_DATA = {
   "categories": [
     {
@@ -15,7 +15,6 @@ const P1_DATA = {
           "id": 1,
           "title": "Have you ever had a pet before",
           "q": "Have you ever had a pet before?",
-          "clueId": "1",
           "words": {
             "正面回答": [
               "Yes, absolutely",
@@ -24,182 +23,46 @@ const P1_DATA = {
             "来源或举例": [
               "a puppy",
               "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "go for a walk",
-              "park"
+              "home"
             ],
             "频次": [
               "every day",
-              "park",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "park"
             ],
             "感受": [
               "unwind",
-              "really lifts my mood",
-              "it makes me happy",
-              "feel relaxed and at ease",
-              "appreciated",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax"
+              "really lifts my mood"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Yes, absolutely",
-                "used to"
-              ],
-              "clueHint": "养过",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "a puppy",
-                "dorms",
-                "home"
-              ],
-              "clueHint": "⼩狗",
-              "material": [
-                "renting an apartment",
-                "stay home",
-                "go for a walk",
-                "park"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "every day",
-                "park"
-              ],
-              "clueHint": "每天",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "unwind",
-                "really lifts my mood"
-              ],
-              "clueHint": "解压",
-              "material": [
-                "it makes me happy",
-                "feel relaxed and at ease",
-                "appreciated",
-                "sit down and relax",
-                "chill out",
-                "take a break and relax"
-              ]
-            }
-          }
+          "clueId": "1"
         },
         {
           "id": 2,
           "title": "Have you ever been part of a sports team",
           "q": "Have you ever been part of a sports team?",
-          "clueId": "2",
           "words": {
             "正面回答": [
               "Definitely"
             ],
             "来源或举例": [
               "play basketball",
-              "volleyball in the sports centre",
-              "do some sports",
-              "go jogging",
-              "volleyball",
-              "hiking",
-              "library"
+              "volleyball in the sports centre"
             ],
             "频次": [
               "at weekends",
-              "in my free time",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my free time"
             ],
             "感受": [
               "sense of teamwork",
-              "practical",
-              "it makes me happy",
-              "really lifts my mood",
-              "feel relaxed and at ease",
-              "appreciated"
+              "practical"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Definitely"
-              ],
-              "clueHint": "参加过",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "play basketball",
-                "volleyball in the sports centre"
-              ],
-              "clueHint": "篮球排球",
-              "material": [
-                "do some sports",
-                "go jogging",
-                "volleyball",
-                "hiking",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "at weekends",
-                "in my free time"
-              ],
-              "clueHint": "周末",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "sense of teamwork",
-                "practical"
-              ],
-              "clueHint": "团队",
-              "material": [
-                "it makes me happy",
-                "really lifts my mood",
-                "feel relaxed and at ease",
-                "appreciated"
-              ]
-            }
-          }
+          "clueId": "2"
         },
         {
           "id": 3,
           "title": "Have you ever sent handmade gifts to others",
           "q": "Have you ever sent handmade gifts to others?",
-          "clueId": "3",
           "words": {
             "正面回答": [
               "Exactly",
@@ -208,87 +71,21 @@ const P1_DATA = {
             "来源或举例": [
               "a t-shirt",
               "coat",
-              "bought by",
-              "pay with my phone",
-              "t-shirt",
-              "sweatshirt",
-              "get dressed",
-              "eat breakfast",
-              "grab my stuff"
+              "pay with my phone"
             ],
             "频次": [
-              "from time to time",
-              "regularly",
-              "as often as I can",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school",
-              "when I started university"
+              "from time to time"
             ],
             "感受": [
-              "it makes me happy",
-              "really lifts my mood",
-              "feel relaxed and at ease",
-              "appreciated"
+              "it makes me happy"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Exactly",
-                "just last month"
-              ],
-              "clueHint": "送过收到过",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "a t-shirt",
-                "coat",
-                "bought by",
-                "pay with my phone"
-              ],
-              "clueHint": "⾐服",
-              "material": [
-                "t-shirt",
-                "sweatshirt",
-                "get dressed",
-                "eat breakfast",
-                "grab my stuff"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "from time to time"
-              ],
-              "clueHint": "偶尔",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school",
-                "when I started university"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "it makes me happy"
-              ],
-              "clueHint": "开⼼",
-              "material": [
-                "really lifts my mood",
-                "feel relaxed and at ease",
-                "appreciated"
-              ]
-            }
-          }
+          "clueId": "3"
         },
         {
           "id": 4,
           "title": "Have you ever received a great gift",
           "q": "Have you ever received a great gift?",
-          "clueId": "3",
           "words": {
             "正面回答": [
               "Exactly",
@@ -297,87 +94,21 @@ const P1_DATA = {
             "来源或举例": [
               "a t-shirt",
               "coat",
-              "bought by",
-              "pay with my phone",
-              "t-shirt",
-              "sweatshirt",
-              "get dressed",
-              "eat breakfast",
-              "grab my stuff"
+              "pay with my phone"
             ],
             "频次": [
-              "from time to time",
-              "regularly",
-              "as often as I can",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school",
-              "when I started university"
+              "from time to time"
             ],
             "感受": [
-              "it makes me happy",
-              "really lifts my mood",
-              "feel relaxed and at ease",
-              "appreciated"
+              "it makes me happy"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Exactly",
-                "just last month"
-              ],
-              "clueHint": "送过收到过",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "a t-shirt",
-                "coat",
-                "bought by",
-                "pay with my phone"
-              ],
-              "clueHint": "⾐服",
-              "material": [
-                "t-shirt",
-                "sweatshirt",
-                "get dressed",
-                "eat breakfast",
-                "grab my stuff"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "from time to time"
-              ],
-              "clueHint": "偶尔",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school",
-                "when I started university"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "it makes me happy"
-              ],
-              "clueHint": "开⼼",
-              "material": [
-                "really lifts my mood",
-                "feel relaxed and at ease",
-                "appreciated"
-              ]
-            }
-          }
+          "clueId": "3"
         },
         {
           "id": 5,
           "title": "What gift have you received recently",
           "q": "What gift have you received recently?",
-          "clueId": "3",
           "words": {
             "正面回答": [
               "Exactly",
@@ -386,87 +117,21 @@ const P1_DATA = {
             "来源或举例": [
               "a t-shirt",
               "coat",
-              "bought by",
-              "pay with my phone",
-              "t-shirt",
-              "sweatshirt",
-              "get dressed",
-              "eat breakfast",
-              "grab my stuff"
+              "pay with my phone"
             ],
             "频次": [
-              "from time to time",
-              "regularly",
-              "as often as I can",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school",
-              "when I started university"
+              "from time to time"
             ],
             "感受": [
-              "it makes me happy",
-              "really lifts my mood",
-              "feel relaxed and at ease",
-              "appreciated"
+              "it makes me happy"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Exactly",
-                "just last month"
-              ],
-              "clueHint": "送过收到过",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "a t-shirt",
-                "coat",
-                "bought by",
-                "pay with my phone"
-              ],
-              "clueHint": "⾐服",
-              "material": [
-                "t-shirt",
-                "sweatshirt",
-                "get dressed",
-                "eat breakfast",
-                "grab my stuff"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "from time to time"
-              ],
-              "clueHint": "偶尔",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school",
-                "when I started university"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "it makes me happy"
-              ],
-              "clueHint": "开⼼",
-              "material": [
-                "really lifts my mood",
-                "feel relaxed and at ease",
-                "appreciated"
-              ]
-            }
-          }
+          "clueId": "3"
         },
         {
           "id": 6,
           "title": "Where did you go for a walk lately",
           "q": "Where did you go for a walk lately?",
-          "clueId": "4",
           "words": {
             "正面回答": [
               "Recently",
@@ -474,94 +139,23 @@ const P1_DATA = {
             ],
             "来源或举例": [
               "the local park",
-              "city centre",
-              "go for a walk",
-              "park",
-              "library",
-              "sports centre",
-              "the city centre"
+              "city centre"
             ],
             "频次": [
               "after dinner",
-              "feel bored",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "feel bored"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "relax my mind",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "slow down",
-              "enjoy a good laugh",
-              "unwind"
+              "relax my mind"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Recently",
-                "just a few days ago"
-              ],
-              "clueHint": "去过",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "the local park",
-                "city centre"
-              ],
-              "clueHint": "公园",
-              "material": [
-                "go for a walk",
-                "park",
-                "library",
-                "sports centre",
-                "the city centre"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "after dinner",
-                "feel bored"
-              ],
-              "clueHint": "晚饭后",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "relax my mind"
-              ],
-              "clueHint": "松弛",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "slow down",
-                "enjoy a good laugh",
-                "unwind"
-              ]
-            }
-          }
+          "clueId": "4"
         },
         {
           "id": 7,
           "title": "When did you learn how to type on a keyboard",
           "q": "When did you learn how to type on a keyboard?",
-          "clueId": "5",
           "words": {
             "正面回答": [
               "In my childhood",
@@ -569,75 +163,23 @@ const P1_DATA = {
             ],
             "来源或举例": [
               "shop online",
-              "play video games",
-              "browse videos",
-              "spend a lot of time on dou yin, xiaohongshu, wechat"
+              "play video games"
             ],
             "频次": [
               "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school",
-              "when I started university",
-              "after I get up"
+              "as often as I can"
             ],
             "感受": [
               "practical",
               "time-saving"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "In my childhood",
-                "in primary school"
-              ],
-              "clueHint": "⼩时候",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "shop online",
-                "play video games"
-              ],
-              "clueHint": "⽹购",
-              "material": [
-                "browse videos",
-                "spend a lot of time on dou yin, xiaohongshu, wechat"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "regularly",
-                "as often as I can"
-              ],
-              "clueHint": "每天",
-              "material": [
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school",
-                "when I started university",
-                "after I get up"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "practical",
-                "time-saving"
-              ],
-              "clueHint": "实⽤",
-              "material": []
-            }
-          }
+          "clueId": "5"
         },
         {
           "id": 8,
           "title": "How do you improve your typing",
           "q": "How do you improve your typing?",
-          "clueId": "5",
           "words": {
             "正面回答": [
               "In my childhood",
@@ -645,2031 +187,518 @@ const P1_DATA = {
             ],
             "来源或举例": [
               "shop online",
-              "play video games",
-              "browse videos",
-              "spend a lot of time on dou yin, xiaohongshu, wechat"
+              "play video games"
             ],
             "频次": [
               "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school",
-              "when I started university",
-              "after I get up"
+              "as often as I can"
             ],
             "感受": [
               "practical",
               "time-saving"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "In my childhood",
-                "in primary school"
-              ],
-              "clueHint": "⼩时候",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "shop online",
-                "play video games"
-              ],
-              "clueHint": "⽹购",
-              "material": [
-                "browse videos",
-                "spend a lot of time on dou yin, xiaohongshu, wechat"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "regularly",
-                "as often as I can"
-              ],
-              "clueHint": "每天",
-              "material": [
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school",
-                "when I started university",
-                "after I get up"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "practical",
-                "time-saving"
-              ],
-              "clueHint": "实⽤",
-              "material": []
-            }
-          }
+          "clueId": "5"
         },
         {
           "id": 9,
           "title": "What are the most beautiful sights you have seen while traveling",
           "q": "What are the most beautiful sights you have seen while traveling?",
-          "clueId": "6",
           "words": {
             "正面回答": [
               "To be honest, the seaside"
             ],
             "来源或举例": [
-              "take photos of the stunning views",
-              "take photos",
-              "hiking",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "take photos of the stunning views"
             ],
             "频次": [
               "during holidays",
-              "when I have days off",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "when I have days off"
             ],
             "感受": [
-              "It's something I'll never forget",
-              "it makes me happy",
-              "really lifts my mood",
-              "feel relaxed and at ease",
-              "appreciated"
+              "It's something I'll never forget"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "To be honest, the seaside"
-              ],
-              "clueHint": "海滩",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "take photos of the stunning views"
-              ],
-              "clueHint": "拍照",
-              "material": [
-                "take photos",
-                "hiking",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "during holidays",
-                "when I have days off"
-              ],
-              "clueHint": "假期",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "It's something I'll never forget"
-              ],
-              "clueHint": "难忘",
-              "material": [
-                "it makes me happy",
-                "really lifts my mood",
-                "feel relaxed and at ease",
-                "appreciated"
-              ]
-            }
-          }
+          "clueId": "6"
         },
         {
           "id": 10,
           "title": "Are there tall buildings near your home",
           "q": "Are there tall buildings near your home?",
-          "clueId": "7",
           "words": {
             "正面回答": [
               "Yes, lots of them"
             ],
             "来源或举例": [
-              "like shopping malls and hotels",
-              "library",
-              "sports centre",
-              "the city centre",
-              "convenience stores",
-              "shopping malls"
+              "like shopping malls and hotels"
             ],
             "频次": [
               "go there regularly",
-              "in my free time",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my free time"
             ],
             "感受": [
               "super convenient",
-              "practical",
-              "time-saving"
+              "practical"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Yes, lots of them"
-              ],
-              "clueHint": "有很多",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "like shopping malls and hotels"
-              ],
-              "clueHint": "商超",
-              "material": [
-                "library",
-                "sports centre",
-                "the city centre",
-                "convenience stores",
-                "shopping malls"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "go there regularly",
-                "in my free time"
-              ],
-              "clueHint": "经常去",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "super convenient",
-                "practical"
-              ],
-              "clueHint": "便利",
-              "material": [
-                "time-saving"
-              ]
-            }
-          }
+          "clueId": "7"
         },
         {
           "id": 11,
           "title": "What plant did you grow when you were young",
           "q": "What plant did you grow when you were young?",
-          "clueId": "8",
           "words": {
             "正面回答": [
               "Actually yes"
             ],
             "来源或举例": [
               "some flowers on my balcony",
-              "bought from street market",
-              "library",
-              "sports centre",
-              "the city centre",
-              "convenience stores",
-              "shopping malls"
+              "bought from street market"
             ],
             "频次": [
-              "water them every day",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "water them every day"
             ],
             "感受": [
-              "gives me a chance to reflect on things",
-              "it makes me happy",
-              "really lifts my mood",
-              "feel relaxed and at ease",
-              "appreciated",
-              "reflect on things"
+              "gives me a chance to reflect on things"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Actually yes"
-              ],
-              "clueHint": "种过知道",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "some flowers on my balcony",
-                "bought from street market"
-              ],
-              "clueHint": "花草",
-              "material": [
-                "library",
-                "sports centre",
-                "the city centre",
-                "convenience stores",
-                "shopping malls"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "water them every day"
-              ],
-              "clueHint": "每天",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "gives me a chance to reflect on things"
-              ],
-              "clueHint": "反思",
-              "material": [
-                "it makes me happy",
-                "really lifts my mood",
-                "feel relaxed and at ease",
-                "appreciated",
-                "reflect on things"
-              ]
-            }
-          }
+          "clueId": "8"
         },
         {
           "id": 12,
           "title": "Do you know anything about growing a plant",
           "q": "Do you know anything about growing a plant?",
-          "clueId": "8",
           "words": {
             "正面回答": [
               "Actually yes"
             ],
             "来源或举例": [
               "some flowers on my balcony",
-              "bought from street market",
-              "library",
-              "sports centre",
-              "the city centre",
-              "convenience stores",
-              "shopping malls"
+              "bought from street market"
             ],
             "频次": [
-              "water them every day",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "water them every day"
             ],
             "感受": [
-              "gives me a chance to reflect on things",
-              "it makes me happy",
-              "really lifts my mood",
-              "feel relaxed and at ease",
-              "appreciated",
-              "reflect on things"
+              "gives me a chance to reflect on things"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Actually yes"
-              ],
-              "clueHint": "种过知道",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "some flowers on my balcony",
-                "bought from street market"
-              ],
-              "clueHint": "花草",
-              "material": [
-                "library",
-                "sports centre",
-                "the city centre",
-                "convenience stores",
-                "shopping malls"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "water them every day"
-              ],
-              "clueHint": "每天",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "gives me a chance to reflect on things"
-              ],
-              "clueHint": "反思",
-              "material": [
-                "it makes me happy",
-                "really lifts my mood",
-                "feel relaxed and at ease",
-                "appreciated",
-                "reflect on things"
-              ]
-            }
-          }
+          "clueId": "8"
         },
         {
           "id": 13,
           "title": "Have you ever talked with someone you don't know in public places",
           "q": "Have you ever talked with someone you don't know in public places?",
-          "clueId": "9",
           "words": {
             "正面回答": [
               "Occasionally, yes"
             ],
             "来源或举例": [
               "in the cafes",
-              "library",
-              "have a chat",
-              "hang out",
-              "go to parties",
-              "get together with friends and classmates",
-              "meet like-minded people"
+              "library"
             ],
             "频次": [
               "seldom",
-              "just from time to time",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "just from time to time"
             ],
             "感受": [
               "good chance to have a conversation",
-              "share opinions",
-              "it makes me happy",
-              "really lifts my mood",
-              "feel relaxed and at ease",
-              "appreciated",
-              "sit down and relax",
-              "chill out"
+              "share opinions"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Occasionally, yes"
-              ],
-              "clueHint": "聊过",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "in the cafes",
-                "library"
-              ],
-              "clueHint": "咖啡店问路",
-              "material": [
-                "have a chat",
-                "hang out",
-                "go to parties",
-                "get together with friends and classmates",
-                "meet like-minded people"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "seldom",
-                "just from time to time"
-              ],
-              "clueHint": "极少",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "good chance to have a conversation",
-                "share opinions"
-              ],
-              "clueHint": "交谈",
-              "material": [
-                "it makes me happy",
-                "really lifts my mood",
-                "feel relaxed and at ease",
-                "appreciated",
-                "sit down and relax",
-                "chill out"
-              ]
-            }
-          }
+          "clueId": "9"
         },
         {
           "id": 14,
           "title": "Are there any rules for students at your school",
           "q": "Are there any rules for students at your school?",
-          "clueId": "10",
           "words": {
             "正面回答": [
               "Definitely",
               "a lot of rules"
             ],
             "来源或举例": [
-              "e.g., no phones in the classroom",
-              "school",
-              "classroom",
-              "the school canteen",
-              "library",
-              "study"
+              "e.g., no phones in the classroom"
             ],
             "频次": [
-              "we have to follow them daily",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "we have to follow them daily"
             ],
             "感受": [
               "forces me to work hard at my studies",
-              "complete homework independently",
-              "self-driven",
-              "a sense of achievement",
-              "take the initiative to",
-              "take action"
+              "complete homework independently"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Definitely",
-                "a lot of rules"
-              ],
-              "clueHint": "有规矩遇到过",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "e.g., no phones in the classroom"
-              ],
-              "clueHint": "教室",
-              "material": [
-                "school",
-                "classroom",
-                "the school canteen",
-                "library",
-                "study"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "we have to follow them daily"
-              ],
-              "clueHint": "每天",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "forces me to work hard at my studies",
-                "complete homework independently"
-              ],
-              "clueHint": "努⼒学习",
-              "material": [
-                "self-driven",
-                "a sense of achievement",
-                "take the initiative to",
-                "take action"
-              ]
-            }
-          }
+          "clueId": "10"
         },
         {
           "id": 15,
           "title": "Have you ever had a really dedicated teacher",
           "q": "Have you ever had a really dedicated teacher?",
-          "clueId": "10",
           "words": {
             "正面回答": [
               "Definitely",
               "a lot of rules"
             ],
             "来源或举例": [
-              "e.g., no phones in the classroom",
-              "school",
-              "classroom",
-              "the school canteen",
-              "library",
-              "study"
+              "e.g., no phones in the classroom"
             ],
             "频次": [
-              "we have to follow them daily",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "we have to follow them daily"
             ],
             "感受": [
               "forces me to work hard at my studies",
-              "complete homework independently",
-              "self-driven",
-              "a sense of achievement",
-              "take the initiative to",
-              "take action"
+              "complete homework independently"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Definitely",
-                "a lot of rules"
-              ],
-              "clueHint": "有规矩遇到过",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "e.g., no phones in the classroom"
-              ],
-              "clueHint": "教室",
-              "material": [
-                "school",
-                "classroom",
-                "the school canteen",
-                "library",
-                "study"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "we have to follow them daily"
-              ],
-              "clueHint": "每天",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "forces me to work hard at my studies",
-                "complete homework independently"
-              ],
-              "clueHint": "努⼒学习",
-              "material": [
-                "self-driven",
-                "a sense of achievement",
-                "take the initiative to",
-                "take action"
-              ]
-            }
-          }
+          "clueId": "10"
         },
         {
           "id": 16,
           "title": "Have you ever had a really strict teacher",
           "q": "Have you ever had a really strict teacher?",
-          "clueId": "10",
           "words": {
             "正面回答": [
               "Definitely",
               "a lot of rules"
             ],
             "来源或举例": [
-              "e.g., no phones in the classroom",
-              "school",
-              "classroom",
-              "the school canteen",
-              "library",
-              "study"
+              "e.g., no phones in the classroom"
             ],
             "频次": [
-              "we have to follow them daily",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "we have to follow them daily"
             ],
             "感受": [
               "forces me to work hard at my studies",
-              "complete homework independently",
-              "self-driven",
-              "a sense of achievement",
-              "take the initiative to",
-              "take action"
+              "complete homework independently"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Definitely",
-                "a lot of rules"
-              ],
-              "clueHint": "有规矩遇到过",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "e.g., no phones in the classroom"
-              ],
-              "clueHint": "教室",
-              "material": [
-                "school",
-                "classroom",
-                "the school canteen",
-                "library",
-                "study"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "we have to follow them daily"
-              ],
-              "clueHint": "每天",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "forces me to work hard at my studies",
-                "complete homework independently"
-              ],
-              "clueHint": "努⼒学习",
-              "material": [
-                "self-driven",
-                "a sense of achievement",
-                "take the initiative to",
-                "take action"
-              ]
-            }
-          }
+          "clueId": "10"
         },
         {
           "id": 17,
           "title": "Have you ever bought shoes online",
           "q": "Have you ever bought shoes online?",
-          "clueId": "11",
           "words": {
             "正面回答": [
               "Absolutely"
             ],
             "来源或举例": [
               "shop online",
-              "browse websites",
-              "browse videos",
-              "spend a lot of time on dou yin, xiaohongshu, wechat",
-              "t-shirt",
-              "coat",
-              "sweatshirt"
+              "browse websites"
             ],
             "频次": [
               "regularly",
-              "whenever I need",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school",
-              "when I started university"
+              "whenever I need"
             ],
             "感受": [
               "practical",
-              "cheap and handy",
-              "time-saving"
+              "cheap and handy"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Absolutely"
-              ],
-              "clueHint": "买过",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "shop online",
-                "browse websites"
-              ],
-              "clueHint": "⽹购",
-              "material": [
-                "browse videos",
-                "spend a lot of time on dou yin, xiaohongshu, wechat",
-                "t-shirt",
-                "coat",
-                "sweatshirt"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "regularly",
-                "whenever I need"
-              ],
-              "clueHint": "换季时",
-              "material": [
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school",
-                "when I started university"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "practical",
-                "cheap and handy"
-              ],
-              "clueHint": "实⽤",
-              "material": [
-                "time-saving"
-              ]
-            }
-          }
+          "clueId": "11"
         },
         {
           "id": 18,
           "title": "Do you have an experience when you did something well",
           "q": "Do you have an experience when you did something well?",
-          "clueId": "12",
           "words": {
             "正面回答": [
               "Yes, I have an impressive memory"
             ],
             "来源或举例": [
               "complete homework independently",
-              "pass an exam",
-              "study",
-              "go to classes",
-              "read books",
-              "flip through the pages of real books",
-              "go to extra classes and events"
+              "pass an exam"
             ],
             "频次": [
-              "last semester",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "last semester"
             ],
             "感受": [
               "made me feel self-driven",
-              "a sense of achievement",
-              "self-driven",
-              "take the initiative to",
-              "take action"
+              "a sense of achievement"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Yes, I have an impressive memory"
-              ],
-              "clueHint": "有过",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "complete homework independently",
-                "pass an exam"
-              ],
-              "clueHint": "独⽴完成作业",
-              "material": [
-                "study",
-                "go to classes",
-                "read books",
-                "flip through the pages of real books",
-                "go to extra classes and events"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "last semester"
-              ],
-              "clueHint": "偶尔",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "made me feel self-driven",
-                "a sense of achievement"
-              ],
-              "clueHint": "⾃驱⼒",
-              "material": [
-                "self-driven",
-                "take the initiative to",
-                "take action"
-              ]
-            }
-          }
+          "clueId": "12"
         },
         {
           "id": 19,
           "title": "Do you have an experience when your teacher thought you did a good job",
           "q": "Do you have an experience when your teacher thought you did a good job?",
-          "clueId": "12",
           "words": {
             "正面回答": [
               "Yes, I have an impressive memory"
             ],
             "来源或举例": [
               "complete homework independently",
-              "pass an exam",
-              "study",
-              "go to classes",
-              "read books",
-              "flip through the pages of real books",
-              "go to extra classes and events"
+              "pass an exam"
             ],
             "频次": [
-              "last semester",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "last semester"
             ],
             "感受": [
               "made me feel self-driven",
-              "a sense of achievement",
-              "self-driven",
-              "take the initiative to",
-              "take action"
+              "a sense of achievement"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Yes, I have an impressive memory"
-              ],
-              "clueHint": "有过",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "complete homework independently",
-                "pass an exam"
-              ],
-              "clueHint": "独⽴完成作业",
-              "material": [
-                "study",
-                "go to classes",
-                "read books",
-                "flip through the pages of real books",
-                "go to extra classes and events"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "last semester"
-              ],
-              "clueHint": "偶尔",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "made me feel self-driven",
-                "a sense of achievement"
-              ],
-              "clueHint": "⾃驱⼒",
-              "material": [
-                "self-driven",
-                "take the initiative to",
-                "take action"
-              ]
-            }
-          }
+          "clueId": "12"
         },
         {
           "id": 20,
           "title": "Is the city where you live crowded",
           "q": "Is the city where you live crowded?",
-          "clueId": "13",
           "words": {
             "正面回答": [
               "Honestly, yes"
             ],
             "来源或举例": [
               "the city centre",
-              "use the subway in rush hour",
-              "library",
-              "sports centre",
-              "convenience stores",
-              "shopping malls",
-              "park"
+              "use the subway in rush hour"
             ],
             "频次": [
-              "every single day",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "every single day"
             ],
             "感受": [
               "it bothers me",
               "feel terrible"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Honestly, yes"
-              ],
-              "clueHint": "拥挤去过",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "the city centre",
-                "use the subway in rush hour"
-              ],
-              "clueHint": "市中⼼地铁",
-              "material": [
-                "library",
-                "sports centre",
-                "convenience stores",
-                "shopping malls",
-                "park"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "every single day"
-              ],
-              "clueHint": "每天",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "it bothers me",
-                "feel terrible"
-              ],
-              "clueHint": "烦恼",
-              "material": []
-            }
-          }
+          "clueId": "13"
         },
         {
           "id": 21,
           "title": "Is there a crowded place near where you live",
           "q": "Is there a crowded place near where you live?",
-          "clueId": "13",
           "words": {
             "正面回答": [
               "Honestly, yes"
             ],
             "来源或举例": [
               "the city centre",
-              "use the subway in rush hour",
-              "library",
-              "sports centre",
-              "convenience stores",
-              "shopping malls",
-              "park"
+              "use the subway in rush hour"
             ],
             "频次": [
-              "every single day",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "every single day"
             ],
             "感受": [
               "it bothers me",
               "feel terrible"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Honestly, yes"
-              ],
-              "clueHint": "拥挤去过",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "the city centre",
-                "use the subway in rush hour"
-              ],
-              "clueHint": "市中⼼地铁",
-              "material": [
-                "library",
-                "sports centre",
-                "convenience stores",
-                "shopping malls",
-                "park"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "every single day"
-              ],
-              "clueHint": "每天",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "it bothers me",
-                "feel terrible"
-              ],
-              "clueHint": "烦恼",
-              "material": []
-            }
-          }
+          "clueId": "13"
         },
         {
           "id": 22,
           "title": "When was the last time you were in a crowded place",
           "q": "When was the last time you were in a crowded place?",
-          "clueId": "13",
           "words": {
             "正面回答": [
               "Honestly, yes"
             ],
             "来源或举例": [
               "the city centre",
-              "use the subway in rush hour",
-              "library",
-              "sports centre",
-              "convenience stores",
-              "shopping malls",
-              "park"
+              "use the subway in rush hour"
             ],
             "频次": [
-              "every single day",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "every single day"
             ],
             "感受": [
               "it bothers me",
               "feel terrible"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Honestly, yes"
-              ],
-              "clueHint": "拥挤去过",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "the city centre",
-                "use the subway in rush hour"
-              ],
-              "clueHint": "市中⼼地铁",
-              "material": [
-                "library",
-                "sports centre",
-                "convenience stores",
-                "shopping malls",
-                "park"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "every single day"
-              ],
-              "clueHint": "每天",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "it bothers me",
-                "feel terrible"
-              ],
-              "clueHint": "烦恼",
-              "material": []
-            }
-          }
+          "clueId": "13"
         },
         {
           "id": 23,
           "title": "Have you ever worked with old people",
           "q": "Have you ever worked with old people?",
-          "clueId": "14",
           "words": {
             "正面回答": [
               "Yes, in a community event"
             ],
             "来源或举例": [
               "have a conversation",
-              "have a chat with them",
-              "have a chat",
-              "hang out",
-              "go to parties",
-              "get together with friends and classmates",
-              "meet like-minded people"
+              "have a chat with them"
             ],
             "频次": [
-              "when I started university",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "when I started university"
             ],
             "感受": [
               "great chance to share experiences",
-              "learn from them",
-              "it makes me happy",
-              "really lifts my mood",
-              "feel relaxed and at ease",
-              "appreciated",
-              "sit down and relax",
-              "chill out"
+              "learn from them"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Yes, in a community event"
-              ],
-              "clueHint": "合作过",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "have a conversation",
-                "have a chat with them"
-              ],
-              "clueHint": "聊天",
-              "material": [
-                "have a chat",
-                "hang out",
-                "go to parties",
-                "get together with friends and classmates",
-                "meet like-minded people"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "when I started university"
-              ],
-              "clueHint": "上⼤学后",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "great chance to share experiences",
-                "learn from them"
-              ],
-              "clueHint": "分享经验",
-              "material": [
-                "it makes me happy",
-                "really lifts my mood",
-                "feel relaxed and at ease",
-                "appreciated",
-                "sit down and relax",
-                "chill out"
-              ]
-            }
-          }
+          "clueId": "14"
         },
         {
           "id": 24,
           "title": "Do many people grow vegetables in your city",
           "q": "Do many people grow vegetables in your city?",
-          "clueId": "15",
           "words": {
             "正面回答": [
               "Not really"
             ],
             "来源或举例": [
               "people live in high-rise residential areas",
-              "apartments",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "breakfast"
+              "apartments"
             ],
             "频次": [
-              "rarely see it",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "rarely see it"
             ],
             "感受": [
               "we usually buy groceries",
-              "food ingredients instead",
-              "it makes me happy",
-              "really lifts my mood",
-              "feel relaxed and at ease",
-              "appreciated",
-              "sit down and relax",
-              "chill out"
+              "food ingredients instead"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Not really"
-              ],
-              "clueHint": "不多",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "people live in high-rise residential areas",
-                "apartments"
-              ],
-              "clueHint": "住宅区",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "breakfast"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "rarely see it"
-              ],
-              "clueHint": "极少",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "we usually buy groceries",
-                "food ingredients instead"
-              ],
-              "clueHint": "买⽣鲜",
-              "material": [
-                "it makes me happy",
-                "really lifts my mood",
-                "feel relaxed and at ease",
-                "appreciated",
-                "sit down and relax",
-                "chill out"
-              ]
-            }
-          }
+          "clueId": "15"
         },
         {
           "id": 25,
           "title": "Have you borrowed books from others",
           "q": "Have you borrowed books from others?",
-          "clueId": "16",
           "words": {
             "正面回答": [
               "Yes, exactly"
             ],
             "来源或举例": [
-              "borrowed real books from friends in dorms",
-              "study",
-              "go to classes",
-              "read books",
-              "flip through the pages of real books",
-              "go to extra classes and events"
+              "borrowed real books from friends in dorms"
             ],
             "频次": [
-              "whenever necessary",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "whenever necessary"
             ],
-            "感受": [
-              "it makes me happy",
-              "really lifts my mood",
-              "feel relaxed and at ease",
-              "appreciated",
-              "sit down and relax",
-              "chill out"
-            ]
+            "感受": []
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Yes, exactly"
-              ],
-              "clueHint": "借过",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "borrowed real books from friends in dorms"
-              ],
-              "clueHint": "纸质书室友",
-              "material": [
-                "study",
-                "go to classes",
-                "read books",
-                "flip through the pages of real books",
-                "go to extra classes and events"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "whenever necessary"
-              ],
-              "clueHint": "需要时",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [],
-              "clueHint": "",
-              "material": [
-                "it makes me happy",
-                "really lifts my mood",
-                "feel relaxed and at ease",
-                "appreciated",
-                "sit down and relax",
-                "chill out"
-              ]
-            }
-          }
+          "clueId": "16"
         },
         {
           "id": 26,
           "title": "Have you borrowed money from others",
           "q": "Have you borrowed money from others?",
-          "clueId": "16",
           "words": {
             "正面回答": [
               "Yes, exactly"
             ],
             "来源或举例": [
-              "borrowed real books from friends in dorms",
-              "study",
-              "go to classes",
-              "read books",
-              "flip through the pages of real books",
-              "go to extra classes and events"
+              "borrowed real books from friends in dorms"
             ],
             "频次": [
-              "whenever necessary",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "whenever necessary"
             ],
-            "感受": [
-              "it makes me happy",
-              "really lifts my mood",
-              "feel relaxed and at ease",
-              "appreciated",
-              "sit down and relax",
-              "chill out"
-            ]
+            "感受": []
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Yes, exactly"
-              ],
-              "clueHint": "借过",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "borrowed real books from friends in dorms"
-              ],
-              "clueHint": "纸质书室友",
-              "material": [
-                "study",
-                "go to classes",
-                "read books",
-                "flip through the pages of real books",
-                "go to extra classes and events"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "whenever necessary"
-              ],
-              "clueHint": "需要时",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [],
-              "clueHint": "",
-              "material": [
-                "it makes me happy",
-                "really lifts my mood",
-                "feel relaxed and at ease",
-                "appreciated",
-                "sit down and relax",
-                "chill out"
-              ]
-            }
-          }
+          "clueId": "16"
         },
         {
           "id": 27,
           "title": "Is there an advertisement that made an impression on you when you were a child",
           "q": "Is there an advertisement that made an impression on you when you were a child?",
-          "clueId": "17",
           "words": {
             "正面回答": [
               "Yes, one deeply impressed me"
             ],
             "来源或举例": [
-              "saw it when I watch movies",
-              "watch movies",
-              "movie theaters",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "saw it when I watch movies"
             ],
             "频次": [
               "childhood",
-              "before I went to primary school",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "after I went to middle school",
-              "when I started university",
-              "after I get up"
+              "before I went to primary school"
             ],
             "感受": [
               "it makes me happy",
-              "interesting",
-              "really lifts my mood",
-              "feel relaxed and at ease",
-              "appreciated"
+              "interesting"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Yes, one deeply impressed me"
-              ],
-              "clueHint": "有印象",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "saw it when I watch movies"
-              ],
-              "clueHint": "电视看电影",
-              "material": [
-                "watch movies",
-                "movie theaters",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "childhood",
-                "before I went to primary school"
-              ],
-              "clueHint": "⼩时候",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "after I went to middle school",
-                "when I started university",
-                "after I get up"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "it makes me happy",
-                "interesting"
-              ],
-              "clueHint": "开⼼",
-              "material": [
-                "really lifts my mood",
-                "feel relaxed and at ease",
-                "appreciated"
-              ]
-            }
-          }
+          "clueId": "17"
         },
         {
           "id": 28,
           "title": "Are there many museums in your hometown",
           "q": "Are there many museums in your hometown?",
-          "clueId": "18",
           "words": {
             "正面回答": [
               "Yes, quite a few",
               "recently"
             ],
             "来源或举例": [
-              "located in the city centre",
-              "library",
-              "sports centre",
-              "the city centre",
-              "convenience stores",
-              "shopping malls"
+              "located in the city centre"
             ],
             "频次": [
-              "in my free time",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my free time"
             ],
             "感受": [
-              "helps me to slow down and learn history",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "helps me to slow down and learn history"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Yes, quite a few",
-                "recently"
-              ],
-              "clueHint": "很多去过",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "located in the city centre"
-              ],
-              "clueHint": "市中⼼",
-              "material": [
-                "library",
-                "sports centre",
-                "the city centre",
-                "convenience stores",
-                "shopping malls"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my free time"
-              ],
-              "clueHint": "周末闲暇",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "helps me to slow down and learn history"
-              ],
-              "clueHint": "慢下来",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "18"
         },
         {
           "id": 29,
           "title": "When was the last time you visited a museum",
           "q": "When was the last time you visited a museum?",
-          "clueId": "18",
           "words": {
             "正面回答": [
               "Yes, quite a few",
               "recently"
             ],
             "来源或举例": [
-              "located in the city centre",
-              "library",
-              "sports centre",
-              "the city centre",
-              "convenience stores",
-              "shopping malls"
+              "located in the city centre"
             ],
             "频次": [
-              "in my free time",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my free time"
             ],
             "感受": [
-              "helps me to slow down and learn history",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "helps me to slow down and learn history"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Yes, quite a few",
-                "recently"
-              ],
-              "clueHint": "很多去过",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "located in the city centre"
-              ],
-              "clueHint": "市中⼼",
-              "material": [
-                "library",
-                "sports centre",
-                "the city centre",
-                "convenience stores",
-                "shopping malls"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my free time"
-              ],
-              "clueHint": "周末闲暇",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "helps me to slow down and learn history"
-              ],
-              "clueHint": "慢下来",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "18"
         },
         {
           "id": 30,
           "title": "Did your parents teach you to share when you were a child",
           "q": "Did your parents teach you to share when you were a child?",
-          "clueId": "19",
           "words": {
             "正面回答": [
               "Definitely"
             ],
             "来源或举例": [
               "share a meal",
-              "share thoughts and feelings with friends",
-              "share experiences",
-              "share opinions",
-              "share thoughts and feelings",
-              "altruistic behaviour",
-              "motivate each other"
+              "share thoughts and feelings with friends"
             ],
             "频次": [
               "regularly",
-              "all the time",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school",
-              "when I started university"
+              "all the time"
             ],
             "感受": [
-              "good for mental self-care",
-              "self-care"
+              "good for mental self-care"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Definitely"
-              ],
-              "clueHint": "教过分享过",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "share a meal",
-                "share thoughts and feelings with friends"
-              ],
-              "clueHint": "分享⻝物想法",
-              "material": [
-                "share experiences",
-                "share opinions",
-                "share thoughts and feelings",
-                "altruistic behaviour",
-                "motivate each other"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "regularly",
-                "all the time"
-              ],
-              "clueHint": "经常",
-              "material": [
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school",
-                "when I started university"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "good for mental self-care"
-              ],
-              "clueHint": "⾃我照顾满⾜",
-              "material": [
-                "self-care"
-              ]
-            }
-          }
+          "clueId": "19"
         },
         {
           "id": 31,
           "title": "Do you have anything to share with others recently",
           "q": "Do you have anything to share with others recently?",
-          "clueId": "19",
           "words": {
             "正面回答": [
               "Definitely"
             ],
             "来源或举例": [
               "share a meal",
-              "share thoughts and feelings with friends",
-              "share experiences",
-              "share opinions",
-              "share thoughts and feelings",
-              "altruistic behaviour",
-              "motivate each other"
+              "share thoughts and feelings with friends"
             ],
             "频次": [
               "regularly",
-              "all the time",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school",
-              "when I started university"
+              "all the time"
             ],
             "感受": [
-              "good for mental self-care",
-              "self-care"
+              "good for mental self-care"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Definitely"
-              ],
-              "clueHint": "教过分享过",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "share a meal",
-                "share thoughts and feelings with friends"
-              ],
-              "clueHint": "分享⻝物想法",
-              "material": [
-                "share experiences",
-                "share opinions",
-                "share thoughts and feelings",
-                "altruistic behaviour",
-                "motivate each other"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "regularly",
-                "all the time"
-              ],
-              "clueHint": "经常",
-              "material": [
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school",
-                "when I started university"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "good for mental self-care"
-              ],
-              "clueHint": "⾃我照顾满⾜",
-              "material": [
-                "self-care"
-              ]
-            }
-          }
+          "clueId": "19"
         },
         {
           "id": 32,
           "title": "What subjects are you studying",
           "q": "What subjects are you studying?",
-          "clueId": "20",
           "words": {
             "正面回答": [
               "I am a student majoring in"
@@ -2677,82 +706,21 @@ const P1_DATA = {
             "来源或举例": [
               "Study",
               "go to classes",
-              "listen to a lecture",
-              "read books",
-              "flip through the pages of real books",
-              "go to extra classes and events",
-              "work hard at my studies",
-              "complete homework independently"
+              "listen to a lecture"
             ],
             "频次": [
-              "every weekday",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "every weekday"
             ],
             "感受": [
-              "it could be useful for my future job",
-              "practical",
-              "time-saving"
+              "it could be useful for my future job"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I am a student majoring in"
-              ],
-              "clueHint": "学⽣打⼯⼈",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "Study",
-                "go to classes",
-                "listen to a lecture"
-              ],
-              "clueHint": "上课查资料",
-              "material": [
-                "read books",
-                "flip through the pages of real books",
-                "go to extra classes and events",
-                "work hard at my studies",
-                "complete homework independently"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "every weekday"
-              ],
-              "clueHint": "每天",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "it could be useful for my future job"
-              ],
-              "clueHint": "有⽤",
-              "material": [
-                "practical",
-                "time-saving"
-              ]
-            }
-          }
+          "clueId": "20"
         },
         {
           "id": 33,
           "title": "What work do you do",
           "q": "What work do you do?",
-          "clueId": "20",
           "words": {
             "正面回答": [
               "I am a student majoring in"
@@ -2760,82 +728,21 @@ const P1_DATA = {
             "来源或举例": [
               "Study",
               "go to classes",
-              "listen to a lecture",
-              "read books",
-              "flip through the pages of real books",
-              "go to extra classes and events",
-              "work hard at my studies",
-              "complete homework independently"
+              "listen to a lecture"
             ],
             "频次": [
-              "every weekday",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "every weekday"
             ],
             "感受": [
-              "it could be useful for my future job",
-              "practical",
-              "time-saving"
+              "it could be useful for my future job"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I am a student majoring in"
-              ],
-              "clueHint": "学⽣打⼯⼈",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "Study",
-                "go to classes",
-                "listen to a lecture"
-              ],
-              "clueHint": "上课查资料",
-              "material": [
-                "read books",
-                "flip through the pages of real books",
-                "go to extra classes and events",
-                "work hard at my studies",
-                "complete homework independently"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "every weekday"
-              ],
-              "clueHint": "每天",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "it could be useful for my future job"
-              ],
-              "clueHint": "有⽤",
-              "material": [
-                "practical",
-                "time-saving"
-              ]
-            }
-          }
+          "clueId": "20"
         },
         {
           "id": 34,
           "title": "What requirements did you need to meet to get your current job",
           "q": "What requirements did you need to meet to get your current job?",
-          "clueId": "20",
           "words": {
             "正面回答": [
               "I am a student majoring in"
@@ -2843,82 +750,21 @@ const P1_DATA = {
             "来源或举例": [
               "Study",
               "go to classes",
-              "listen to a lecture",
-              "read books",
-              "flip through the pages of real books",
-              "go to extra classes and events",
-              "work hard at my studies",
-              "complete homework independently"
+              "listen to a lecture"
             ],
             "频次": [
-              "every weekday",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "every weekday"
             ],
             "感受": [
-              "it could be useful for my future job",
-              "practical",
-              "time-saving"
+              "it could be useful for my future job"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I am a student majoring in"
-              ],
-              "clueHint": "学⽣打⼯⼈",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "Study",
-                "go to classes",
-                "listen to a lecture"
-              ],
-              "clueHint": "上课查资料",
-              "material": [
-                "read books",
-                "flip through the pages of real books",
-                "go to extra classes and events",
-                "work hard at my studies",
-                "complete homework independently"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "every weekday"
-              ],
-              "clueHint": "每天",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "it could be useful for my future job"
-              ],
-              "clueHint": "有⽤",
-              "material": [
-                "practical",
-                "time-saving"
-              ]
-            }
-          }
+          "clueId": "20"
         },
         {
           "id": 35,
           "title": "Why did you choose to study that subject",
           "q": "Why did you choose to study that subject?",
-          "clueId": "20",
           "words": {
             "正面回答": [
               "I am a student majoring in"
@@ -2926,82 +772,21 @@ const P1_DATA = {
             "来源或举例": [
               "Study",
               "go to classes",
-              "listen to a lecture",
-              "read books",
-              "flip through the pages of real books",
-              "go to extra classes and events",
-              "work hard at my studies",
-              "complete homework independently"
+              "listen to a lecture"
             ],
             "频次": [
-              "every weekday",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "every weekday"
             ],
             "感受": [
-              "it could be useful for my future job",
-              "practical",
-              "time-saving"
+              "it could be useful for my future job"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I am a student majoring in"
-              ],
-              "clueHint": "学⽣打⼯⼈",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "Study",
-                "go to classes",
-                "listen to a lecture"
-              ],
-              "clueHint": "上课查资料",
-              "material": [
-                "read books",
-                "flip through the pages of real books",
-                "go to extra classes and events",
-                "work hard at my studies",
-                "complete homework independently"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "every weekday"
-              ],
-              "clueHint": "每天",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "it could be useful for my future job"
-              ],
-              "clueHint": "有⽤",
-              "material": [
-                "practical",
-                "time-saving"
-              ]
-            }
-          }
+          "clueId": "20"
         },
         {
           "id": 36,
           "title": "Why did you choose to do that type of work",
           "q": "Why did you choose to do that type of work?",
-          "clueId": "20",
           "words": {
             "正面回答": [
               "I am a student majoring in"
@@ -3009,82 +794,21 @@ const P1_DATA = {
             "来源或举例": [
               "Study",
               "go to classes",
-              "listen to a lecture",
-              "read books",
-              "flip through the pages of real books",
-              "go to extra classes and events",
-              "work hard at my studies",
-              "complete homework independently"
+              "listen to a lecture"
             ],
             "频次": [
-              "every weekday",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "every weekday"
             ],
             "感受": [
-              "it could be useful for my future job",
-              "practical",
-              "time-saving"
+              "it could be useful for my future job"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I am a student majoring in"
-              ],
-              "clueHint": "学⽣打⼯⼈",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "Study",
-                "go to classes",
-                "listen to a lecture"
-              ],
-              "clueHint": "上课查资料",
-              "material": [
-                "read books",
-                "flip through the pages of real books",
-                "go to extra classes and events",
-                "work hard at my studies",
-                "complete homework independently"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "every weekday"
-              ],
-              "clueHint": "每天",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "it could be useful for my future job"
-              ],
-              "clueHint": "有⽤",
-              "material": [
-                "practical",
-                "time-saving"
-              ]
-            }
-          }
+          "clueId": "20"
         },
         {
           "id": 37,
           "title": "Do you have any plans for your studies in the next five years",
           "q": "Do you have any plans for your studies in the next five years?",
-          "clueId": "20",
           "words": {
             "正面回答": [
               "I am a student majoring in"
@@ -3092,82 +816,21 @@ const P1_DATA = {
             "来源或举例": [
               "Study",
               "go to classes",
-              "listen to a lecture",
-              "read books",
-              "flip through the pages of real books",
-              "go to extra classes and events",
-              "work hard at my studies",
-              "complete homework independently"
+              "listen to a lecture"
             ],
             "频次": [
-              "every weekday",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "every weekday"
             ],
             "感受": [
-              "it could be useful for my future job",
-              "practical",
-              "time-saving"
+              "it could be useful for my future job"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I am a student majoring in"
-              ],
-              "clueHint": "学⽣打⼯⼈",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "Study",
-                "go to classes",
-                "listen to a lecture"
-              ],
-              "clueHint": "上课查资料",
-              "material": [
-                "read books",
-                "flip through the pages of real books",
-                "go to extra classes and events",
-                "work hard at my studies",
-                "complete homework independently"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "every weekday"
-              ],
-              "clueHint": "每天",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "it could be useful for my future job"
-              ],
-              "clueHint": "有⽤",
-              "material": [
-                "practical",
-                "time-saving"
-              ]
-            }
-          }
+          "clueId": "20"
         },
         {
           "id": 38,
           "title": "Do you have any plans for your work in the next five years",
           "q": "Do you have any plans for your work in the next five years?",
-          "clueId": "20",
           "words": {
             "正面回答": [
               "I am a student majoring in"
@@ -3175,82 +838,21 @@ const P1_DATA = {
             "来源或举例": [
               "Study",
               "go to classes",
-              "listen to a lecture",
-              "read books",
-              "flip through the pages of real books",
-              "go to extra classes and events",
-              "work hard at my studies",
-              "complete homework independently"
+              "listen to a lecture"
             ],
             "频次": [
-              "every weekday",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "every weekday"
             ],
             "感受": [
-              "it could be useful for my future job",
-              "practical",
-              "time-saving"
+              "it could be useful for my future job"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I am a student majoring in"
-              ],
-              "clueHint": "学⽣打⼯⼈",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "Study",
-                "go to classes",
-                "listen to a lecture"
-              ],
-              "clueHint": "上课查资料",
-              "material": [
-                "read books",
-                "flip through the pages of real books",
-                "go to extra classes and events",
-                "work hard at my studies",
-                "complete homework independently"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "every weekday"
-              ],
-              "clueHint": "每天",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "it could be useful for my future job"
-              ],
-              "clueHint": "有⽤",
-              "material": [
-                "practical",
-                "time-saving"
-              ]
-            }
-          }
+          "clueId": "20"
         },
         {
           "id": 39,
           "title": "Who helps you the most? And how",
           "q": "Who helps you the most? And how?",
-          "clueId": "20",
           "words": {
             "正面回答": [
               "I am a student majoring in"
@@ -3258,3394 +860,825 @@ const P1_DATA = {
             "来源或举例": [
               "Study",
               "go to classes",
-              "listen to a lecture",
-              "read books",
-              "flip through the pages of real books",
-              "go to extra classes and events",
-              "work hard at my studies",
-              "complete homework independently"
+              "listen to a lecture"
             ],
             "频次": [
-              "every weekday",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "every weekday"
             ],
             "感受": [
-              "it could be useful for my future job",
-              "practical",
-              "time-saving"
+              "it could be useful for my future job"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I am a student majoring in"
-              ],
-              "clueHint": "学⽣打⼯⼈",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "Study",
-                "go to classes",
-                "listen to a lecture"
-              ],
-              "clueHint": "上课查资料",
-              "material": [
-                "read books",
-                "flip through the pages of real books",
-                "go to extra classes and events",
-                "work hard at my studies",
-                "complete homework independently"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "every weekday"
-              ],
-              "clueHint": "每天",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "it could be useful for my future job"
-              ],
-              "clueHint": "有⽤",
-              "material": [
-                "practical",
-                "time-saving"
-              ]
-            }
-          }
+          "clueId": "20"
         },
         {
           "id": 40,
           "title": "Are the transport facilities to your home very good",
           "q": "Are the transport facilities to your home very good?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 41,
           "title": "Please describe the room you live in.",
           "q": "Please describe the room you live in.",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 42,
           "title": "Can you describe the place where you live",
           "q": "Can you describe the place where you live?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 43,
           "title": "How long have you lived there",
           "q": "How long have you lived there?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 44,
           "title": "Who do you live with",
           "q": "Who do you live with?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 45,
           "title": "What kinds of accommodation do you live in",
           "q": "What kinds of accommodation do you live in?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 46,
           "title": "Where is your hometown",
           "q": "Where is your hometown?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 47,
           "title": "Is that a big city or a small place",
           "q": "Is that a big city or a small place?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 48,
           "title": "Please describe your hometown a little.",
           "q": "Please describe your hometown a little.",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 49,
           "title": "How long have you been living there",
           "q": "How long have you been living there?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 50,
           "title": "What's your hometown famous for",
           "q": "What's your hometown famous for?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 51,
           "title": "Did you learn about the history of your hometown at school",
           "q": "Did you learn about the history of your hometown at school?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 52,
           "title": "Did you learn about the culture of your hometown at school",
           "q": "Did you learn about the culture of your hometown at school?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 53,
           "title": "Did you learn about the history of your hometown in childhood",
           "q": "Did you learn about the history of your hometown in childhood?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 54,
           "title": "Did you learn about the culture of your hometown in childhood",
           "q": "Did you learn about the culture of your hometown in childhood?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 55,
           "title": "Are there many young people in your hometown",
           "q": "Are there many young people in your hometown?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 56,
           "title": "Do you know any famous people in your area",
           "q": "Do you know any famous people in your area?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 57,
           "title": "What are some changes in the area recently",
           "q": "What are some changes in the area recently?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 58,
           "title": "Do you know any of your neighbors",
           "q": "Do you know any of your neighbors?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 59,
           "title": "Are the people in your neighborhood nice and friendly",
           "q": "Are the people in your neighborhood nice and friendly?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 60,
           "title": "Do you live in a noisy or a quiet area",
           "q": "Do you live in a noisy or a quiet area?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 61,
           "title": "What city do you live in",
           "q": "What city do you live in?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 62,
           "title": "How long have you lived in this city",
           "q": "How long have you lived in this city?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 63,
           "title": "Is this city your permanent residence",
           "q": "Is this city your permanent residence?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 64,
           "title": "Are there big changes in this city",
           "q": "Are there big changes in this city?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 65,
           "title": "Are there people of different ages living in this city",
           "q": "Are there people of different ages living in this city?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 66,
           "title": "Are the people friendly in the city",
           "q": "Are the people friendly in the city?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 67,
           "title": "What's the weather like where you live",
           "q": "What's the weather like where you live?",
-          "clueId": "21",
           "words": {
             "正面回答": [
               "I live in a big city",
               "have lived here since childhood"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway",
-              "dorms",
-              "home",
-              "renting an apartment",
-              "stay home",
-              "library"
+              "surrounded by convenience stores, shopping malls, easy to use the subway"
             ],
             "频次": [
-              "in my daily life",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "in my daily life"
             ],
             "感受": [
               "feel relaxed and at ease",
-              "nice place to sit down and relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "nice place to sit down and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "I live in a big city",
-                "have lived here since childhood"
-              ],
-              "clueHint": "描述地点时⻓",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "surrounded by convenience stores, shopping malls, easy to use the subway"
-              ],
-              "clueHint": "便利店商超地铁",
-              "material": [
-                "dorms",
-                "home",
-                "renting an apartment",
-                "stay home",
-                "library"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "in my daily life"
-              ],
-              "clueHint": "⽇常",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "feel relaxed and at ease",
-                "nice place to sit down and relax"
-              ],
-              "clueHint": "舒服归属感",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "21"
         },
         {
           "id": 68,
           "title": "When was the last time you had a few days off",
           "q": "When was the last time you had a few days off?",
-          "clueId": "22",
           "words": {
             "正面回答": [
               "Just last month"
             ],
             "来源或举例": [
               "binge-watch TV shows",
-              "have some me time at home",
-              "watch movies",
-              "listen to music",
-              "sing a song",
-              "eat out in a restaurant",
-              "dorms"
+              "have some me time at home"
             ],
             "频次": [
-              "rarely get the chance",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "rarely get the chance"
             ],
             "感受": [
               "relax my mind",
-              "take a break and relax",
-              "sit down and relax",
-              "chill out",
-              "slow down",
-              "enjoy a good laugh",
-              "unwind",
-              "a great way to unwind"
+              "take a break and relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Just last month"
-              ],
-              "clueHint": "上周上个⽉",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "binge-watch TV shows",
-                "have some me time at home"
-              ],
-              "clueHint": "追剧独处",
-              "material": [
-                "watch movies",
-                "listen to music",
-                "sing a song",
-                "eat out in a restaurant",
-                "dorms"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "rarely get the chance"
-              ],
-              "clueHint": "难得",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "relax my mind",
-                "take a break and relax"
-              ],
-              "clueHint": "放松⼼智",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "slow down",
-                "enjoy a good laugh",
-                "unwind",
-                "a great way to unwind"
-              ]
-            }
-          }
+          "clueId": "22"
         },
         {
           "id": 69,
           "title": "Can you remember the dreams you had",
           "q": "Can you remember the dreams you had?",
-          "clueId": "23",
           "words": {
             "正面回答": [
               "Yes, sometimes I do"
             ],
             "来源或举例": [
-              "usually recall them right after I get up",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school",
-              "when I started university",
-              "after I get up"
+              "usually recall them right after I get up"
             ],
             "频次": [
-              "from time to time",
-              "regularly",
-              "as often as I can",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school",
-              "when I started university"
+              "from time to time"
             ],
             "感受": [
-              "I don't know how to explain it, but it's fascinating",
-              "I don't know how to explain"
+              "I don't know how to explain it, but it's fascinating"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Yes, sometimes I do"
-              ],
-              "clueHint": "记得",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "usually recall them right after I get up"
-              ],
-              "clueHint": "考试起床后",
-              "material": [
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school",
-                "when I started university",
-                "after I get up"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "from time to time"
-              ],
-              "clueHint": "偶尔",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school",
-                "when I started university"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "I don't know how to explain it, but it's fascinating"
-              ],
-              "clueHint": "⽆法解释",
-              "material": [
-                "I don't know how to explain"
-              ]
-            }
-          }
+          "clueId": "23"
         },
         {
           "id": 70,
           "title": "Have you ever lost your keys",
           "q": "Have you ever lost your keys?",
-          "clueId": "24",
           "words": {
             "正面回答": [
               "Unfortunately, yes"
             ],
             "来源或举例": [
               "when I tried to grab my stuff",
-              "before I go out",
-              "get dressed",
-              "eat breakfast",
-              "grab my stuff",
-              "head out",
-              "pay with my phone"
+              "before I go out"
             ],
             "频次": [
-              "only once or twice",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "only once or twice"
             ],
             "感受": [
-              "it bothers me a lot, taught me to be careful",
-              "it bothers me"
+              "it bothers me a lot, taught me to be careful"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [
-                "Unfortunately, yes"
-              ],
-              "clueHint": "丢过",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "when I tried to grab my stuff",
-                "before I go out"
-              ],
-              "clueHint": "拿东西出⻔前",
-              "material": [
-                "get dressed",
-                "eat breakfast",
-                "grab my stuff",
-                "head out",
-                "pay with my phone"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "only once or twice"
-              ],
-              "clueHint": "极少",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "it bothers me a lot, taught me to be careful"
-              ],
-              "clueHint": "烦恼教训",
-              "material": [
-                "it bothers me"
-              ]
-            }
-          }
+          "clueId": "24"
         },
         {
           "id": 71,
           "title": "What did you often do with your friends in your childhood",
           "q": "What did you often do with your friends in your childhood?",
-          "clueId": "m1",
           "words": {
             "正面回答": [],
             "来源或举例": [
-              "play video games",
-              "have a chat",
-              "hang out",
-              "go to parties",
-              "get together with friends and classmates",
-              "meet like-minded people"
+              "play video games"
             ],
             "频次": [
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school",
-              "when I started university"
+              "regularly"
             ],
             "感受": [
-              "enjoy a good laugh",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "unwind"
+              "enjoy a good laugh"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [],
-              "clueHint": "",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "play video games"
-              ],
-              "clueHint": "打游戏",
-              "material": [
-                "have a chat",
-                "hang out",
-                "go to parties",
-                "get together with friends and classmates",
-                "meet like-minded people"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "regularly"
-              ],
-              "clueHint": "经常",
-              "material": [
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school",
-                "when I started university"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "enjoy a good laugh"
-              ],
-              "clueHint": "开怀⼤笑",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "unwind"
-              ]
-            }
-          }
+          "clueId": "m1"
         },
         {
           "id": 72,
           "title": "Do you have any plans for the next five years",
           "q": "Do you have any plans for the next five years?",
-          "clueId": "m2",
           "words": {
             "正面回答": [],
             "来源或举例": [
-              "work hard at my studies",
-              "study",
-              "go to classes",
-              "read books",
-              "flip through the pages of real books",
-              "go to extra classes and events"
+              "work hard at my studies"
             ],
             "频次": [
-              "every day",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "every day"
             ],
             "感受": [
-              "practical",
-              "time-saving"
+              "practical"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [],
-              "clueHint": "",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "work hard at my studies"
-              ],
-              "clueHint": "努⼒学习",
-              "material": [
-                "study",
-                "go to classes",
-                "read books",
-                "flip through the pages of real books",
-                "go to extra classes and events"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "every day"
-              ],
-              "clueHint": "每天",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "practical"
-              ],
-              "clueHint": "实⽤",
-              "material": [
-                "time-saving"
-              ]
-            }
-          }
+          "clueId": "m2"
         },
         {
           "id": 73,
           "title": "What are examples of good and poor phone manners",
           "q": "What are examples of good and poor phone manners?",
-          "clueId": "m3",
           "words": {
             "正面回答": [],
             "来源或举例": [
-              "have a chat",
-              "hang out",
-              "go to parties",
-              "get together with friends and classmates",
-              "meet like-minded people",
-              "have a conversation"
+              "have a chat"
             ],
             "频次": [
-              "from time to time",
-              "regularly",
-              "as often as I can",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school",
-              "when I started university"
+              "from time to time"
             ],
             "感受": [
-              "bothers me",
-              "it bothers me"
+              "bothers me"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [],
-              "clueHint": "",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "have a chat"
-              ],
-              "clueHint": "⼤声聊天",
-              "material": [
-                "hang out",
-                "go to parties",
-                "get together with friends and classmates",
-                "meet like-minded people",
-                "have a conversation"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "from time to time"
-              ],
-              "clueHint": "偶尔",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school",
-                "when I started university"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "bothers me"
-              ],
-              "clueHint": "烦恼",
-              "material": [
-                "it bothers me"
-              ]
-            }
-          }
+          "clueId": "m3"
         },
         {
           "id": 74,
           "title": "What kind of music events are there in your country",
           "q": "What kind of music events are there in your country?",
-          "clueId": "m4",
           "words": {
             "正面回答": [],
             "来源或举例": [
               "listen to music"
             ],
             "频次": [
-              "at weekends",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "at weekends"
             ],
             "感受": [
-              "relax",
-              "sit down and relax",
-              "chill out",
-              "take a break and relax",
-              "relax my mind",
-              "slow down",
-              "enjoy a good laugh"
+              "relax"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [],
-              "clueHint": "",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "listen to music"
-              ],
-              "clueHint": "听⾳乐",
-              "material": []
-            },
-            "频次": {
-              "clue": [
-                "at weekends"
-              ],
-              "clueHint": "周末",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "relax"
-              ],
-              "clueHint": "放松",
-              "material": [
-                "sit down and relax",
-                "chill out",
-                "take a break and relax",
-                "relax my mind",
-                "slow down",
-                "enjoy a good laugh"
-              ]
-            }
-          }
+          "clueId": "m4"
         },
         {
           "id": 75,
           "title": "What short-term jobs do young people do in other countries",
           "q": "What short-term jobs do young people do in other countries?",
-          "clueId": "m5",
           "words": {
             "正面回答": [],
             "来源或举例": [
-              "eat out",
-              "breakfast",
-              "dinner",
-              "takeaways",
-              "street food",
-              "food ingredients"
+              "eat out"
             ],
             "频次": [
-              "during holidays",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "during holidays"
             ],
             "感受": [
-              "practical",
-              "time-saving"
+              "practical"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [],
-              "clueHint": "",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "eat out"
-              ],
-              "clueHint": "餐厅外出吃饭",
-              "material": [
-                "breakfast",
-                "dinner",
-                "takeaways",
-                "street food",
-                "food ingredients"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "during holidays"
-              ],
-              "clueHint": "假期",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "practical"
-              ],
-              "clueHint": "实⽤",
-              "material": [
-                "time-saving"
-              ]
-            }
-          }
+          "clueId": "m5"
         },
         {
           "id": 76,
           "title": "What kind of things are people happy to pay a high price for",
           "q": "What kind of things are people happy to pay a high price for?",
-          "clueId": "m6",
           "words": {
             "正面回答": [],
             "来源或举例": [
               "clothes",
-              "coat",
-              "t-shirt",
-              "sweatshirt"
+              "coat"
             ],
             "频次": [
-              "from time to time",
-              "regularly",
-              "as often as I can",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school",
-              "when I started university"
+              "from time to time"
             ],
             "感受": [
-              "makes me happy",
-              "it makes me happy",
-              "really lifts my mood",
-              "feel relaxed and at ease",
-              "appreciated"
+              "makes me happy"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [],
-              "clueHint": "",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "clothes",
-                "coat"
-              ],
-              "clueHint": "⾐服",
-              "material": [
-                "t-shirt",
-                "sweatshirt"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "from time to time"
-              ],
-              "clueHint": "偶尔",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school",
-                "when I started university"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "makes me happy"
-              ],
-              "clueHint": "开⼼",
-              "material": [
-                "it makes me happy",
-                "really lifts my mood",
-                "feel relaxed and at ease",
-                "appreciated"
-              ]
-            }
-          }
+          "clueId": "m6"
         },
         {
           "id": 77,
           "title": "What challenges do young people face when working abroad",
           "q": "What challenges do young people face when working abroad?",
-          "clueId": "m7",
           "words": {
             "正面回答": [],
             "来源或举例": [
-              "renting an apartment",
-              "dorms",
-              "home",
-              "stay home"
+              "renting an apartment"
             ],
             "频次": [
-              "every day",
-              "regularly",
-              "as often as I can",
-              "from time to time",
-              "childhood",
-              "before I went to primary school",
-              "after I went to middle school"
+              "every day"
             ],
             "感受": [
               "pressure",
-              "bothers me",
-              "it bothers me"
+              "bothers me"
             ]
           },
-          "wordLayers": {
-            "正面回答": {
-              "clue": [],
-              "clueHint": "",
-              "material": []
-            },
-            "来源或举例": {
-              "clue": [
-                "renting an apartment"
-              ],
-              "clueHint": "租房",
-              "material": [
-                "dorms",
-                "home",
-                "stay home"
-              ]
-            },
-            "频次": {
-              "clue": [
-                "every day"
-              ],
-              "clueHint": "每天",
-              "material": [
-                "regularly",
-                "as often as I can",
-                "from time to time",
-                "childhood",
-                "before I went to primary school",
-                "after I went to middle school"
-              ]
-            },
-            "感受": {
-              "clue": [
-                "pressure",
-                "bothers me"
-              ],
-              "clueHint": "压⼒",
-              "material": [
-                "it bothers me"
-              ]
-            }
-          }
+          "clueId": "m7"
         }
-      ],
-      "tipModel": "clue+material"
+      ]
     },
     {
       "id": "xihao",
@@ -9302,9 +4335,5 @@ const P1_DATA = {
         }
       ]
     }
-  ],
-  "materialMeta": {
-    "source": "P1素材",
-    "note": "线索=本题指定方向；素材=总词库可替换项，服务最少准备"
-  }
+  ]
 };
