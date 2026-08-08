@@ -1,4 +1,4 @@
-// P1 data - 事实陈述类词块仅来自口语P1线索/3月线索
+// P1 data - 全库按题面逻辑裁剪词块
 const P1_DATA = {
   "categories": [
     {
@@ -15,9 +15,11 @@ const P1_DATA = {
           "id": 1,
           "title": "Have you ever had a pet before",
           "q": "Have you ever had a pet before?",
+          "clueId": "1",
           "words": {
             "正面回答": [
-              "Yes, absolutely",
+              "Yes",
+              "absolutely",
               "used to"
             ],
             "来源或举例": [
@@ -33,13 +35,13 @@ const P1_DATA = {
               "unwind",
               "really lifts my mood"
             ]
-          },
-          "clueId": "1"
+          }
         },
         {
           "id": 2,
           "title": "Have you ever been part of a sports team",
           "q": "Have you ever been part of a sports team?",
+          "clueId": "2",
           "words": {
             "正面回答": [
               "Definitely"
@@ -56,13 +58,13 @@ const P1_DATA = {
               "sense of teamwork",
               "practical"
             ]
-          },
-          "clueId": "2"
+          }
         },
         {
           "id": 3,
           "title": "Have you ever sent handmade gifts to others",
           "q": "Have you ever sent handmade gifts to others?",
+          "clueId": "3",
           "words": {
             "正面回答": [
               "Exactly"
@@ -77,13 +79,13 @@ const P1_DATA = {
             "感受": [
               "it makes me happy"
             ]
-          },
-          "clueId": "3"
+          }
         },
         {
           "id": 4,
           "title": "Have you ever received a great gift",
           "q": "Have you ever received a great gift?",
+          "clueId": "3",
           "words": {
             "正面回答": [
               "Exactly",
@@ -91,8 +93,7 @@ const P1_DATA = {
             ],
             "来源或举例": [
               "a t-shirt",
-              "coat",
-              "pay with my phone"
+              "coat"
             ],
             "频次": [
               "from time to time"
@@ -100,22 +101,20 @@ const P1_DATA = {
             "感受": [
               "it makes me happy"
             ]
-          },
-          "clueId": "3"
+          }
         },
         {
           "id": 5,
           "title": "What gift have you received recently",
           "q": "What gift have you received recently?",
+          "clueId": "3",
           "words": {
             "正面回答": [
-              "Exactly",
               "just last month"
             ],
             "来源或举例": [
               "a t-shirt",
-              "coat",
-              "pay with my phone"
+              "coat"
             ],
             "频次": [
               "from time to time"
@@ -123,13 +122,13 @@ const P1_DATA = {
             "感受": [
               "it makes me happy"
             ]
-          },
-          "clueId": "3"
+          }
         },
         {
           "id": 6,
           "title": "Where did you go for a walk lately",
           "q": "Where did you go for a walk lately?",
+          "clueId": "4",
           "words": {
             "正面回答": [
               "Recently",
@@ -147,13 +146,13 @@ const P1_DATA = {
               "feel relaxed and at ease",
               "relax my mind"
             ]
-          },
-          "clueId": "4"
+          }
         },
         {
           "id": 7,
           "title": "When did you learn how to type on a keyboard",
           "q": "When did you learn how to type on a keyboard?",
+          "clueId": "5",
           "words": {
             "正面回答": [
               "In my childhood",
@@ -171,13 +170,13 @@ const P1_DATA = {
               "practical",
               "time-saving"
             ]
-          },
-          "clueId": "5"
+          }
         },
         {
           "id": 8,
           "title": "How do you improve your typing",
           "q": "How do you improve your typing?",
+          "clueId": "5",
           "words": {
             "正面回答": [],
             "来源或举例": [
@@ -192,16 +191,17 @@ const P1_DATA = {
               "practical",
               "time-saving"
             ]
-          },
-          "clueId": "5"
+          }
         },
         {
           "id": 9,
           "title": "What are the most beautiful sights you have seen while traveling",
           "q": "What are the most beautiful sights you have seen while traveling?",
+          "clueId": "6",
           "words": {
             "正面回答": [
-              "To be honest, the seaside"
+              "To be honest",
+              "the seaside"
             ],
             "来源或举例": [
               "take photos of the stunning views"
@@ -213,19 +213,20 @@ const P1_DATA = {
             "感受": [
               "It's something I'll never forget"
             ]
-          },
-          "clueId": "6"
+          }
         },
         {
           "id": 10,
           "title": "Are there tall buildings near your home",
           "q": "Are there tall buildings near your home?",
+          "clueId": "7",
           "words": {
             "正面回答": [
-              "Yes, lots of them"
+              "Yes",
+              "lots of them"
             ],
             "来源或举例": [
-              "like shopping malls and hotels"
+              "shopping malls and hotels"
             ],
             "频次": [
               "go there regularly",
@@ -235,13 +236,13 @@ const P1_DATA = {
               "super convenient",
               "practical"
             ]
-          },
-          "clueId": "7"
+          }
         },
         {
           "id": 11,
           "title": "What plant did you grow when you were young",
           "q": "What plant did you grow when you were young?",
+          "clueId": "8",
           "words": {
             "正面回答": [
               "Actually yes"
@@ -256,13 +257,13 @@ const P1_DATA = {
             "感受": [
               "gives me a chance to reflect on things"
             ]
-          },
-          "clueId": "8"
+          }
         },
         {
           "id": 12,
           "title": "Do you know anything about growing a plant",
           "q": "Do you know anything about growing a plant?",
+          "clueId": "8",
           "words": {
             "正面回答": [
               "Actually yes"
@@ -271,22 +272,21 @@ const P1_DATA = {
               "some flowers on my balcony",
               "bought from street market"
             ],
-            "频次": [
-              "water them every day"
-            ],
+            "频次": [],
             "感受": [
               "gives me a chance to reflect on things"
             ]
-          },
-          "clueId": "8"
+          }
         },
         {
           "id": 13,
           "title": "Have you ever talked with someone you don't know in public places",
           "q": "Have you ever talked with someone you don't know in public places?",
+          "clueId": "9",
           "words": {
             "正面回答": [
-              "Occasionally, yes"
+              "Occasionally",
+              "yes"
             ],
             "来源或举例": [
               "in the cafes",
@@ -300,35 +300,34 @@ const P1_DATA = {
               "good chance to have a conversation",
               "share opinions"
             ]
-          },
-          "clueId": "9"
+          }
         },
         {
           "id": 14,
           "title": "Are there any rules for students at your school",
           "q": "Are there any rules for students at your school?",
+          "clueId": "10",
           "words": {
             "正面回答": [
               "Definitely",
               "a lot of rules"
             ],
             "来源或举例": [
-              "e.g., no phones in the classroom"
+              "no phones in the classroom"
             ],
             "频次": [
               "we have to follow them daily"
             ],
             "感受": [
-              "forces me to work hard at my studies",
-              "complete homework independently"
+              "forces me to work hard at my studies"
             ]
-          },
-          "clueId": "10"
+          }
         },
         {
           "id": 15,
           "title": "Have you ever had a really dedicated teacher",
           "q": "Have you ever had a really dedicated teacher?",
+          "clueId": "10",
           "words": {
             "正面回答": [
               "Definitely"
@@ -341,13 +340,13 @@ const P1_DATA = {
               "forces me to work hard at my studies",
               "complete homework independently"
             ]
-          },
-          "clueId": "10"
+          }
         },
         {
           "id": 16,
           "title": "Have you ever had a really strict teacher",
           "q": "Have you ever had a really strict teacher?",
+          "clueId": "10",
           "words": {
             "正面回答": [
               "Definitely"
@@ -360,13 +359,13 @@ const P1_DATA = {
               "forces me to work hard at my studies",
               "complete homework independently"
             ]
-          },
-          "clueId": "10"
+          }
         },
         {
           "id": 17,
           "title": "Have you ever bought shoes online",
           "q": "Have you ever bought shoes online?",
+          "clueId": "11",
           "words": {
             "正面回答": [
               "Absolutely"
@@ -383,16 +382,17 @@ const P1_DATA = {
               "practical",
               "cheap and handy"
             ]
-          },
-          "clueId": "11"
+          }
         },
         {
           "id": 18,
           "title": "Do you have an experience when you did something well",
           "q": "Do you have an experience when you did something well?",
+          "clueId": "12",
           "words": {
             "正面回答": [
-              "Yes, I have an impressive memory"
+              "Yes",
+              "I have an impressive memory"
             ],
             "来源或举例": [
               "complete homework independently",
@@ -405,16 +405,17 @@ const P1_DATA = {
               "made me feel self-driven",
               "a sense of achievement"
             ]
-          },
-          "clueId": "12"
+          }
         },
         {
           "id": 19,
           "title": "Do you have an experience when your teacher thought you did a good job",
           "q": "Do you have an experience when your teacher thought you did a good job?",
+          "clueId": "12",
           "words": {
             "正面回答": [
-              "Yes, I have an impressive memory"
+              "Yes",
+              "I have an impressive memory"
             ],
             "来源或举例": [
               "complete homework independently",
@@ -427,16 +428,17 @@ const P1_DATA = {
               "made me feel self-driven",
               "a sense of achievement"
             ]
-          },
-          "clueId": "12"
+          }
         },
         {
           "id": 20,
           "title": "Is the city where you live crowded",
           "q": "Is the city where you live crowded?",
+          "clueId": "13",
           "words": {
             "正面回答": [
-              "Honestly, yes"
+              "Honestly",
+              "yes"
             ],
             "来源或举例": [
               "the city centre",
@@ -449,16 +451,17 @@ const P1_DATA = {
               "it bothers me",
               "feel terrible"
             ]
-          },
-          "clueId": "13"
+          }
         },
         {
           "id": 21,
           "title": "Is there a crowded place near where you live",
           "q": "Is there a crowded place near where you live?",
+          "clueId": "13",
           "words": {
             "正面回答": [
-              "Honestly, yes"
+              "Honestly",
+              "yes"
             ],
             "来源或举例": [
               "the city centre",
@@ -471,38 +474,37 @@ const P1_DATA = {
               "it bothers me",
               "feel terrible"
             ]
-          },
-          "clueId": "13"
+          }
         },
         {
           "id": 22,
           "title": "When was the last time you were in a crowded place",
           "q": "When was the last time you were in a crowded place?",
+          "clueId": "13",
           "words": {
             "正面回答": [
-              "Honestly, yes"
+              "the city centre"
             ],
             "来源或举例": [
               "the city centre",
               "use the subway in rush hour"
             ],
-            "频次": [
-              "every single day"
-            ],
+            "频次": [],
             "感受": [
               "it bothers me",
               "feel terrible"
             ]
-          },
-          "clueId": "13"
+          }
         },
         {
           "id": 23,
           "title": "Have you ever worked with old people",
           "q": "Have you ever worked with old people?",
+          "clueId": "14",
           "words": {
             "正面回答": [
-              "Yes, in a community event"
+              "Yes",
+              "in a community event"
             ],
             "来源或举例": [
               "have a conversation",
@@ -515,13 +517,13 @@ const P1_DATA = {
               "great chance to share experiences",
               "learn from them"
             ]
-          },
-          "clueId": "14"
+          }
         },
         {
           "id": 24,
           "title": "Do many people grow vegetables in your city",
           "q": "Do many people grow vegetables in your city?",
+          "clueId": "15",
           "words": {
             "正面回答": [
               "Not really"
@@ -537,16 +539,17 @@ const P1_DATA = {
               "we usually buy groceries",
               "food ingredients instead"
             ]
-          },
-          "clueId": "15"
+          }
         },
         {
           "id": 25,
           "title": "Have you borrowed books from others",
           "q": "Have you borrowed books from others?",
+          "clueId": "16",
           "words": {
             "正面回答": [
-              "Yes, exactly"
+              "Yes",
+              "exactly"
             ],
             "来源或举例": [
               "borrowed real books from friends in dorms"
@@ -554,33 +557,43 @@ const P1_DATA = {
             "频次": [
               "whenever necessary"
             ],
-            "感受": []
-          },
-          "clueId": "16"
+            "感受": [
+              "shows altruistic behaviour",
+              "mutual help"
+            ]
+          }
         },
         {
           "id": 26,
           "title": "Have you borrowed money from others",
           "q": "Have you borrowed money from others?",
+          "clueId": "16",
           "words": {
             "正面回答": [
-              "Yes, exactly"
+              "Yes",
+              "exactly"
             ],
-            "来源或举例": [],
+            "来源或举例": [
+              "from friends in dorms"
+            ],
             "频次": [
               "whenever necessary"
             ],
-            "感受": []
-          },
-          "clueId": "16"
+            "感受": [
+              "shows altruistic behaviour",
+              "mutual help"
+            ]
+          }
         },
         {
           "id": 27,
           "title": "Is there an advertisement that made an impression on you when you were a child",
           "q": "Is there an advertisement that made an impression on you when you were a child?",
+          "clueId": "17",
           "words": {
             "正面回答": [
-              "Yes, one deeply impressed me"
+              "Yes",
+              "one deeply impressed me"
             ],
             "来源或举例": [
               "saw it when I watch movies"
@@ -593,17 +606,17 @@ const P1_DATA = {
               "it makes me happy",
               "interesting"
             ]
-          },
-          "clueId": "17"
+          }
         },
         {
           "id": 28,
           "title": "Are there many museums in your hometown",
           "q": "Are there many museums in your hometown?",
+          "clueId": "18",
           "words": {
             "正面回答": [
-              "Yes, quite a few",
-              "recently"
+              "Yes",
+              "quite a few"
             ],
             "来源或举例": [
               "located in the city centre"
@@ -614,16 +627,15 @@ const P1_DATA = {
             "感受": [
               "helps me to slow down and learn history"
             ]
-          },
-          "clueId": "18"
+          }
         },
         {
           "id": 29,
           "title": "When was the last time you visited a museum",
           "q": "When was the last time you visited a museum?",
+          "clueId": "18",
           "words": {
             "正面回答": [
-              "Yes, quite a few",
               "recently"
             ],
             "来源或举例": [
@@ -635,13 +647,13 @@ const P1_DATA = {
             "感受": [
               "helps me to slow down and learn history"
             ]
-          },
-          "clueId": "18"
+          }
         },
         {
           "id": 30,
           "title": "Did your parents teach you to share when you were a child",
           "q": "Did your parents teach you to share when you were a child?",
+          "clueId": "19",
           "words": {
             "正面回答": [
               "Definitely"
@@ -657,13 +669,13 @@ const P1_DATA = {
             "感受": [
               "good for mental self-care"
             ]
-          },
-          "clueId": "19"
+          }
         },
         {
           "id": 31,
           "title": "Do you have anything to share with others recently",
           "q": "Do you have anything to share with others recently?",
+          "clueId": "19",
           "words": {
             "正面回答": [
               "Definitely"
@@ -673,19 +685,18 @@ const P1_DATA = {
               "share thoughts and feelings with friends"
             ],
             "频次": [
-              "regularly",
-              "all the time"
+              "regularly"
             ],
             "感受": [
               "good for mental self-care"
             ]
-          },
-          "clueId": "19"
+          }
         },
         {
           "id": 32,
           "title": "What subjects are you studying",
           "q": "What subjects are you studying?",
+          "clueId": "20",
           "words": {
             "正面回答": [
               "I am a student majoring in"
@@ -701,49 +712,45 @@ const P1_DATA = {
             "感受": [
               "it could be useful for my future job"
             ]
-          },
-          "clueId": "20"
+          }
         },
         {
           "id": 33,
           "title": "What work do you do",
           "q": "What work do you do?",
+          "clueId": "20",
           "words": {
             "正面回答": [],
-            "来源或举例": [
-              "go to classes"
-            ],
+            "来源或举例": [],
             "频次": [
               "every weekday"
             ],
             "感受": [
               "it could be useful for my future job"
             ]
-          },
-          "clueId": "20"
+          }
         },
         {
           "id": 34,
           "title": "What requirements did you need to meet to get your current job",
           "q": "What requirements did you need to meet to get your current job?",
+          "clueId": "20",
           "words": {
             "正面回答": [],
-            "来源或举例": [
-              "go to classes"
-            ],
+            "来源或举例": [],
             "频次": [
               "every weekday"
             ],
             "感受": [
               "it could be useful for my future job"
             ]
-          },
-          "clueId": "20"
+          }
         },
         {
           "id": 35,
           "title": "Why did you choose to study that subject",
           "q": "Why did you choose to study that subject?",
+          "clueId": "20",
           "words": {
             "正面回答": [
               "I am a student majoring in"
@@ -759,31 +766,29 @@ const P1_DATA = {
             "感受": [
               "it could be useful for my future job"
             ]
-          },
-          "clueId": "20"
+          }
         },
         {
           "id": 36,
           "title": "Why did you choose to do that type of work",
           "q": "Why did you choose to do that type of work?",
+          "clueId": "20",
           "words": {
             "正面回答": [],
-            "来源或举例": [
-              "go to classes"
-            ],
+            "来源或举例": [],
             "频次": [
               "every weekday"
             ],
             "感受": [
               "it could be useful for my future job"
             ]
-          },
-          "clueId": "20"
+          }
         },
         {
           "id": 37,
           "title": "Do you have any plans for your studies in the next five years",
           "q": "Do you have any plans for your studies in the next five years?",
+          "clueId": "20",
           "words": {
             "正面回答": [
               "I am a student majoring in"
@@ -799,60 +804,49 @@ const P1_DATA = {
             "感受": [
               "it could be useful for my future job"
             ]
-          },
-          "clueId": "20"
+          }
         },
         {
           "id": 38,
           "title": "Do you have any plans for your work in the next five years",
           "q": "Do you have any plans for your work in the next five years?",
+          "clueId": "20",
           "words": {
             "正面回答": [],
-            "来源或举例": [
-              "go to classes"
-            ],
+            "来源或举例": [],
             "频次": [
               "every weekday"
             ],
             "感受": [
               "it could be useful for my future job"
             ]
-          },
-          "clueId": "20"
+          }
         },
         {
           "id": 39,
           "title": "Who helps you the most? And how",
           "q": "Who helps you the most? And how?",
+          "clueId": "20",
           "words": {
-            "正面回答": [
-              "I am a student majoring in"
-            ],
-            "来源或举例": [
-              "Study",
-              "go to classes",
-              "listen to a lecture"
-            ],
-            "频次": [
-              "every weekday"
-            ],
-            "感受": [
-              "it could be useful for my future job"
-            ]
-          },
-          "clueId": "20"
+            "正面回答": [],
+            "来源或举例": [],
+            "频次": [],
+            "感受": []
+          }
         },
         {
           "id": 40,
           "title": "Are the transport facilities to your home very good",
           "q": "Are the transport facilities to your home very good?",
+          "clueId": "21",
           "words": {
             "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
+              "I live in a big city"
             ],
             "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
+              "surrounded by convenience stores",
+              "shopping malls",
+              "easy to use the subway"
             ],
             "频次": [
               "in my daily life"
@@ -861,585 +855,13 @@ const P1_DATA = {
               "feel relaxed and at ease",
               "nice place to sit down and relax"
             ]
-          },
-          "clueId": "21"
+          }
         },
         {
           "id": 41,
           "title": "Please describe the room you live in.",
           "q": "Please describe the room you live in.",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 42,
-          "title": "Can you describe the place where you live",
-          "q": "Can you describe the place where you live?",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 43,
-          "title": "How long have you lived there",
-          "q": "How long have you lived there?",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 44,
-          "title": "Who do you live with",
-          "q": "Who do you live with?",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 45,
-          "title": "What kinds of accommodation do you live in",
-          "q": "What kinds of accommodation do you live in?",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 46,
-          "title": "Where is your hometown",
-          "q": "Where is your hometown?",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 47,
-          "title": "Is that a big city or a small place",
-          "q": "Is that a big city or a small place?",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 48,
-          "title": "Please describe your hometown a little.",
-          "q": "Please describe your hometown a little.",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 49,
-          "title": "How long have you been living there",
-          "q": "How long have you been living there?",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 50,
-          "title": "What's your hometown famous for",
-          "q": "What's your hometown famous for?",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 51,
-          "title": "Did you learn about the history of your hometown at school",
-          "q": "Did you learn about the history of your hometown at school?",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 52,
-          "title": "Did you learn about the culture of your hometown at school",
-          "q": "Did you learn about the culture of your hometown at school?",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 53,
-          "title": "Did you learn about the history of your hometown in childhood",
-          "q": "Did you learn about the history of your hometown in childhood?",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 54,
-          "title": "Did you learn about the culture of your hometown in childhood",
-          "q": "Did you learn about the culture of your hometown in childhood?",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 55,
-          "title": "Are there many young people in your hometown",
-          "q": "Are there many young people in your hometown?",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 56,
-          "title": "Do you know any famous people in your area",
-          "q": "Do you know any famous people in your area?",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 57,
-          "title": "What are some changes in the area recently",
-          "q": "What are some changes in the area recently?",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 58,
-          "title": "Do you know any of your neighbors",
-          "q": "Do you know any of your neighbors?",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 59,
-          "title": "Are the people in your neighborhood nice and friendly",
-          "q": "Are the people in your neighborhood nice and friendly?",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 60,
-          "title": "Do you live in a noisy or a quiet area",
-          "q": "Do you live in a noisy or a quiet area?",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 61,
-          "title": "What city do you live in",
-          "q": "What city do you live in?",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 62,
-          "title": "How long have you lived in this city",
-          "q": "How long have you lived in this city?",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 63,
-          "title": "Is this city your permanent residence",
-          "q": "Is this city your permanent residence?",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 64,
-          "title": "Are there big changes in this city",
-          "q": "Are there big changes in this city?",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 65,
-          "title": "Are there people of different ages living in this city",
-          "q": "Are there people of different ages living in this city?",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 66,
-          "title": "Are the people friendly in the city",
-          "q": "Are the people friendly in the city?",
-          "words": {
-            "正面回答": [
-              "I live in a big city",
-              "have lived here since childhood"
-            ],
-            "来源或举例": [
-              "surrounded by convenience stores, shopping malls, easy to use the subway"
-            ],
-            "频次": [
-              "in my daily life"
-            ],
-            "感受": [
-              "feel relaxed and at ease",
-              "nice place to sit down and relax"
-            ]
-          },
-          "clueId": "21"
-        },
-        {
-          "id": 67,
-          "title": "What's the weather like where you live",
-          "q": "What's the weather like where you live?",
+          "clueId": "21",
           "words": {
             "正面回答": [],
             "来源或举例": [],
@@ -1450,13 +872,550 @@ const P1_DATA = {
               "feel relaxed and at ease",
               "nice place to sit down and relax"
             ]
-          },
-          "clueId": "21"
+          }
+        },
+        {
+          "id": 42,
+          "title": "Can you describe the place where you live",
+          "q": "Can you describe the place where you live?",
+          "clueId": "21",
+          "words": {
+            "正面回答": [
+              "I live in a big city",
+              "have lived here since childhood"
+            ],
+            "来源或举例": [
+              "surrounded by convenience stores",
+              "shopping malls",
+              "easy to use the subway"
+            ],
+            "频次": [
+              "in my daily life"
+            ],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
+        },
+        {
+          "id": 43,
+          "title": "How long have you lived there",
+          "q": "How long have you lived there?",
+          "clueId": "21",
+          "words": {
+            "正面回答": [
+              "have lived here since childhood"
+            ],
+            "来源或举例": [
+              "surrounded by convenience stores",
+              "shopping malls",
+              "easy to use the subway"
+            ],
+            "频次": [
+              "in my daily life"
+            ],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
+        },
+        {
+          "id": 44,
+          "title": "Who do you live with",
+          "q": "Who do you live with?",
+          "clueId": "21",
+          "words": {
+            "正面回答": [],
+            "来源或举例": [],
+            "频次": [],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
+        },
+        {
+          "id": 45,
+          "title": "What kinds of accommodation do you live in",
+          "q": "What kinds of accommodation do you live in?",
+          "clueId": "21",
+          "words": {
+            "正面回答": [
+              "I live in a big city",
+              "have lived here since childhood"
+            ],
+            "来源或举例": [
+              "surrounded by convenience stores",
+              "shopping malls",
+              "easy to use the subway"
+            ],
+            "频次": [
+              "in my daily life"
+            ],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
+        },
+        {
+          "id": 46,
+          "title": "Where is your hometown",
+          "q": "Where is your hometown?",
+          "clueId": "21",
+          "words": {
+            "正面回答": [
+              "I live in a big city",
+              "have lived here since childhood"
+            ],
+            "来源或举例": [
+              "surrounded by convenience stores",
+              "shopping malls",
+              "easy to use the subway"
+            ],
+            "频次": [
+              "in my daily life"
+            ],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
+        },
+        {
+          "id": 47,
+          "title": "Is that a big city or a small place",
+          "q": "Is that a big city or a small place?",
+          "clueId": "21",
+          "words": {
+            "正面回答": [
+              "I live in a big city",
+              "have lived here since childhood"
+            ],
+            "来源或举例": [
+              "surrounded by convenience stores",
+              "shopping malls",
+              "easy to use the subway"
+            ],
+            "频次": [
+              "in my daily life"
+            ],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
+        },
+        {
+          "id": 48,
+          "title": "Please describe your hometown a little.",
+          "q": "Please describe your hometown a little.",
+          "clueId": "21",
+          "words": {
+            "正面回答": [
+              "I live in a big city",
+              "have lived here since childhood"
+            ],
+            "来源或举例": [
+              "surrounded by convenience stores",
+              "shopping malls",
+              "easy to use the subway"
+            ],
+            "频次": [
+              "in my daily life"
+            ],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
+        },
+        {
+          "id": 49,
+          "title": "How long have you been living there",
+          "q": "How long have you been living there?",
+          "clueId": "21",
+          "words": {
+            "正面回答": [
+              "have lived here since childhood"
+            ],
+            "来源或举例": [
+              "surrounded by convenience stores",
+              "shopping malls",
+              "easy to use the subway"
+            ],
+            "频次": [
+              "in my daily life"
+            ],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
+        },
+        {
+          "id": 50,
+          "title": "What's your hometown famous for",
+          "q": "What's your hometown famous for?",
+          "clueId": "21",
+          "words": {
+            "正面回答": [
+              "I live in a big city",
+              "have lived here since childhood"
+            ],
+            "来源或举例": [],
+            "频次": [
+              "in my daily life"
+            ],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
+        },
+        {
+          "id": 51,
+          "title": "Did you learn about the history of your hometown at school",
+          "q": "Did you learn about the history of your hometown at school?",
+          "clueId": "21",
+          "words": {
+            "正面回答": [],
+            "来源或举例": [],
+            "频次": [
+              "in my daily life"
+            ],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
+        },
+        {
+          "id": 52,
+          "title": "Did you learn about the culture of your hometown at school",
+          "q": "Did you learn about the culture of your hometown at school?",
+          "clueId": "21",
+          "words": {
+            "正面回答": [],
+            "来源或举例": [],
+            "频次": [
+              "in my daily life"
+            ],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
+        },
+        {
+          "id": 53,
+          "title": "Did you learn about the history of your hometown in childhood",
+          "q": "Did you learn about the history of your hometown in childhood?",
+          "clueId": "21",
+          "words": {
+            "正面回答": [],
+            "来源或举例": [],
+            "频次": [
+              "in my daily life"
+            ],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
+        },
+        {
+          "id": 54,
+          "title": "Did you learn about the culture of your hometown in childhood",
+          "q": "Did you learn about the culture of your hometown in childhood?",
+          "clueId": "21",
+          "words": {
+            "正面回答": [],
+            "来源或举例": [],
+            "频次": [
+              "in my daily life"
+            ],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
+        },
+        {
+          "id": 55,
+          "title": "Are there many young people in your hometown",
+          "q": "Are there many young people in your hometown?",
+          "clueId": "21",
+          "words": {
+            "正面回答": [
+              "I live in a big city",
+              "have lived here since childhood"
+            ],
+            "来源或举例": [],
+            "频次": [
+              "in my daily life"
+            ],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
+        },
+        {
+          "id": 56,
+          "title": "Do you know any famous people in your area",
+          "q": "Do you know any famous people in your area?",
+          "clueId": "21",
+          "words": {
+            "正面回答": [],
+            "来源或举例": [],
+            "频次": [],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
+        },
+        {
+          "id": 57,
+          "title": "What are some changes in the area recently",
+          "q": "What are some changes in the area recently?",
+          "clueId": "21",
+          "words": {
+            "正面回答": [
+              "I live in a big city",
+              "have lived here since childhood"
+            ],
+            "来源或举例": [
+              "surrounded by convenience stores",
+              "shopping malls",
+              "easy to use the subway"
+            ],
+            "频次": [
+              "in my daily life"
+            ],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
+        },
+        {
+          "id": 58,
+          "title": "Do you know any of your neighbors",
+          "q": "Do you know any of your neighbors?",
+          "clueId": "21",
+          "words": {
+            "正面回答": [
+              "I live in a big city"
+            ],
+            "来源或举例": [],
+            "频次": [
+              "in my daily life"
+            ],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
+        },
+        {
+          "id": 59,
+          "title": "Are the people in your neighborhood nice and friendly",
+          "q": "Are the people in your neighborhood nice and friendly?",
+          "clueId": "21",
+          "words": {
+            "正面回答": [
+              "I live in a big city"
+            ],
+            "来源或举例": [],
+            "频次": [
+              "in my daily life"
+            ],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
+        },
+        {
+          "id": 60,
+          "title": "Do you live in a noisy or a quiet area",
+          "q": "Do you live in a noisy or a quiet area?",
+          "clueId": "21",
+          "words": {
+            "正面回答": [
+              "I live in a big city"
+            ],
+            "来源或举例": [],
+            "频次": [
+              "in my daily life"
+            ],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
+        },
+        {
+          "id": 61,
+          "title": "What city do you live in",
+          "q": "What city do you live in?",
+          "clueId": "21",
+          "words": {
+            "正面回答": [
+              "I live in a big city",
+              "have lived here since childhood"
+            ],
+            "来源或举例": [
+              "surrounded by convenience stores",
+              "shopping malls",
+              "easy to use the subway"
+            ],
+            "频次": [
+              "in my daily life"
+            ],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
+        },
+        {
+          "id": 62,
+          "title": "How long have you lived in this city",
+          "q": "How long have you lived in this city?",
+          "clueId": "21",
+          "words": {
+            "正面回答": [
+              "have lived here since childhood"
+            ],
+            "来源或举例": [
+              "surrounded by convenience stores",
+              "shopping malls",
+              "easy to use the subway"
+            ],
+            "频次": [
+              "in my daily life"
+            ],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
+        },
+        {
+          "id": 63,
+          "title": "Is this city your permanent residence",
+          "q": "Is this city your permanent residence?",
+          "clueId": "21",
+          "words": {
+            "正面回答": [
+              "I live in a big city",
+              "have lived here since childhood"
+            ],
+            "来源或举例": [
+              "surrounded by convenience stores",
+              "shopping malls",
+              "easy to use the subway"
+            ],
+            "频次": [
+              "in my daily life"
+            ],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
+        },
+        {
+          "id": 64,
+          "title": "Are there big changes in this city",
+          "q": "Are there big changes in this city?",
+          "clueId": "21",
+          "words": {
+            "正面回答": [
+              "I live in a big city",
+              "have lived here since childhood"
+            ],
+            "来源或举例": [
+              "surrounded by convenience stores",
+              "shopping malls",
+              "easy to use the subway"
+            ],
+            "频次": [
+              "in my daily life"
+            ],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
+        },
+        {
+          "id": 65,
+          "title": "Are there people of different ages living in this city",
+          "q": "Are there people of different ages living in this city?",
+          "clueId": "21",
+          "words": {
+            "正面回答": [
+              "I live in a big city",
+              "have lived here since childhood"
+            ],
+            "来源或举例": [],
+            "频次": [
+              "in my daily life"
+            ],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
+        },
+        {
+          "id": 66,
+          "title": "Are the people friendly in the city",
+          "q": "Are the people friendly in the city?",
+          "clueId": "21",
+          "words": {
+            "正面回答": [
+              "I live in a big city",
+              "have lived here since childhood"
+            ],
+            "来源或举例": [],
+            "频次": [
+              "in my daily life"
+            ],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
+        },
+        {
+          "id": 67,
+          "title": "What's the weather like where you live",
+          "q": "What's the weather like where you live?",
+          "clueId": "21",
+          "words": {
+            "正面回答": [],
+            "来源或举例": [],
+            "频次": [
+              "in my daily life"
+            ],
+            "感受": [
+              "feel relaxed and at ease",
+              "nice place to sit down and relax"
+            ]
+          }
         },
         {
           "id": 68,
           "title": "When was the last time you had a few days off",
           "q": "When was the last time you had a few days off?",
+          "clueId": "22",
           "words": {
             "正面回答": [
               "Just last month"
@@ -1472,16 +1431,17 @@ const P1_DATA = {
               "relax my mind",
               "take a break and relax"
             ]
-          },
-          "clueId": "22"
+          }
         },
         {
           "id": 69,
           "title": "Can you remember the dreams you had",
           "q": "Can you remember the dreams you had?",
+          "clueId": "23",
           "words": {
             "正面回答": [
-              "Yes, sometimes I do"
+              "Yes",
+              "sometimes I do"
             ],
             "来源或举例": [
               "usually recall them right after I get up"
@@ -1490,18 +1450,20 @@ const P1_DATA = {
               "from time to time"
             ],
             "感受": [
-              "I don't know how to explain it, but it's fascinating"
+              "I don't know how to explain it",
+              "but it's fascinating"
             ]
-          },
-          "clueId": "23"
+          }
         },
         {
           "id": 70,
           "title": "Have you ever lost your keys",
           "q": "Have you ever lost your keys?",
+          "clueId": "24",
           "words": {
             "正面回答": [
-              "Unfortunately, yes"
+              "Unfortunately",
+              "yes"
             ],
             "来源或举例": [
               "when I tried to grab my stuff",
@@ -1511,15 +1473,16 @@ const P1_DATA = {
               "only once or twice"
             ],
             "感受": [
-              "it bothers me a lot, taught me to be careful"
+              "it bothers me a lot",
+              "taught me to be careful"
             ]
-          },
-          "clueId": "24"
+          }
         },
         {
           "id": 71,
           "title": "What did you often do with your friends in your childhood",
           "q": "What did you often do with your friends in your childhood?",
+          "clueId": "m1",
           "words": {
             "正面回答": [],
             "来源或举例": [
@@ -1531,13 +1494,13 @@ const P1_DATA = {
             "感受": [
               "enjoy a good laugh"
             ]
-          },
-          "clueId": "m1"
+          }
         },
         {
           "id": 72,
           "title": "Do you have any plans for the next five years",
           "q": "Do you have any plans for the next five years?",
+          "clueId": "m2",
           "words": {
             "正面回答": [],
             "来源或举例": [
@@ -1549,13 +1512,13 @@ const P1_DATA = {
             "感受": [
               "practical"
             ]
-          },
-          "clueId": "m2"
+          }
         },
         {
           "id": 73,
           "title": "What are examples of good and poor phone manners",
           "q": "What are examples of good and poor phone manners?",
+          "clueId": "m3",
           "words": {
             "正面回答": [],
             "来源或举例": [
@@ -1567,13 +1530,13 @@ const P1_DATA = {
             "感受": [
               "bothers me"
             ]
-          },
-          "clueId": "m3"
+          }
         },
         {
           "id": 74,
           "title": "What kind of music events are there in your country",
           "q": "What kind of music events are there in your country?",
+          "clueId": "m4",
           "words": {
             "正面回答": [],
             "来源或举例": [
@@ -1585,13 +1548,13 @@ const P1_DATA = {
             "感受": [
               "relax"
             ]
-          },
-          "clueId": "m4"
+          }
         },
         {
           "id": 75,
           "title": "What short-term jobs do young people do in other countries",
           "q": "What short-term jobs do young people do in other countries?",
+          "clueId": "m5",
           "words": {
             "正面回答": [],
             "来源或举例": [
@@ -1603,13 +1566,13 @@ const P1_DATA = {
             "感受": [
               "practical"
             ]
-          },
-          "clueId": "m5"
+          }
         },
         {
           "id": 76,
           "title": "What kind of things are people happy to pay a high price for",
           "q": "What kind of things are people happy to pay a high price for?",
+          "clueId": "m6",
           "words": {
             "正面回答": [],
             "来源或举例": [
@@ -1622,13 +1585,13 @@ const P1_DATA = {
             "感受": [
               "makes me happy"
             ]
-          },
-          "clueId": "m6"
+          }
         },
         {
           "id": 77,
           "title": "What challenges do young people face when working abroad",
           "q": "What challenges do young people face when working abroad?",
+          "clueId": "m7",
           "words": {
             "正面回答": [],
             "来源或举例": [
@@ -1641,8 +1604,7 @@ const P1_DATA = {
               "pressure",
               "bothers me"
             ]
-          },
-          "clueId": "m7"
+          }
         }
       ]
     },
@@ -1666,13 +1628,13 @@ const P1_DATA = {
             ],
             "原因或时间": [
               "delicious",
-              "mouth-watering desserts"
+              "mouth-watering sweet treats"
             ],
             "频次": [
-              "order takeout"
+              "order takeaways"
             ],
             "感受": [
-              "it really hits the spot"
+              "satisfy my taste buds"
             ]
           }
         },
@@ -1682,84 +1644,64 @@ const P1_DATA = {
           "q": "What kind of food did you like when you were young?",
           "words": {
             "正面回答": [
-              "I had a sweet tooth"
+              "I enjoyed sweet food"
             ],
             "原因或时间": [
               "childhood",
-              "before primary school"
+              "before I went to primary school"
             ],
             "频次": [
-              "have cake for breakfast"
+              "eat breakfast with cakes"
             ],
             "感受": [
-              "it always cheers me up",
-              "have a great time"
+              "it makes me happy",
+              "have a blast"
             ]
           }
         },
         {
           "id": 3,
-          "title": "Has your favourite food changed since you were a child",
-          "q": "Has your favourite food changed since you were a child?",
+          "title": "What's your favourite animal? Why",
+          "q": "What's your favourite animal? Why?",
           "words": {
             "正面回答": [
-              "Yes, definitely changed"
+              "I'm quite fond of dogs"
             ],
             "原因或时间": [
-              "to stay healthy"
+              "they are loyal"
             ],
             "频次": [
-              "buy fresh groceries",
-              "fresh ingredients"
+              "stay at home with me"
             ],
             "感受": [
-              "good for both body and mind"
-            ]
-          }
-        },
-        {
-          "id": 4,
-          "title": "Whats your favourite animal",
-          "q": "Whats your favourite animal? Why?",
-          "words": {
-            "正面回答": [
-              "I'm a dog person"
-            ],
-            "原因或时间": [
-              "they are incredibly loyal"
-            ],
-            "频次": [
-              "keep me company at home"
-            ],
-            "感受": [
-              "a great way to unwind",
+              "a great stress buster",
               "unwind"
             ]
           }
         },
         {
-          "id": 5,
-          "title": "Do you like watching team games",
+          "id": 4,
+          "title": "Do you like watching team games? Why",
           "q": "Do you like watching team games? Why?",
           "words": {
             "正面回答": [
-              "I'm really into them"
+              "I am keen on them"
             ],
             "原因或时间": [
               "in my free time",
-              "when I have some free time"
+              "when I have time for myself"
             ],
             "频次": [
-              "watch basketball games",
+              "watch basketball",
               "volleyball games"
             ],
             "感受": [
-              "clear my mind"
+              "relax my mind"
             ]
           }
         },
         {
-          "id": 6,
+          "id": 5,
           "title": "Do you have any hobbies",
           "q": "Do you have any hobbies?",
           "words": {
@@ -1773,12 +1715,12 @@ const P1_DATA = {
               "binge-watch TV shows"
             ],
             "感受": [
-              "sit back and relax"
+              "sit down and relax"
             ]
           }
         },
         {
-          "id": 7,
+          "id": 6,
           "title": "Did you have any hobbies when you were a child",
           "q": "Did you have any hobbies when you were a child?",
           "words": {
@@ -1786,30 +1728,30 @@ const P1_DATA = {
               "Absolutely"
             ],
             "原因或时间": [
-              "before primary school"
+              "before I went to primary school"
             ],
             "频次": [
               "play video games"
             ],
             "感受": [
-              "great fun",
-              "have a great time"
+              "super amusing",
+              "have a blast"
             ]
           }
         },
         {
-          "id": 8,
-          "title": "Do you have a hobby that you’ve had since childhood",
-          "q": "Do you have a hobby that you ve had since childhood?",
+          "id": 7,
+          "title": "Do you have a hobby that you've had since childhood",
+          "q": "Do you have a hobby that you've had since childhood?",
           "words": {
             "正面回答": [
               "Exactly"
             ],
             "原因或时间": [
-              "before bed"
+              "before I go to sleep"
             ],
             "频次": [
-              "flip through physical books"
+              "flip through the pages of real books"
             ],
             "感受": [
               "reflect on things"
@@ -1817,67 +1759,69 @@ const P1_DATA = {
           }
         },
         {
-          "id": 9,
+          "id": 8,
           "title": "Do you have the same hobbies as your family members",
           "q": "Do you have the same hobbies as your family members?",
           "words": {
             "正面回答": [
-              "Yes, we share some"
+              "Yes",
+              "we share some"
             ],
             "原因或时间": [
-              "during the holidays"
+              "during holidays"
             ],
             "频次": [
-              "eat out together"
+              "eat out in a restaurant"
             ],
             "感受": [
-              "open up to each other"
+              "share thoughts and feelings"
             ]
           }
         },
         {
-          "id": 10,
+          "id": 9,
           "title": "Do you like getting up early in the morning",
           "q": "Do you like getting up early in the morning?",
           "words": {
             "正面回答": [
-              "Honestly, yes"
+              "Honestly",
+              "yes"
             ],
             "原因或时间": [
-              "the first thing I do after getting up"
+              "the first thing I do after I get up"
             ],
             "频次": [
               "go jogging"
             ],
             "感受": [
               "energetic",
-              "full of energy"
+              "full of beans"
             ]
           }
         },
         {
-          "id": 11,
+          "id": 10,
           "title": "Do you like reading",
           "q": "Do you like reading?",
           "words": {
             "正面回答": [
-              "I'm passionate about reading"
+              "I am passionate about reading"
             ],
             "原因或时间": [
               "when I feel bored"
             ],
             "频次": [
-              "read in the library"
+              "read books in the library"
             ],
             "感受": [
-              "unwind",
-              "feel at peace"
+              "chill out",
+              "feel peaceful"
             ]
           }
         },
         {
-          "id": 12,
-          "title": "Where would you like to take a long walk if you had the chan",
+          "id": 11,
+          "title": "Where would you like to take a long walk if you had the chance",
           "q": "Where would you like to take a long walk if you had the chance?",
           "words": {
             "正面回答": [
@@ -1895,7 +1839,7 @@ const P1_DATA = {
           }
         },
         {
-          "id": 13,
+          "id": 12,
           "title": "Do you like to take scenery pictures",
           "q": "Do you like to take scenery pictures?",
           "words": {
@@ -1903,20 +1847,18 @@ const P1_DATA = {
               "Definitely"
             ],
             "原因或时间": [
-              "capture moments of my life"
+              "record my life"
             ],
             "频次": [
               "take photos outdoors"
             ],
             "感受": [
-              "It",
-              "s something I",
-              "ll never forget"
+              "It's something I'll never forget"
             ]
           }
         },
         {
-          "id": 14,
+          "id": 13,
           "title": "Do you like taking pictures of different views",
           "q": "Do you like taking pictures of different views?",
           "words": {
@@ -1924,38 +1866,39 @@ const P1_DATA = {
               "I'm crazy about it"
             ],
             "原因或时间": [
-              "when travelling",
-              "on vacation"
+              "when traveling",
+              "on vacations"
             ],
             "频次": [
-              "cityscapes and nature"
+              "city centre and nature"
             ],
             "感受": [
-              "relieve stress"
+              "reduce stress"
             ]
           }
         },
         {
-          "id": 15,
+          "id": 14,
           "title": "Is there a building that you would like to visit",
           "q": "Is there a building that you would like to visit?",
           "words": {
             "正面回答": [
-              "yes, there is one"
+              "Yes",
+              "there is one"
             ],
             "原因或时间": [
-              "its unique design"
+              "unique design"
             ],
             "频次": [
               "cafes"
             ],
             "感受": [
-              "meet like-minded people"
+              "meet people with similar interests"
             ]
           }
         },
         {
-          "id": 16,
+          "id": 15,
           "title": "What were your favourite activities when you were a child",
           "q": "What were your favourite activities when you were a child?",
           "words": {
@@ -1963,37 +1906,38 @@ const P1_DATA = {
               "One of my favourite things to do as a child was"
             ],
             "原因或时间": [
-              "outside of class"
+              "outside the classroom"
             ],
             "频次": [
               "hang out with friends"
             ],
             "感受": [
-              "have a good laugh"
+              "enjoy a good laugh"
             ]
           }
         },
         {
-          "id": 17,
+          "id": 16,
           "title": "Would you like to see more public places near where you live",
           "q": "Would you like to see more public places near where you live?",
           "words": {
             "正面回答": [
-              "Yes, absolutely"
+              "Yes",
+              "absolutely"
             ],
             "原因或时间": [
-              "convenient for getting together"
+              "convenient for gatherings"
             ],
             "频次": [
               "shopping malls"
             ],
             "感受": [
-              "really convenient"
+              "very practical"
             ]
           }
         },
         {
-          "id": 18,
+          "id": 17,
           "title": "Would you like to work as a teacher in a rule-free school",
           "q": "Would you like to work as a teacher in a rule-free school?",
           "words": {
@@ -2001,75 +1945,78 @@ const P1_DATA = {
               "I'd love to"
             ],
             "原因或时间": [
-              "the free atmosphere"
+              "free atmosphere"
             ],
             "频次": [
-              "exchange ideas freely"
+              "share opinions outside the classroom"
             ],
             "感受": [
-              "be more self-motivated"
+              "be more self-driven"
             ]
           }
         },
         {
-          "id": 19,
-          "title": "Do you like buying shoes",
+          "id": 18,
+          "title": "Do you like buying shoes? How often",
           "q": "Do you like buying shoes? How often?",
           "words": {
             "正面回答": [
-              "yes, I'm a big fan"
+              "Yes",
+              "I am a big fan"
             ],
             "原因或时间": [
-              "when putting together outfits"
+              "when I get dressed"
             ],
             "频次": [
               "shop online regularly"
             ],
             "感受": [
-              "it helps to light up my mood"
+              "it really lifts my mood"
+            ]
+          }
+        },
+        {
+          "id": 19,
+          "title": "Do you like crowded places",
+          "q": "Do you like crowded places?",
+          "words": {
+            "正面回答": [
+              "To be honest",
+              "no"
+            ],
+            "原因或时间": [
+              "especially in rush hour"
+            ],
+            "频次": [
+              "use the subway"
+            ],
+            "感受": [
+              "it bothers me"
             ]
           }
         },
         {
           "id": 20,
-          "title": "Do you like crowded places",
-          "q": "Do you like crowded places?",
+          "title": "Are you happy to work with people who are older than you",
+          "q": "Are you happy to work with people who are older than you?",
           "words": {
             "正面回答": [
-              "to be honest, no"
+              "Yes",
+              "I am happy to"
             ],
             "原因或时间": [
-              "especially during rush hour"
+              "they have rich experience"
             ],
             "频次": [
-              "take the subway"
+              "have a conversation"
             ],
             "感受": [
-              "it really gets to me"
+              "it could be useful for my future job"
             ]
           }
         },
         {
           "id": 21,
-          "title": "Are you happy to work with people who are older than you",
-          "q": "Are you happy to work with people who are older than you?",
-          "words": {
-            "正面回答": [
-              "yes, I'm happy to"
-            ],
-            "原因或时间": [
-              "they have so much experience"
-            ],
-            "频次": [
-              "have a good chat"
-            ],
-            "感受": [
-              "it will be useful for my future career"
-            ]
-          }
-        },
-        {
-          "id": 22,
           "title": "Do you enjoy spending time with old people",
           "q": "Do you enjoy spending time with old people?",
           "words": {
@@ -2080,55 +2027,54 @@ const P1_DATA = {
               "in my spare time"
             ],
             "频次": [
-              "share stories"
+              "share experiences"
             ],
             "感受": [
-              "feel valued"
+              "feel appreciated"
+            ]
+          }
+        },
+        {
+          "id": 22,
+          "title": "Are you interested in growing vegetables and fruits",
+          "q": "Are you interested in growing vegetables and fruits?",
+          "words": {
+            "正面回答": [
+              "Quite interested"
+            ],
+            "原因或时间": [
+              "when I'm not studying"
+            ],
+            "频次": [
+              "groceries",
+              "food ingredients"
+            ],
+            "感受": [
+              "a nice way to sit down and relax"
             ]
           }
         },
         {
           "id": 23,
-          "title": "Are you interested in growing vegetables and fruits",
-          "q": "Are you interested in growing vegetables and fruits?",
-          "words": {
-            "正面回答": [
-              "I'm quite interested"
-            ],
-            "原因或时间": [
-              "when I",
-              "m not studying"
-            ],
-            "频次": [
-              "groceries",
-              "fresh ingredients"
-            ],
-            "感受": [
-              "a nice way to unwind"
-            ]
-          }
-        },
-        {
-          "id": 24,
           "title": "Do you like chatting with friends",
           "q": "Do you like chatting with friends?",
           "words": {
             "正面回答": [
-              "it's my favourite thing to do"
+              "It's my top choice"
             ],
             "原因或时间": [
               "at weekends"
             ],
             "频次": [
-              "chat over coffee"
+              "have a chat in cafes"
             ],
             "感受": [
-              "motivate each other"
+              "mutually motivate each other"
             ]
           }
         },
         {
-          "id": 25,
+          "id": 24,
           "title": "Do you like to lend things to others",
           "q": "Do you like to lend things to others?",
           "words": {
@@ -2139,39 +2085,40 @@ const P1_DATA = {
               "in daily life"
             ],
             "频次": [
-              "lend my books"
+              "lend real books"
             ],
             "感受": [
-              "shows real kindness"
+              "shows altruistic behaviour"
             ]
           }
         },
         {
-          "id": 26,
+          "id": 25,
           "title": "Do you mind if others borrow money from you",
           "q": "Do you mind if others borrow money from you?",
           "words": {
             "正面回答": [
-              "Honestly, yes"
+              "Honestly",
+              "yes"
             ],
             "原因或时间": [
               "it's complicated"
             ],
             "频次": [
-              "hard to get my things back"
+              "hard to grab my stuff back"
             ],
             "感受": [
-              "it really gets to me"
+              "it bothers me"
             ]
           }
         },
         {
-          "id": 27,
+          "id": 26,
           "title": "Do you like advertisements",
           "q": "Do you like advertisements?",
           "words": {
             "正面回答": [
-              "it depends on the situation"
+              "It depends on the situation"
             ],
             "原因或时间": [
               "when I browse videos"
@@ -2180,51 +2127,51 @@ const P1_DATA = {
               "creative ads"
             ],
             "感受": [
-              "have a good laugh"
+              "enjoy a good laugh"
+            ]
+          }
+        },
+        {
+          "id": 27,
+          "title": "What kind of advertising do you like",
+          "q": "What kind of advertising do you like?",
+          "words": {
+            "正面回答": [
+              "Humorous ones"
+            ],
+            "原因或时间": [
+              "when I watch movies"
+            ],
+            "频次": [
+              "ads placement"
+            ],
+            "感受": [
+              "relax my mind"
             ]
           }
         },
         {
           "id": 28,
-          "title": "What kind of advertising do you like",
-          "q": "What kind of advertising do you like?",
+          "title": "What kind of things do you like to share with others",
+          "q": "What kind of things do you like to share with others?",
           "words": {
             "正面回答": [
-              "humorous ones"
+              "I like to share a meal"
             ],
             "原因或时间": [
-              "when watching movies"
+              "when I go to parties"
             ],
             "频次": [
-              "product placements"
+              "pig out on tasty local food"
             ],
             "感受": [
-              "clear my mind"
+              "meet people with similar interests"
             ]
           }
         },
         {
           "id": 29,
-          "title": "What kind of things do you like to share with others",
-          "q": "What kind of things do you like to share with others?",
-          "words": {
-            "正面回答": [
-              "I like sharing food"
-            ],
-            "原因或时间": [
-              "when I go to gatherings"
-            ],
-            "频次": [
-              "enjoy tasty local food"
-            ],
-            "感受": [
-              "meet like-minded people"
-            ]
-          }
-        },
-        {
-          "id": 30,
-          "title": "Who is the first person you would like to share good news wi",
+          "title": "Who is the first person you would like to share good news with",
           "q": "Who is the first person you would like to share good news with?",
           "words": {
             "正面回答": [
@@ -2232,18 +2179,18 @@ const P1_DATA = {
               "besties"
             ],
             "原因或时间": [
-              "whenever I get good news"
+              "whenever I get news"
             ],
             "频次": [
-              "share our thoughts on WeChat"
+              "share thoughts and feelings on WeChat"
             ],
             "感受": [
-              "it helps to light up my mood"
+              "it really lifts my mood"
             ]
           }
         },
         {
-          "id": 31,
+          "id": 30,
           "title": "Do you like your subject",
           "q": "Do you like your subject?",
           "words": {
@@ -2251,40 +2198,37 @@ const P1_DATA = {
               "I'm passionate about it"
             ],
             "原因或时间": [
-              "really convenient"
+              "very practical"
             ],
             "频次": [
-              "attend classes",
+              "go to classes",
               "listen to a lecture"
             ],
             "感受": [
-              "self-motivated",
-              "strive in one",
-              "s studies"
+              "self-driven",
+              "work hard at my studies"
             ]
           }
         },
         {
-          "id": 32,
+          "id": 31,
           "title": "Do you want to change your major",
           "q": "Do you want to change your major?",
           "words": {
             "正面回答": [
-              "absolutely not"
+              "Absolutely not"
             ],
             "原因或时间": [
-              "I'm passionate about it"
+              "feel passionate about it"
             ],
             "频次": [
-              "study at the library"
+              "go to the library to study"
             ],
-            "感受": [
-              "it will be useful for my future career"
-            ]
+            "感受": []
           }
         },
         {
-          "id": 33,
+          "id": 32,
           "title": "Are you looking forward to working",
           "q": "Are you looking forward to working?",
           "words": {
@@ -2295,45 +2239,46 @@ const P1_DATA = {
               "after graduation"
             ],
             "频次": [
-              "no longer rely on my parents"
+              "no longer rely on parents"
             ],
             "感受": [
-              "stand on my own two feet"
+              "take action and be independent"
+            ]
+          }
+        },
+        {
+          "id": 33,
+          "title": "Do you like your job",
+          "q": "Do you like your job?",
+          "words": {
+            "正面回答": [
+              "Yes",
+              "I do"
+            ],
+            "原因或时间": [
+              "good atmosphere"
+            ],
+            "频次": [
+              "share opinions"
+            ],
+            "感受": [
+              "very practical and fulfilling"
             ]
           }
         },
         {
           "id": 34,
-          "title": "Do you like your job",
-          "q": "Do you like your job?",
-          "words": {
-            "正面回答": [
-              "yes, I do"
-            ],
-            "原因或时间": [
-              "a great atmosphere"
-            ],
-            "频次": [
-              "exchange ideas"
-            ],
-            "感受": [
-              "both practical and fulfilling"
-            ]
-          }
-        },
-        {
-          "id": 35,
           "title": "Do you want to change to another job",
           "q": "Do you want to change to another job?",
           "words": {
             "正面回答": [
-              "not at the moment"
+              "Not at the moment"
             ],
             "原因或时间": [
-              "at this stage of my life"
+              "at this stage"
             ],
             "频次": [
-              "focus on my current work"
+              "focus on current tasks"
             ],
             "感受": [
               "feel relaxed and at ease"
@@ -2341,54 +2286,54 @@ const P1_DATA = {
           }
         },
         {
-          "id": 36,
+          "id": 35,
           "title": "Do you miss being a student",
           "q": "Do you miss being a student?",
           "words": {
             "正面回答": [
-              "I absolutely miss it"
+              "Absolutely miss it"
             ],
             "原因或时间": [
-              "when work gets tiring"
+              "when tired of work"
             ],
             "频次": [
-              "the school canteen and classrooms"
+              "the school canteen and classroom"
             ],
             "感受": [
-              "holds a lot of precious memories"
+              "holds precious memories and emotions"
+            ]
+          }
+        },
+        {
+          "id": 36,
+          "title": "What kind of house or apartment do you want to live in in the future",
+          "q": "What kind of house or apartment do you want to live in in the future?",
+          "words": {
+            "正面回答": [
+              "A spacious house"
+            ],
+            "原因或时间": [
+              "love quietness"
+            ],
+            "频次": [
+              "residential areas"
+            ],
+            "感受": [
+              "good for self-care",
+              "chill out"
             ]
           }
         },
         {
           "id": 37,
-          "title": "What kind of house or apartment do you want to live in in th",
-          "q": "What kind of house or apartment do you want to live in in the future?",
-          "words": {
-            "正面回答": [
-              "a spacious house"
-            ],
-            "原因或时间": [
-              "enjoy the peace and quiet"
-            ],
-            "频次": [
-              "a residential area"
-            ],
-            "感受": [
-              "a good form of self-care",
-              "unwind"
-            ]
-          }
-        },
-        {
-          "id": 38,
           "title": "What part of your home do you like the most",
           "q": "What part of your home do you like the most?",
           "words": {
             "正面回答": [
-              "my bedroom"
+              "My bedroom"
             ],
             "原因或时间": [
-              "when I need some me-time"
+              "when I need me time"
             ],
             "频次": [
               "listen to music",
@@ -2400,34 +2345,35 @@ const P1_DATA = {
           }
         },
         {
-          "id": 39,
-          "title": "Whats your favorite room in your apartment or house",
-          "q": "Whats your favorite room in your apartment or house?",
+          "id": 38,
+          "title": "What's your favorite room in your apartment or house",
+          "q": "What's your favorite room in your apartment or house?",
           "words": {
             "正面回答": [
-              "the living room"
+              "The living room"
             ],
             "原因或时间": [
               "after dinner"
             ],
             "频次": [
-              "spend time with my family"
+              "hang out with family"
             ],
             "感受": [
-              "have a good laugh"
+              "enjoy a good laugh"
             ]
           }
         },
         {
-          "id": 40,
+          "id": 39,
           "title": "Do you plan to live there for a long time",
           "q": "Do you plan to live there for a long time?",
           "words": {
             "正面回答": [
-              "yes, I plan to"
+              "Yes",
+              "I plan to"
             ],
             "原因或时间": [
-              "as long as I live here"
+              "as long as I'm here"
             ],
             "频次": [
               "close to convenience stores"
@@ -2438,7 +2384,7 @@ const P1_DATA = {
           }
         },
         {
-          "id": 41,
+          "id": 40,
           "title": "Do you like your hometown",
           "q": "Do you like your hometown?",
           "words": {
@@ -2446,57 +2392,58 @@ const P1_DATA = {
               "I'm a big fan of it"
             ],
             "原因或时间": [
-              "a foodie paradise"
+              "food heaven"
             ],
             "频次": [
               "street food",
               "tasty local food"
             ],
             "感受": [
-              "it really hits the spot"
+              "satisfy my taste buds"
             ]
           }
         },
         {
-          "id": 42,
+          "id": 41,
           "title": "Do you like living there",
           "q": "Do you like living there?",
           "words": {
             "正面回答": [
-              "yes, I really enjoy living there"
+              "Yes",
+              "I enjoy living there"
             ],
             "原因或时间": [
               "in my free time"
             ],
             "频次": [
-              "go into the city centre"
+              "go to the city centre"
             ],
             "感受": [
-              "take a proper break"
+              "take a break and relax"
             ]
           }
         },
         {
-          "id": 43,
-          "title": "What do you like  about your hometown",
-          "q": "What do you like most about your hometown?",
+          "id": 42,
+          "title": "What do you like (most) about your hometown",
+          "q": "What do you like (most) about your hometown?",
           "words": {
             "正面回答": [
-              "the natural scenery"
+              "The natural views"
             ],
             "原因或时间": [
-              "on sunny days"
+              "on Sunny days"
             ],
             "频次": [
               "go for a walk in the park"
             ],
             "感受": [
-              "relieve stress"
+              "reduce stress"
             ]
           }
         },
         {
-          "id": 44,
+          "id": 43,
           "title": "Is there anything you dislike about it",
           "q": "Is there anything you dislike about it?",
           "words": {
@@ -2504,18 +2451,18 @@ const P1_DATA = {
               "The only thing I dislike is"
             ],
             "原因或时间": [
-              "the heavy traffic"
+              "heavy traffic"
             ],
             "频次": [
               "during rush hour"
             ],
             "感受": [
-              "it really gets to me"
+              "it bothers me"
             ]
           }
         },
         {
-          "id": 45,
+          "id": 44,
           "title": "Do you like the area that you live in",
           "q": "Do you like the area that you live in?",
           "words": {
@@ -2526,26 +2473,26 @@ const P1_DATA = {
               "great infrastructure"
             ],
             "频次": [
-              "just a 10-minute walk from my home"
+              "just about 10mins walk away from my home"
             ],
             "感受": [
-              "really convenient"
+              "super practical"
             ]
           }
         },
         {
-          "id": 46,
+          "id": 45,
           "title": "Where do you like to go in that area",
           "q": "Where do you like to go in that area?",
           "words": {
             "正面回答": [
-              "I love going to the cafes"
+              "I prefer going to the cafes"
             ],
             "原因或时间": [
-              "when I have some free time"
+              "when I have time for myself"
             ],
             "频次": [
-              "read"
+              "read books"
             ],
             "感受": [
               "reflect on things"
@@ -2553,61 +2500,124 @@ const P1_DATA = {
           }
         },
         {
-          "id": 47,
-          "title": "Do you like this city",
+          "id": 46,
+          "title": "Do you like this city? Why",
           "q": "Do you like this city? Why?",
           "words": {
             "正面回答": [
               "I'm passionate about it"
             ],
             "原因或时间": [
-              "ever since I moved here"
+              "since I moved here"
             ],
             "频次": [
-              "take part in extracurricular activities"
+              "go to extra classes and events"
             ],
             "感受": [
-              "holds a lot of memories for me"
+              "holds memories and emotions"
             ]
           }
         },
         {
-          "id": 48,
+          "id": 47,
           "title": "What would you like to do if you had a day off tomorrow",
           "q": "What would you like to do if you had a day off tomorrow?",
           "words": {
             "正面回答": [
-              "I'd love to get some proper rest"
+              "I would like to take a rest"
             ],
             "原因或时间": [
               "during the day off"
             ],
             "频次": [
-              "stay home and enjoy some me-time"
+              "stay at home and have some me time"
             ],
             "感受": [
-              "clear my mind"
+              "relax my mind"
             ]
           }
         },
         {
-          "id": 49,
+          "id": 48,
           "title": "Do you want to make your dreams come true",
           "q": "Do you want to make your dreams come true?",
           "words": {
             "正面回答": [
-              "I absolutely want to make them come true"
+              "Absolutely desire it"
             ],
             "原因或时间": [
               "for my future"
             ],
             "频次": [
               "take the initiative to work hard",
-              "strive in one",
-              "s studies"
+              "work hard at my studies"
             ],
             "感受": [
               "The thing will make me happy is the time when it comes true"
+            ]
+          }
+        },
+        {
+          "id": 49,
+          "title": "Do you want to live in a tall building",
+          "q": "Do you want to live in a tall building?",
+          "words": {
+            "正面回答": [],
+            "原因或时间": [
+              "convenient"
+            ],
+            "频次": [
+              "shopping malls"
+            ],
+            "感受": [
+              "feel relaxed and at ease"
+            ]
+          }
+        },
+        {
+          "id": 50,
+          "title": "What are your favourite activities",
+          "q": "What are your favourite activities?",
+          "words": {
+            "正面回答": [],
+            "原因或时间": [
+              "free time"
+            ],
+            "频次": [
+              "binge-watch TV shows"
+            ],
+            "感受": [
+              "relax my mind"
+            ]
+          }
+        },
+        {
+          "id": 51,
+          "title": "Do you enjoy being the age you are now",
+          "q": "Do you enjoy being the age you are now?",
+          "words": {
+            "正面回答": [],
+            "原因或时间": [],
+            "频次": [
+              "go to parties"
+            ],
+            "感受": [
+              "lift my mood"
+            ]
+          }
+        },
+        {
+          "id": 52,
+          "title": "Do you want to be a famous person",
+          "q": "Do you want to be a famous person?",
+          "words": {
+            "正面回答": [],
+            "原因或时间": [],
+            "频次": [
+              "shop online"
+            ],
+            "感受": [
+              "satisfy"
             ]
           }
         }
@@ -2633,13 +2643,13 @@ const P1_DATA = {
             ],
             "原因": [
               "groceries",
-              "fresh ingredients"
+              "food ingredients"
             ],
             "时间线+行为描述": [
               "get together"
             ],
             "影响": [
-              "good for both body and mind"
+              "good for the mind and the body"
             ]
           }
         },
@@ -2660,7 +2670,7 @@ const P1_DATA = {
             ],
             "影响": [
               "energetic",
-              "full of energy"
+              "full of beans"
             ]
           }
         },
@@ -2676,12 +2686,11 @@ const P1_DATA = {
               "my parents requirements"
             ],
             "时间线+行为描述": [
-              "before primary school",
-              "have breakfast"
+              "before I went to primary school",
+              "eat breakfast"
             ],
             "影响": [
-              "strive in one",
-              "s studies"
+              "work hard at my studies"
             ]
           }
         },
@@ -2694,7 +2703,7 @@ const P1_DATA = {
               "Definitely"
             ],
             "原因": [
-              "relieve stress"
+              "reduce stress"
             ],
             "时间线+行为描述": [
               "in my free time",
@@ -2707,26 +2716,27 @@ const P1_DATA = {
         },
         {
           "id": 5,
-          "title": "Did you often go outside to have a walk when you were a chil",
+          "title": "Did you often go outside to have a walk when you were a child",
           "q": "Did you often go outside to have a walk when you were a child?",
           "words": {
             "正面回答": [
-              "Yes, I used to"
+              "Yes",
+              "I used to"
             ],
             "原因": [
-              "get close to nature"
+              "have exposure to the nature"
             ],
             "时间线+行为描述": [
               "when the weather is nice"
             ],
             "影响": [
-              "have a good laugh"
+              "enjoy a good laugh"
             ]
           }
         },
         {
           "id": 6,
-          "title": "Do you look out the window at the scenery when travelling by",
+          "title": "Do you look out the window at the scenery when travelling by bus or car",
           "q": "Do you look out the window at the scenery when travelling by bus or car?",
           "words": {
             "正面回答": [
@@ -2740,7 +2750,7 @@ const P1_DATA = {
               "listen to music"
             ],
             "影响": [
-              "clear my mind"
+              "relax my mind"
             ]
           }
         },
@@ -2753,7 +2763,7 @@ const P1_DATA = {
               "I often take photos"
             ],
             "原因": [
-              "be passionate about things"
+              "feel passionate about something"
             ],
             "时间线+行为描述": [
               "the city centre",
@@ -2770,16 +2780,17 @@ const P1_DATA = {
           "q": "Do you keep plants at home?",
           "words": {
             "正面回答": [
-              "Yes, quite a few"
+              "Yes",
+              "quite a few"
             ],
             "原因": [
-              "a nice sensory experience"
+              "sensory experiences"
             ],
             "时间线+行为描述": [
-              "stay at home"
+              "stay home"
             ],
             "影响": [
-              "a great way to unwind",
+              "a great stress buster",
               "unwind"
             ]
           }
@@ -2790,16 +2801,16 @@ const P1_DATA = {
           "q": "Do you wear headphones in public places?",
           "words": {
             "正面回答": [
-              "almost always"
+              "Almost always"
             ],
             "原因": [
-              "have some me-time"
+              "have some me time"
             ],
             "时间线+行为描述": [
               "in public during rush hour"
             ],
             "影响": [
-              "escape the hustle and bustle of the city"
+              "escape from the city's hustle and bustle"
             ]
           }
         },
@@ -2809,16 +2820,16 @@ const P1_DATA = {
           "q": "Do you often go to public places with your friends?",
           "words": {
             "正面回答": [
-              "regularly"
+              "Regularly"
             ],
             "原因": [
-              "the lively atmosphere"
+              "hustle and bustle"
             ],
             "时间线+行为描述": [
               "shopping malls"
             ],
             "影响": [
-              "expand our social circle"
+              "expand my social circle"
             ]
           }
         },
@@ -2837,7 +2848,7 @@ const P1_DATA = {
               "shop online"
             ],
             "影响": [
-              "it always cheers me up"
+              "it makes me happy"
             ]
           }
         },
@@ -2847,16 +2858,17 @@ const P1_DATA = {
           "q": "Do you often tell your friends when they do something well?",
           "words": {
             "正面回答": [
-              "Exactly, I always tell them"
+              "Exactly",
+              "I always tell them"
             ],
             "原因": [
-              "motivate each other"
+              "mutually motivate each other"
             ],
             "时间线+行为描述": [
               "go to parties"
             ],
             "影响": [
-              "real kindness"
+              "altruistic behaviour"
             ]
           }
         },
@@ -2872,7 +2884,7 @@ const P1_DATA = {
               "practical"
             ],
             "时间线+行为描述": [
-              "grab my things before I go out"
+              "grab my stuff before I go out"
             ],
             "影响": [
               "self-care"
@@ -2892,10 +2904,10 @@ const P1_DATA = {
             ],
             "时间线+行为描述": [
               "places",
-              "pay by phone"
+              "pay with my phone"
             ],
             "影响": [
-              "it really gets to me"
+              "it bothers me"
             ]
           }
         },
@@ -2905,7 +2917,7 @@ const P1_DATA = {
           "q": "Do you often bring cash with you?",
           "words": {
             "正面回答": [
-              "seldom these days"
+              "Seldom nowadays"
             ],
             "原因": [
               "practical"
@@ -2914,7 +2926,7 @@ const P1_DATA = {
               "convenience stores"
             ],
             "影响": [
-              "clear my mind"
+              "relax my mind"
             ]
           }
         },
@@ -2924,16 +2936,16 @@ const P1_DATA = {
           "q": "How often do you use cash?",
           "words": {
             "正面回答": [
-              "I rarely use cash now"
+              "Rarely use it"
             ],
             "原因": [
-              "lifestyle"
+              "lifestyle preferences"
             ],
             "时间线+行为描述": [
               "street market"
             ],
             "影响": [
-              "it always cheers me up"
+              "it makes me happy"
             ]
           }
         },
@@ -2943,17 +2955,17 @@ const P1_DATA = {
           "q": "What do you usually chat about with friends?",
           "words": {
             "正面回答": [
-              "all sorts of things"
+              "Various topics"
             ],
             "原因": [
-              "meet like-minded people"
+              "meet people with similar interests"
             ],
             "时间线+行为描述": [
               "cafes",
-              "have a good chat"
+              "have a chat"
             ],
             "影响": [
-              "open up to each other"
+              "share thoughts and feelings"
             ]
           }
         },
@@ -2963,13 +2975,13 @@ const P1_DATA = {
           "q": "Do you argue with friends?",
           "words": {
             "正面回答": [
-              "occasionally we do"
+              "Occasionally we do"
             ],
             "原因": [
               "have strong opinions"
             ],
             "时间线+行为描述": [
-              "exchange ideas"
+              "share opinions"
             ],
             "影响": [
               "reflect on things"
@@ -2978,20 +2990,20 @@ const P1_DATA = {
         },
         {
           "id": 19,
-          "title": "Do you often see advertisements when you are on your phone o",
+          "title": "Do you often see advertisements when you are on your phone or computer",
           "q": "Do you often see advertisements when you are on your phone or computer?",
           "words": {
             "正面回答": [
-              "all the time"
+              "All the time"
             ],
             "原因": [
-              "a bit obsessed with short videos"
+              "obsessed with short videos"
             ],
             "时间线+行为描述": [
-              "spend a lot of time on short video apps"
+              "spend a lot of time on dou yin"
             ],
             "影响": [
-              "it really gets to me"
+              "it bothers me"
             ]
           }
         },
@@ -3001,16 +3013,16 @@ const P1_DATA = {
           "q": "Do you often visit a museum?",
           "words": {
             "正面回答": [
-              "from time to time"
+              "From time to time"
             ],
             "原因": [
-              "outside of class"
+              "outside the classroom"
             ],
             "时间线+行为描述": [
               "the city centre"
             ],
             "影响": [
-              "good for both body and mind"
+              "good for the mind and the body"
             ]
           }
         },
@@ -3020,7 +3032,7 @@ const P1_DATA = {
           "q": "How often do you take a rest or a break?",
           "words": {
             "正面回答": [
-              "every single day"
+              "Every single day"
             ],
             "原因": [
               "to relieve stress"
@@ -3029,7 +3041,7 @@ const P1_DATA = {
               "library"
             ],
             "影响": [
-              "sit back and relax"
+              "sit down and relax"
             ]
           }
         },
@@ -3042,14 +3054,14 @@ const P1_DATA = {
               "I do lots of things"
             ],
             "原因": [
-              "have some me-time"
+              "have some me time"
             ],
             "时间线+行为描述": [
               "dorms",
               "binge-watch TV shows"
             ],
             "影响": [
-              "clear my mind"
+              "relax my mind"
             ]
           }
         },
@@ -3059,13 +3071,14 @@ const P1_DATA = {
           "q": "Do you take a nap when you are taking your rest?",
           "words": {
             "正面回答": [
-              "Yes, I usually take a nap"
+              "Yes",
+              "I usually take a nap"
             ],
             "原因": [
               "self-care"
             ],
             "时间线+行为描述": [
-              "until noon"
+              "until midday"
             ],
             "影响": [
               "feel relaxed and at ease"
@@ -3084,28 +3097,27 @@ const P1_DATA = {
               "work hard at my studies"
             ],
             "时间线+行为描述": [
-              "the classroom",
-              "finish homework on my own"
+              "classroom",
+              "complete homework independently"
             ],
             "影响": [
-              "What makes me happy is the moment when"
+              "The thing will make me happy is the time when"
             ]
           }
         },
         {
           "id": 25,
-          "title": "What technology do you use when you study / at work",
-          "q": "What technology do you use when you study / at work?",
+          "title": "What technology do you use when you study",
+          "q": "What technology do you use when you study?",
           "words": {
             "正面回答": [
-              "iPad",
-              "mainly my laptop and iPad"
+              "Mainly computers and iPads"
             ],
             "原因": [
-              "it's just my personal habit"
+              "it has something to do with my personality"
             ],
             "时间线+行为描述": [
-              "attend classes",
+              "go to classes",
               "listen to a lecture"
             ],
             "影响": [
@@ -3115,37 +3127,54 @@ const P1_DATA = {
         },
         {
           "id": 26,
-          "title": "What room does your family spend most of the time in",
-          "q": "What room does your family spend most of the time in?",
+          "title": "What technology do you use at work",
+          "q": "What technology do you use at work?",
           "words": {
             "正面回答": [
-              "definitely the living room"
+              "Mainly computers and iPads"
             ],
             "原因": [
-              "share stories"
+              "it has something to do with my personality"
             ],
-            "时间线+行为描述": [
-              "dinner"
-            ],
+            "时间线+行为描述": [],
             "影响": [
-              "precious memories"
+              "practical"
             ]
           }
         },
         {
           "id": 27,
+          "title": "What room does your family spend most of the time in",
+          "q": "What room does your family spend most of the time in?",
+          "words": {
+            "正面回答": [
+              "Definitely the living room"
+            ],
+            "原因": [
+              "share experiences"
+            ],
+            "时间线+行为描述": [
+              "dinner"
+            ],
+            "影响": [
+              "memories and emotions"
+            ]
+          }
+        },
+        {
+          "id": 28,
           "title": "What do you usually do in your apartment",
           "q": "What do you usually do in your apartment?",
           "words": {
             "正面回答": [
-              "I usually stay at home"
+              "I usually stay indoors"
             ],
             "原因": [
-              "have some me-time"
+              "have some me time"
             ],
             "时间线+行为描述": [
-              "my rented apartment",
-              "flip through physical books"
+              "renting an apartment",
+              "flip through the pages of real books"
             ],
             "影响": [
               "slow down"
@@ -3153,26 +3182,27 @@ const P1_DATA = {
           }
         },
         {
-          "id": 28,
+          "id": 29,
           "title": "Do you often see your neighbors",
           "q": "Do you often see your neighbors?",
           "words": {
             "正面回答": [
-              "yes, quite often"
+              "Yes",
+              "quite often"
             ],
             "原因": [
-              "a residential area"
+              "residential areas"
             ],
             "时间线+行为描述": [
               "head out"
             ],
             "影响": [
-              "have a good chat"
+              "have a conversation"
             ]
           }
         },
         {
-          "id": 29,
+          "id": 30,
           "title": "What do you usually do when you have days off",
           "q": "What do you usually do when you have days off?",
           "words": {
@@ -3180,69 +3210,71 @@ const P1_DATA = {
               "I have a packed schedule"
             ],
             "原因": [
-              "be passionate about"
+              "feel passionate about"
             ],
             "时间线+行为描述": [
-              "enjoy tasty local food",
-              "eat out together"
+              "pig out on tasty local food",
+              "eat out in a restaurant"
             ],
             "影响": [
-              "it helps to light up my mood"
+              "it really lifts my mood"
             ]
           }
         },
         {
-          "id": 30,
-          "title": "Do you usually spend your days off with your parents or with",
+          "id": 31,
+          "title": "Do you usually spend your days off with your parents or with your friends",
           "q": "Do you usually spend your days off with your parents or with your friends?",
           "words": {
             "正面回答": [
-              "mostly with my friends"
+              "Mostly with my friends"
             ],
             "原因": [
-              "meet like-minded people"
+              "meet people with similar interests"
             ],
             "时间线+行为描述": [
               "in my free time",
               "hang out"
             ],
             "影响": [
-              "take a proper break"
-            ]
-          }
-        },
-        {
-          "id": 31,
-          "title": "Do you share your dreams with others",
-          "q": "Do you share your dreams with others?",
-          "words": {
-            "正面回答": [
-              "yes, I share them quite often"
-            ],
-            "原因": [
-              "open up to each other"
-            ],
-            "时间线+行为描述": [
-              "get together with friends and classmates"
-            ],
-            "影响": [
-              "motivate each other"
+              "take a break and relax"
             ]
           }
         },
         {
           "id": 32,
+          "title": "Do you share your dreams with others",
+          "q": "Do you share your dreams with others?",
+          "words": {
+            "正面回答": [
+              "Yes",
+              "I frequently do"
+            ],
+            "原因": [
+              "share thoughts and feelings"
+            ],
+            "时间线+行为描述": [
+              "get together with friends and classmates"
+            ],
+            "影响": [
+              "mutually motivate each other"
+            ]
+          }
+        },
+        {
+          "id": 33,
           "title": "Do you always bring a lot of keys with you",
           "q": "Do you always bring a lot of keys with you?",
           "words": {
             "正面回答": [
-              "no, rarely"
+              "No",
+              "seldom"
             ],
             "原因": [
               "rely on"
             ],
             "时间线+行为描述": [
-              "grab my things before I go out"
+              "grab my stuff before I go out"
             ],
             "影响": [
               "practical"
@@ -3250,21 +3282,111 @@ const P1_DATA = {
           }
         },
         {
-          "id": 33,
-          "title": "Do you often forget the keys and lock yourself out？",
-          "q": "Do you often forget the keys and lock yourself out？",
+          "id": 34,
+          "title": "Do you often forget the keys and lock yourself out",
+          "q": "Do you often forget the keys and lock yourself out?",
           "words": {
             "正面回答": [
-              "it happens occasionally"
+              "It depends",
+              "occasionally yes"
             ],
             "原因": [
-              "something unexpected comes up"
+              "something comes up"
             ],
             "时间线+行为描述": [
               "school"
             ],
             "影响": [
-              "it really gets to me"
+              "it bothers me"
+            ]
+          }
+        },
+        {
+          "id": 35,
+          "title": "When would old people ask young people for advice",
+          "q": "When would old people ask young people for advice?",
+          "words": {
+            "正面回答": [],
+            "原因": [],
+            "时间线+行为描述": [
+              "spend time on phone"
+            ],
+            "影响": [
+              "altruistic behaviour"
+            ]
+          }
+        },
+        {
+          "id": 36,
+          "title": "Are there any occasions when people need to pretend to smile",
+          "q": "Are there any occasions when people need to pretend to smile?",
+          "words": {
+            "正面回答": [],
+            "原因": [],
+            "时间线+行为描述": [
+              "have a conversation"
+            ],
+            "影响": []
+          }
+        },
+        {
+          "id": 37,
+          "title": "Why do more people own and drive private vehicles now",
+          "q": "Why do more people own and drive private vehicles now?",
+          "words": {
+            "正面回答": [],
+            "原因": [],
+            "时间线+行为描述": [
+              "head out"
+            ],
+            "影响": [
+              "practical",
+              "time-saving"
+            ]
+          }
+        },
+        {
+          "id": 38,
+          "title": "What can children do to help their parents",
+          "q": "What can children do to help their parents?",
+          "words": {
+            "正面回答": [],
+            "原因": [],
+            "时间线+行为描述": [
+              "chores"
+            ],
+            "影响": [
+              "self-care"
+            ]
+          }
+        },
+        {
+          "id": 39,
+          "title": "Why do many people like listening to music while doing sports",
+          "q": "Why do many people like listening to music while doing sports?",
+          "words": {
+            "正面回答": [],
+            "原因": [],
+            "时间线+行为描述": [
+              "go jogging"
+            ],
+            "影响": [
+              "unwind"
+            ]
+          }
+        },
+        {
+          "id": 40,
+          "title": "Why are employees reluctant to ask their managers for help",
+          "q": "Why are employees reluctant to ask their managers for help?",
+          "words": {
+            "正面回答": [],
+            "原因": [],
+            "时间线+行为描述": [
+              "complete independently"
+            ],
+            "影响": [
+              "bothers me"
             ]
           }
         }
@@ -3286,7 +3408,7 @@ const P1_DATA = {
           "q": "What is the most popular animal in China?",
           "words": {
             "正面回答": [
-              "I'd say pandas and dogs"
+              "I think pandas and dogs"
             ],
             "举例或原因": [
               "loyal"
@@ -3295,7 +3417,7 @@ const P1_DATA = {
               "self-care"
             ],
             "感受": [
-              "a great way to unwind"
+              "a great stress buster"
             ]
           }
         },
@@ -3312,7 +3434,7 @@ const P1_DATA = {
               "volleyball"
             ],
             "作用或影响": [
-              "motivate each other"
+              "mutually motivate each other"
             ],
             "感受": [
               "feel relaxed and at ease"
@@ -3325,7 +3447,7 @@ const P1_DATA = {
           "q": "What do you consider when choosing a gift?",
           "words": {
             "正面回答": [
-              "functionality comes first"
+              "Functionality comes first"
             ],
             "举例或原因": [
               "coat",
@@ -3335,7 +3457,7 @@ const P1_DATA = {
               "practical"
             ],
             "感受": [
-              "lifts my mood"
+              "lift my mood"
             ]
           }
         },
@@ -3348,13 +3470,13 @@ const P1_DATA = {
               "I'm quite good at it"
             ],
             "举例或原因": [
-              "open up to each other"
+              "share thoughts and feelings"
             ],
             "作用或影响": [
-              "lifestyle"
+              "lifestyle preferences"
             ],
             "感受": [
-              "have a good laugh"
+              "enjoy a good laugh"
             ]
           }
         },
@@ -3364,17 +3486,17 @@ const P1_DATA = {
           "q": "Why do people like to walk in parks?",
           "words": {
             "正面回答": [
-              "to get close to nature"
+              "To have exposure to nature"
             ],
             "举例或原因": [
-              "in their free time"
+              "in free time"
             ],
             "作用或影响": [
-              "have some me-time"
+              "have some me time"
             ],
             "感受": [
               "go for a walk",
-              "relieve stress"
+              "reduce stress"
             ]
           }
         },
@@ -3384,16 +3506,17 @@ const P1_DATA = {
           "q": "Do Chinese people send plants as gifts?",
           "words": {
             "正面回答": [
-              "occasionally, yes"
+              "Occasionally",
+              "yes"
             ],
             "举例或原因": [
-              "a nice sensory experience"
+              "sensory experiences"
             ],
             "作用或影响": [
               "home"
             ],
             "感受": [
-              "clear my mind"
+              "relax my mind"
             ]
           }
         },
@@ -3403,16 +3526,16 @@ const P1_DATA = {
           "q": "Do you think students would benefit more from more rules?",
           "words": {
             "正面回答": [
-              "moderate rules are beneficial"
+              "Moderate rules are beneficial"
             ],
             "举例或原因": [
-              "the classroom"
+              "classroom"
             ],
             "作用或影响": [
-              "finish homework on my own"
+              "complete homework independently"
             ],
             "感受": [
-              "self-motivated"
+              "self-driven"
             ]
           }
         },
@@ -3422,33 +3545,33 @@ const P1_DATA = {
           "q": "Do most people like crowded places?",
           "words": {
             "正面回答": [
-              "it depends on the person"
+              "It depends"
             ],
             "举例或原因": [
-              "be passionate about",
+              "feel passionate about",
               "city centre"
             ],
             "作用或影响": [
-              "meet like-minded people"
+              "meet people with similar interests"
             ],
             "感受": [
-              "it really gets to me"
+              "it bothers me"
             ]
           }
         },
         {
           "id": 9,
-          "title": "What are the benefits of being friends with or working with ",
+          "title": "What are the benefits of being friends with or working with old people",
           "q": "What are the benefits of being friends with or working with old people?",
           "words": {
             "正面回答": [
-              "there are lots of benefits"
+              "There are lots of merits"
             ],
             "举例或原因": [
-              "have a good chat"
+              "have a conversation"
             ],
             "作用或影响": [
-              "share stories"
+              "share experiences"
             ],
             "感受": [
               "reflect on things"
@@ -3461,36 +3584,36 @@ const P1_DATA = {
           "q": "Is growing vegetables popular in your country?",
           "words": {
             "正面回答": [
-              "it's more popular in rural areas"
+              "Mainly popular in rural areas"
             ],
             "举例或原因": [
               "groceries",
-              "fresh ingredients"
+              "food ingredients"
             ],
             "作用或影响": [
-              "lifestyle"
+              "lifestyle preferences"
             ],
             "感受": [
-              "good for both body and mind"
+              "good for the mind and the body"
             ]
           }
         },
         {
           "id": 11,
-          "title": "Do you think it’s easy to grow vegetables",
-          "q": "Do you think it s easy to grow vegetables?",
+          "title": "Do you think it's easy to grow vegetables",
+          "q": "Do you think it's easy to grow vegetables?",
           "words": {
             "正面回答": [
-              "it's not easy at all"
+              "Not easy at all"
             ],
             "举例或原因": [
               "take the initiative to"
             ],
             "作用或影响": [
-              "takeout"
+              "takeaways"
             ],
             "感受": [
-              "it really gets to me"
+              "it bothers me"
             ]
           }
         },
@@ -3500,35 +3623,35 @@ const P1_DATA = {
           "q": "Should schools teach students how to grow vegetables?",
           "words": {
             "正面回答": [
-              "they definitely should"
+              "They definitely should"
             ],
             "举例或原因": [
-              "extracurricular activities"
+              "extra classes and events"
             ],
             "作用或影响": [
               "practical"
             ],
             "感受": [
-              "a real sense of achievement"
+              "sense of achievement"
             ]
           }
         },
         {
           "id": 13,
-          "title": "How do you feel when people dont return things they borrowed",
+          "title": "How do you feel when people dont return things they borrowed from you",
           "q": "How do you feel when people dont return things they borrowed from you?",
           "words": {
             "正面回答": [
-              "I feel awful"
+              "I feel terrible"
             ],
             "举例或原因": [
-              "physical books"
+              "real books"
             ],
             "作用或影响": [
-              "share stories"
+              "share experiences"
             ],
             "感受": [
-              "it really gets to me"
+              "it bothers me"
             ]
           }
         },
@@ -3538,17 +3661,17 @@ const P1_DATA = {
           "q": "Do you mind if others borrow money from you?",
           "words": {
             "正面回答": [
-              "it depends on the situation"
+              "It depends on the situation"
             ],
             "举例或原因": [
               "homie",
               "besties"
             ],
             "作用或影响": [
-              "real kindness"
+              "altruistic behaviour"
             ],
             "感受": [
-              "lifts my mood"
+              "lift my mood"
             ]
           }
         },
@@ -3558,7 +3681,7 @@ const P1_DATA = {
           "q": "Do you think museums are important?",
           "words": {
             "正面回答": [
-              "absolutely vital"
+              "Vitally important"
             ],
             "举例或原因": [
               "city centre"
@@ -3577,7 +3700,7 @@ const P1_DATA = {
           "q": "How do you feel after taking a nap?",
           "words": {
             "正面回答": [
-              "completely refreshed"
+              "Fully refreshed"
             ],
             "举例或原因": [
               "when I feel bored"
@@ -3586,7 +3709,7 @@ const P1_DATA = {
               "self-care"
             ],
             "感受": [
-              "full of energy"
+              "full of beans"
             ]
           }
         },
@@ -3596,7 +3719,7 @@ const P1_DATA = {
           "q": "What kind of things are not suitable for sharing?",
           "words": {
             "正面回答": [
-              "private information, definitely"
+              "Private information"
             ],
             "举例或原因": [
               "WeChat"
@@ -3605,7 +3728,7 @@ const P1_DATA = {
               "rely on"
             ],
             "感受": [
-              "it really gets to me"
+              "it bothers me"
             ]
           }
         },
@@ -3615,16 +3738,16 @@ const P1_DATA = {
           "q": "Do you think that your subject is popular in your country?",
           "words": {
             "正面回答": [
-              "it's quite popular"
+              "Quite popular"
             ],
             "举例或原因": [
-              "attend classes"
+              "go to classes"
             ],
             "作用或影响": [
               "practical"
             ],
             "感受": [
-              "self-motivated"
+              "self-driven"
             ]
           }
         },
@@ -3634,16 +3757,16 @@ const P1_DATA = {
           "q": "What are the benefits of being your age?",
           "words": {
             "正面回答": [
-              "there are many advantages"
+              "Many obvious advantages"
             ],
             "举例或原因": [
               "hang out"
             ],
             "作用或影响": [
-              "be passionate about things"
+              "feel passionate about something"
             ],
             "感受": [
-              "have a great time"
+              "have a blast"
             ]
           }
         },
@@ -3653,16 +3776,16 @@ const P1_DATA = {
           "q": "What changes would you like to see in your school?",
           "words": {
             "正面回答": [
-              "I'd improve the food in the canteen"
+              "The food service"
             ],
             "举例或原因": [
-              "the school canteen"
+              "school canteen"
             ],
             "作用或影响": [
               "delicious"
             ],
             "感受": [
-              "have a good laugh"
+              "enjoy a good laugh"
             ]
           }
         },
@@ -3672,33 +3795,33 @@ const P1_DATA = {
           "q": "What do you think is the most important at the moment?",
           "words": {
             "正面回答": [
-              "my studies, for sure"
+              "My academic performance"
             ],
             "举例或原因": [
               "work hard at my studies"
             ],
             "作用或影响": [
-              "finish homework on my own"
+              "complete homework independently"
             ],
             "感受": [
-              "clear my mind"
+              "relax my mind"
             ]
           }
         },
         {
           "id": 22,
-          "title": "What makes you feel pleasant in your home？",
-          "q": "What makes you feel pleasant in your home？",
+          "title": "What makes you feel pleasant in your home",
+          "q": "What makes you feel pleasant in your home?",
           "words": {
             "正面回答": [
-              "the quiet, private atmosphere"
+              "The quiet and private atmosphere"
             ],
             "举例或原因": [
               "dorms",
               "home"
             ],
             "作用或影响": [
-              "have some me-time"
+              "have some me time"
             ],
             "感受": [
               "unwind"
@@ -3707,14 +3830,14 @@ const P1_DATA = {
         },
         {
           "id": 23,
-          "title": "Do you think it is important to live in a comfortable enviro",
-          "q": "Do you think it is important to live in a comfortable environment？",
+          "title": "Do you think it is important to live in a comfortable environment",
+          "q": "Do you think it is important to live in a comfortable environment?",
           "words": {
             "正面回答": [
-              "it's incredibly important"
+              "It is of vital importance"
             ],
             "举例或原因": [
-              "a residential area"
+              "residential areas"
             ],
             "作用或影响": [
               "self-care"
@@ -3730,26 +3853,27 @@ const P1_DATA = {
           "q": "Do you think you will continue living there for a long time?",
           "words": {
             "正面回答": [
-              "most likely, yes"
+              "Most likely",
+              "yes"
             ],
             "举例或原因": [
               "convenience stores"
             ],
             "作用或影响": [
-              "lifestyle"
+              "lifestyle preferences"
             ],
             "感受": [
-              "holds a lot of precious memories"
+              "holds precious memories and emotions"
             ]
           }
         },
         {
           "id": 25,
-          "title": "Is your hometown a good place for young people to pursue the",
+          "title": "Is your hometown a good place for young people to pursue their careers",
           "q": "Is your hometown a good place for young people to pursue their careers?",
           "words": {
             "正面回答": [
-              "it's a great place for that"
+              "An ideal place indeed"
             ],
             "举例或原因": [
               "city centre"
@@ -3758,7 +3882,7 @@ const P1_DATA = {
               "take the initiative to"
             ],
             "感受": [
-              "a real sense of achievement"
+              "sense of achievement"
             ]
           }
         },
@@ -3768,10 +3892,10 @@ const P1_DATA = {
           "q": "Is the city friendly to children and old people?",
           "words": {
             "正面回答": [
-              "very friendly, yes"
+              "Very friendly"
             ],
             "举例或原因": [
-              "the park"
+              "park"
             ],
             "作用或影响": [
               "go for a walk"
@@ -3793,10 +3917,10 @@ const P1_DATA = {
               "tasty local food"
             ],
             "作用或影响": [
-              "share food"
+              "share a meal"
             ],
             "感受": [
-              "the food never disappoints"
+              "satisfy your taste buds"
             ]
           }
         },
@@ -3806,17 +3930,17 @@ const P1_DATA = {
           "q": "Do you share your dreams with others?",
           "words": {
             "正面回答": [
-              "I share them quite often"
+              "I frequently do"
             ],
             "举例或原因": [
               "go to parties",
               "get together"
             ],
             "作用或影响": [
-              "open up to each other"
+              "share thoughts and feelings"
             ],
             "感受": [
-              "motivate each other"
+              "mutually motivate each other"
             ]
           }
         },
@@ -3829,33 +3953,214 @@ const P1_DATA = {
               "Sometimes they do"
             ],
             "举例或原因": [
-              "something unexpected comes up"
+              "something comes up"
             ],
             "作用或影响": [
               "reflect on things"
             ],
             "感受": [
-              "relieve stress"
+              "reduce stress"
             ]
           }
         },
         {
           "id": 30,
-          "title": "Do you think its a good idea to leave your keys with a neigh",
+          "title": "Do you think its a good idea to leave your keys with a neighbour",
           "q": "Do you think its a good idea to leave your keys with a neighbour?",
           "words": {
             "正面回答": [
-              "it's a good idea if you trust them"
+              "Good idea if trusted"
             ],
             "举例或原因": [
               "head out"
             ],
             "作用或影响": [
-              "real kindness"
+              "altruistic behaviour"
             ],
             "感受": [
               "practical",
-              "it really gets to me"
+              "it bothers me"
+            ]
+          }
+        },
+        {
+          "id": 31,
+          "title": "At what age do you think people are the happiest",
+          "q": "At what age do you think people are the happiest?",
+          "words": {
+            "正面回答": [],
+            "举例或原因": [
+              "childhood"
+            ],
+            "作用或影响": [
+              "play video games"
+            ],
+            "感受": [
+              "enjoy a good laugh"
+            ]
+          }
+        },
+        {
+          "id": 32,
+          "title": "What kind of jobs are the most popular in your country",
+          "q": "What kind of jobs are the most popular in your country?",
+          "words": {
+            "正面回答": [],
+            "举例或原因": [
+              "practical"
+            ],
+            "作用或影响": [
+              "make money"
+            ],
+            "感受": [
+              "sense of achievement"
+            ]
+          }
+        },
+        {
+          "id": 33,
+          "title": "Is it easy to become famous in your country",
+          "q": "Is it easy to become famous in your country?",
+          "words": {
+            "正面回答": [],
+            "举例或原因": [],
+            "作用或影响": [
+              "browse videos"
+            ],
+            "感受": []
+          }
+        },
+        {
+          "id": 34,
+          "title": "How does the internet benefit people",
+          "q": "How does the internet benefit people?",
+          "words": {
+            "正面回答": [],
+            "举例或原因": [],
+            "作用或影响": [
+              "takeaways",
+              "shop online"
+            ],
+            "感受": []
+          }
+        },
+        {
+          "id": 35,
+          "title": "Is smiling important in your culture",
+          "q": "Is smiling important in your culture?",
+          "words": {
+            "正面回答": [],
+            "举例或原因": [],
+            "作用或影响": [
+              "have a conversation"
+            ],
+            "感受": [
+              "comfortable"
+            ]
+          }
+        },
+        {
+          "id": 36,
+          "title": "What do you think of the future of electric cars",
+          "q": "What do you think of the future of electric cars?",
+          "words": {
+            "正面回答": [],
+            "举例或原因": [],
+            "作用或影响": [
+              "reduce emission"
+            ],
+            "感受": []
+          }
+        },
+        {
+          "id": 37,
+          "title": "Do you think smart children are happier than other children",
+          "q": "Do you think smart children are happier than other children?",
+          "words": {
+            "正面回答": [],
+            "举例或原因": [
+              "work hard at studies"
+            ],
+            "作用或影响": [
+              "appreciated"
+            ],
+            "感受": []
+          }
+        },
+        {
+          "id": 38,
+          "title": "Is it important for schools to identify and develop each student's talents",
+          "q": "Is it important for schools to identify and develop each student's talents?",
+          "words": {
+            "正面回答": [],
+            "举例或原因": [],
+            "作用或影响": [
+              "study"
+            ],
+            "感受": [
+              "sense of achievement"
+            ]
+          }
+        },
+        {
+          "id": 39,
+          "title": "Do you think children should receive some musical education",
+          "q": "Do you think children should receive some musical education?",
+          "words": {
+            "正面回答": [],
+            "举例或原因": [
+              "interests"
+            ],
+            "作用或影响": [
+              "listen to music"
+            ],
+            "感受": [
+              "relax my mind"
+            ]
+          }
+        },
+        {
+          "id": 40,
+          "title": "Do you think schools should teach children to do household chores",
+          "q": "Do you think schools should teach children to do household chores?",
+          "words": {
+            "正面回答": [],
+            "举例或原因": [],
+            "作用或影响": [
+              "self-care"
+            ],
+            "感受": [
+              "practical"
+            ]
+          }
+        },
+        {
+          "id": 41,
+          "title": "Should children do everything their parents ask them to do",
+          "q": "Should children do everything their parents ask them to do?",
+          "words": {
+            "正面回答": [],
+            "举例或原因": [],
+            "作用或影响": [
+              "reflect on things"
+            ],
+            "感受": [
+              "bothers me"
+            ]
+          }
+        },
+        {
+          "id": 42,
+          "title": "How can employers encourage their staff",
+          "q": "How can employers encourage their staff?",
+          "words": {
+            "正面回答": [],
+            "举例或原因": [],
+            "作用或影响": [
+              "eat out in a restaurant"
+            ],
+            "感受": [
+              "mutually motivate each other"
             ]
           }
         }
@@ -3877,14 +4182,14 @@ const P1_DATA = {
           "q": "Where do you prefer to keep your pet, indoors or outdoors?",
           "words": {
             "正面回答": [
-              "definitely indoors"
+              "Indoors"
             ],
             "选项1的特点与作用": [
               "home",
               "dorms"
             ],
             "选项2的特点与作用": [
-              "the park"
+              "park"
             ],
             "个人感受": [
               "unwind"
@@ -3893,11 +4198,11 @@ const P1_DATA = {
         },
         {
           "id": 2,
-          "title": "What are the differences between team sports and individual ",
+          "title": "What are the differences between team sports and individual sports",
           "q": "What are the differences between team sports and individual sports?",
           "words": {
             "正面回答": [
-              "they're very different"
+              "Huge differences in atmosphere"
             ],
             "选项1的特点与作用": [
               "play basketball",
@@ -3907,23 +4212,23 @@ const P1_DATA = {
               "go jogging"
             ],
             "个人感受": [
-              "meet like-minded people"
+              "meet people with similar interests"
             ]
           }
         },
         {
           "id": 3,
-          "title": "Are there any differences between what you do in the morning",
+          "title": "Are there any differences between what you do in the morning now and what you did in the past",
           "q": "Are there any differences between what you do in the morning now and what you did in the past?",
           "words": {
             "正面回答": [
-              "totally different"
+              "Totally different"
             ],
             "选项1的特点与作用": [
-              "have breakfast"
+              "eat breakfast"
             ],
             "选项2的特点与作用": [
-              "watch short videos"
+              "browse videos"
             ],
             "个人感受": [
               "feel relaxed and at ease"
@@ -3932,14 +4237,15 @@ const P1_DATA = {
         },
         {
           "id": 4,
-          "title": "Do you spend your mornings doing the same things on both wee",
+          "title": "Do you spend your mornings doing the same things on both weekends and weekdays? Why",
           "q": "Do you spend your mornings doing the same things on both weekends and weekdays? Why?",
           "words": {
             "正面回答": [
-              "no, they're quite different"
+              "No",
+              "quite different"
             ],
             "选项1的特点与作用": [
-              "attend classes"
+              "go to classes"
             ],
             "选项2的特点与作用": [
               "binge-watch TV shows"
@@ -3955,13 +4261,13 @@ const P1_DATA = {
           "q": "Do you prefer to read on paper or on a screen?",
           "words": {
             "正面回答": [
-              "I prefer reading on paper"
+              "Read on paper"
             ],
             "选项1的特点与作用": [
-              "flip through physical books"
+              "flip through the pages of real books"
             ],
             "选项2的特点与作用": [
-              "spend a lot of time on my phone"
+              "spend a lot of time on phone"
             ],
             "个人感受": [
               "reflect on things"
@@ -3974,17 +4280,17 @@ const P1_DATA = {
           "q": "When do you need to read carefully, and when not?",
           "words": {
             "正面回答": [
-              "it depends on what I am reading"
+              "It depends on the content"
             ],
             "选项1的特点与作用": [
               "study",
               "library"
             ],
             "选项2的特点与作用": [
-              "watch short videos"
+              "browse videos"
             ],
             "个人感受": [
-              "finish homework on my own",
+              "complete homework independently",
               "practical"
             ]
           }
@@ -3995,13 +4301,13 @@ const P1_DATA = {
           "q": "Do you prefer scanning or detailed reading?",
           "words": {
             "正面回答": [
-              "detailed reading, mostly"
+              "Detailed reading"
             ],
             "选项1的特点与作用": [
-              "physical books"
+              "real books"
             ],
             "选项2的特点与作用": [
-              "takeout"
+              "takeaways"
             ],
             "个人感受": [
               "work hard at my studies"
@@ -4014,16 +4320,16 @@ const P1_DATA = {
           "q": "Do you prefer typing or handwriting?",
           "words": {
             "正面回答": [
-              "typing, for sure"
+              "Typing"
             ],
             "选项1的特点与作用": [
               "shop online"
             ],
             "选项2的特点与作用": [
-              "the classroom"
+              "classroom"
             ],
             "个人感受": [
-              "time-saving and effortless",
+              "time-saving and labor-saving",
               "practical"
             ]
           }
@@ -4034,10 +4340,10 @@ const P1_DATA = {
           "q": "Do you type on a desktop or laptop keyboard every day?",
           "words": {
             "正面回答": [
-              "my laptop keyboard"
+              "Laptop keyboard"
             ],
             "选项1的特点与作用": [
-              "grab my things and head out"
+              "grab my stuff and head out"
             ],
             "选项2的特点与作用": [
               "dorms"
@@ -4053,35 +4359,35 @@ const P1_DATA = {
           "q": "Do you prefer the mountains or the sea?",
           "words": {
             "正面回答": [
-              "definitely the sea"
+              "The sea"
             ],
             "选项1的特点与作用": [
-              "enjoy tasty local food"
+              "pig out on tasty local food"
             ],
             "选项2的特点与作用": [
               "hiking"
             ],
             "个人感受": [
-              "unwind"
+              "chill out"
             ]
           }
         },
         {
           "id": 11,
-          "title": "Did you prefer to do activities alone or with a group of peo",
+          "title": "Did you prefer to do activities alone or with a group of people when you were a child",
           "q": "Did you prefer to do activities alone or with a group of people when you were a child?",
           "words": {
             "正面回答": [
-              "with a group of people"
+              "With a group of people"
             ],
             "选项1的特点与作用": [
               "play video games"
             ],
             "选项2的特点与作用": [
-              "me-time"
+              "me time"
             ],
             "个人感受": [
-              "have a good laugh"
+              "enjoy a good laugh"
             ]
           }
         },
@@ -4091,14 +4397,14 @@ const P1_DATA = {
           "q": "Do you prefer views in urban areas or rural areas?",
           "words": {
             "正面回答": [
-              "I prefer urban views"
+              "Urban areas"
             ],
             "选项1的特点与作用": [
               "city centre",
               "shopping malls"
             ],
             "选项2的特点与作用": [
-              "the park"
+              "park"
             ],
             "个人感受": [
               "practical and makes me happy"
@@ -4107,21 +4413,21 @@ const P1_DATA = {
         },
         {
           "id": 13,
-          "title": "Do you prefer views in your own country or in other countrie",
+          "title": "Do you prefer views in your own country or in other countries",
           "q": "Do you prefer views in your own country or in other countries?",
           "words": {
             "正面回答": [
-              "in my own country"
+              "In my own country"
             ],
             "选项1的特点与作用": [
               "tasty local food"
             ],
             "选项2的特点与作用": [
               "groceries",
-              "fresh ingredients"
+              "food ingredients"
             ],
             "个人感受": [
-              "it really hits the spot"
+              "satisfy my taste buds"
             ]
           }
         },
@@ -4131,16 +4437,16 @@ const P1_DATA = {
           "q": "Do you prefer to have more or fewer rules at school?",
           "words": {
             "正面回答": [
-              "fewer rules, for sure"
+              "Fewer rules"
             ],
             "选项1的特点与作用": [
-              "extracurricular activities"
+              "extra classes and events"
             ],
             "选项2的特点与作用": [
-              "the classroom"
+              "classroom"
             ],
             "个人感受": [
-              "clear my mind"
+              "relax my mind"
             ]
           }
         },
@@ -4150,7 +4456,7 @@ const P1_DATA = {
           "q": "Which do you prefer, fashionable shoes or comfortable shoes?",
           "words": {
             "正面回答": [
-              "comfortable shoes, always"
+              "Comfortable shoes"
             ],
             "选项1的特点与作用": [
               "go jogging",
@@ -4166,11 +4472,11 @@ const P1_DATA = {
         },
         {
           "id": 16,
-          "title": "Do you prefer to chat with a group of people or with only on",
+          "title": "Do you prefer to chat with a group of people or with only one friend",
           "q": "Do you prefer to chat with a group of people or with only one friend?",
           "words": {
             "正面回答": [
-              "just one friend, preferably"
+              "With only one friend"
             ],
             "选项1的特点与作用": [
               "cafes"
@@ -4179,36 +4485,36 @@ const P1_DATA = {
               "parties"
             ],
             "个人感受": [
-              "share stories and encourage each other"
+              "share experiences and mutually motivate each other"
             ]
           }
         },
         {
           "id": 17,
-          "title": "Do you prefer to communicate face-to-face or via social medi",
+          "title": "Do you prefer to communicate face-to-face or via social media",
           "q": "Do you prefer to communicate face-to-face or via social media?",
           "words": {
             "正面回答": [
-              "face-to-face, definitely"
+              "Face-to-face"
             ],
             "选项1的特点与作用": [
-              "eat out together"
+              "eat out in a restaurant"
             ],
             "选项2的特点与作用": [
-              "chat on WeChat"
+              "have a chat on WeChat"
             ],
             "个人感受": [
-              "open up to each other"
+              "share thoughts and feelings"
             ]
           }
         },
         {
           "id": 18,
-          "title": "Do you prefer to share news with your friends or your parent",
+          "title": "Do you prefer to share news with your friends or your parents",
           "q": "Do you prefer to share news with your friends or your parents?",
           "words": {
             "正面回答": [
-              "my friends, usually"
+              "Friends"
             ],
             "选项1的特点与作用": [
               "people with similar interests"
@@ -4217,7 +4523,7 @@ const P1_DATA = {
               "home"
             ],
             "个人感受": [
-              "lifts my mood"
+              "lift my mood"
             ]
           }
         },
@@ -4227,10 +4533,10 @@ const P1_DATA = {
           "q": "Do you prefer to study in the mornings or in the afternoons?",
           "words": {
             "正面回答": [
-              "definitely in the mornings"
+              "In the mornings"
             ],
             "选项1的特点与作用": [
-              "have breakfast"
+              "eat breakfast"
             ],
             "选项2的特点与作用": [
               "binge-watch TV shows"
@@ -4246,13 +4552,13 @@ const P1_DATA = {
           "q": "Do you prefer living in a house or an apartment?",
           "words": {
             "正面回答": [
-              "an apartment, for now"
+              "An apartment"
             ],
             "选项1的特点与作用": [
-              "my rented apartment"
+              "renting an apartment"
             ],
             "选项2的特点与作用": [
-              "attend classes",
+              "go to classes",
               "parties"
             ],
             "个人感受": [
@@ -4262,14 +4568,14 @@ const P1_DATA = {
         },
         {
           "id": 21,
-          "title": "What’s the difference between where you are living now and w",
-          "q": "What s the difference between where you are living now and where you have lived in the past?",
+          "title": "What's the difference between where you are living now and where you have lived in the past",
+          "q": "What's the difference between where you are living now and where you have lived in the past?",
           "words": {
             "正面回答": [
-              "there's a huge difference"
+              "Huge differences"
             ],
             "选项1的特点与作用": [
-              "a residential area",
+              "residential areas",
               "convenience stores"
             ],
             "选项2的特点与作用": [
@@ -4282,20 +4588,55 @@ const P1_DATA = {
         },
         {
           "id": 22,
-          "title": "Do you usually spend your days off with your parents or with",
+          "title": "Do you usually spend your days off with your parents or with your friends",
           "q": "Do you usually spend your days off with your parents or with your friends?",
           "words": {
             "正面回答": [
-              "with my friends, mostly"
+              "With my friends"
             ],
             "选项1的特点与作用": [
               "hang out"
             ],
             "选项2的特点与作用": [
-              "stay at home"
+              "stay home"
             ],
             "个人感受": [
-              "have a good laugh"
+              "enjoy a good laugh"
+            ]
+          }
+        },
+        {
+          "id": 23,
+          "title": "Is it better to live in a new building or an old one",
+          "q": "Is it better to live in a new building or an old one?",
+          "words": {
+            "正面回答": [],
+            "选项1的特点与作用": [
+              "shopping malls"
+            ],
+            "选项2的特点与作用": [
+              "bothers me"
+            ],
+            "个人感受": [
+              "comfortable"
+            ]
+          }
+        },
+        {
+          "id": 24,
+          "title": "What are the differences between old and young people's music preferences",
+          "q": "What are the differences between old and young people's music preferences?",
+          "words": {
+            "正面回答": [],
+            "选项1的特点与作用": [
+              "traditional"
+            ],
+            "选项2的特点与作用": [
+              "listen to music",
+              "browse videos"
+            ],
+            "个人感受": [
+              "chill out"
             ]
           }
         }

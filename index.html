@@ -3,36 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>口语 P1 练习</title>
+    <title>口语练习</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=20260807c">
+    <link rel="stylesheet" href="style.css?v=20260808e">
 </head>
 <body>
     <!-- 顶部导航 -->
     <nav class="top-nav">
         <div class="nav-left">
-            <span class="nav-title">口语 P1 练习</span>
+            <span class="nav-title" id="navTitle">口语练习</span>
+            <div class="part-switch" role="tablist" aria-label="Part 切换">
+                <button type="button" class="part-tab active" data-part="p1" id="partTabP1">P1</button>
+                <button type="button" class="part-tab" data-part="p2" id="partTabP2">P2</button>
+            </div>
             <span class="nav-subtitle" id="progressText">0 / 0 题</span>
         </div>
-        <div class="nav-right">
+        <div class="nav-right" id="p1NavRight">
             <button class="nav-btn" id="modeToggle" title="切换顺序/随机">
                 <span id="modeIcon">📋</span>
                 <span id="modeText">顺序模式</span>
             </button>
             <button class="nav-btn" id="showDataBtn" title="查看已练数据">📊</button>
         </div>
+        <div class="nav-right" id="p2NavRight" style="display: none;">
+            <span class="nav-subtitle" id="p2ProgressText">素材 0 / 6</span>
+        </div>
     </nav>
 
-    <!-- 主内容区 -->
-    <main class="main-content">
-        <!-- 左侧：类别和题目 -->
+    <!-- ========== P1 ========== -->
+    <main class="main-content" id="part1View">
         <aside class="sidebar">
             <div class="category-list" id="categoryList"></div>
         </aside>
 
-        <!-- 中间：练习区 -->
         <section class="practice-area" id="practiceArea">
             <div class="empty-state" id="emptyState">
                 <div class="empty-icon">🎤</div>
@@ -45,7 +50,7 @@
                     <span class="question-category" id="currentCategory"></span>
                     <div class="question-row">
                         <h2 class="question-title" id="currentTitle"></h2>
-                        <button type="button" class="btn-speak" id="speakQuestionBtn" title="听题目（自然英音）" aria-label="朗读题目">
+                        <button type="button" class="btn-speak" id="speakQuestionBtn" title="听题目（预生成神经英音）" aria-label="朗读题目">
                             <span class="speak-icon" aria-hidden="true">🔊</span>
                             <span class="speak-label">听题目</span>
                         </button>
@@ -63,14 +68,11 @@
                     </button>
                 </div>
 
-                <!-- AI 评分区域 -->
                 <div class="ai-section" id="aiSection" style="display: none;">
                     <div class="ai-header">
                         <h3>🤖 AI 雅思评分</h3>
                         <button class="btn btn-sm btn-secondary" id="toggleApiConfig">⚙️ 配置 API</button>
                     </div>
-                    
-                    <!-- API 配置面板 -->
                     <div class="api-config" id="apiConfig" style="display: none;">
                         <div class="config-item">
                             <label>DeepSeek API Key</label>
@@ -79,19 +81,13 @@
                         </div>
                         <div class="config-status" id="apiStatus">未配置</div>
                     </div>
-
-                    <!-- 录音状态 -->
                     <div class="recording-status" id="recordingStatus" style="display: none;">
                         <div class="status-indicator" id="statusIndicator">🎙️ 正在录音...</div>
                         <div class="transcript-preview" id="transcriptPreview"></div>
                     </div>
-
-                    <!-- AI 分析按钮 -->
                     <button class="btn btn-ai" id="aiEvaluateBtn" disabled>
                         <span>✨</span> AI 评分
                     </button>
-
-                    <!-- 评分结果 -->
                     <div class="ai-result" id="aiResult" style="display: none;">
                         <div class="loading" id="aiLoading" style="display: none;">
                             <div class="spinner"></div>
@@ -108,7 +104,6 @@
             </div>
         </section>
 
-        <!-- 右侧：数据面板（可折叠） -->
         <aside class="data-panel" id="dataPanel">
             <div class="panel-header">
                 <h3>练习数据</h3>
@@ -128,8 +123,87 @@
         </aside>
     </main>
 
-    <script src="config.js?v=20260807d"></script>
-    <script src="p1-data.js?v=20260807d"></script>
-    <script src="app.js?v=20260807d"></script>
+    <!-- ========== P2 ========== -->
+    <main class="main-content p2-main" id="part2View" style="display: none;">
+        <div class="p2-mode-bar">
+            <button type="button" class="p2-mode-tab active" data-p2-mode="memorize" id="p2ModeMemorize">背素材</button>
+            <button type="button" class="p2-mode-tab" data-p2-mode="apply" id="p2ModeApply">套题练习</button>
+        </div>
+
+        <div class="p2-body">
+            <!-- 背素材 -->
+            <div class="p2-pane" id="p2MemorizePane">
+                <aside class="sidebar p2-sidebar">
+                    <div class="p2-side-label">6 大素材</div>
+                    <div class="category-list" id="p2MaterialList"></div>
+                </aside>
+                <section class="practice-area">
+                    <div class="empty-state" id="p2MemEmpty">
+                        <div class="empty-icon">📖</div>
+                        <h2>先背熟素材，再去套题</h2>
+                        <p>左侧选一篇，按三步听读；可遮挡英文自测</p>
+                    </div>
+                    <div class="practice-card p2-card" id="p2MemCard" style="display: none;">
+                        <div class="question-header">
+                            <span class="question-category" id="p2MemType"></span>
+                            <div class="question-row">
+                                <h2 class="question-title" id="p2MemTitle"></h2>
+                                <span class="p2-soft-progress" id="p2MemStepProgress">0 / 3 段已过</span>
+                            </div>
+                            <p class="p2-summary" id="p2MemSummary"></p>
+                        </div>
+                        <div id="p2VariantBar" class="p2-variant-bar" style="display: none;"></div>
+                        <div class="steps-container" id="p2MemSteps"></div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- 套题练习 -->
+            <div class="p2-pane" id="p2ApplyPane" style="display: none;">
+                <aside class="sidebar p2-sidebar">
+                    <div class="p2-side-label">题库</div>
+                    <div class="category-list" id="p2QuestionList"></div>
+                </aside>
+                <section class="practice-area">
+                    <div class="p2-guide-banner" id="p2GuideBanner" style="display: none;">
+                        <span>建议先背 6 块素材，再来套题。素材背熟后，这里主要练「开头扣题 + 选对料」。</span>
+                        <button type="button" class="p2-guide-close" id="p2GuideClose" aria-label="关闭提示">×</button>
+                    </div>
+                    <div class="empty-state" id="p2ApplyEmpty">
+                        <div class="empty-icon">🎯</div>
+                        <h2>选择左侧题目开始套用</h2>
+                        <p>每题固定三步：开头过渡 → 套素材 → 感受收尾</p>
+                    </div>
+                    <div class="practice-card p2-card" id="p2ApplyCard" style="display: none;">
+                        <div class="question-header">
+                            <span class="question-category">套题练习</span>
+                            <div class="question-row">
+                                <h2 class="question-title" id="p2ApplyTitle"></h2>
+                                <button type="button" class="btn-speak" id="p2SpeakQBtn" title="听题目">
+                                    <span class="speak-icon" aria-hidden="true">🔊</span>
+                                    <span class="speak-label">听题目</span>
+                                </button>
+                            </div>
+                            <p class="p2-q-en" id="p2ApplyQ"></p>
+                        </div>
+
+                        <div class="p2-apply-blocks" id="p2ApplyBlocks"></div>
+
+                        <div class="action-buttons">
+                            <button class="btn btn-secondary" id="p2PrevQBtn">上一题</button>
+                            <button class="btn btn-primary" id="p2NextQBtn">下一题</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="config.js?v=20260808e"></script>
+    <script src="p1-data.js?v=20260808e"></script>
+    <script src="p2-data.js?v=20260808e"></script>
+    <script src="audio/manifest.js?v=20260808e"></script>
+    <script src="app.js?v=20260808e"></script>
+    <script src="p2-app.js?v=20260808e"></script>
 </body>
 </html>

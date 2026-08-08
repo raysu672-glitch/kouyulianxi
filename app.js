@@ -90,6 +90,9 @@ class P1Practice {
         this._preferredVoice = null;
         this._ttsToken = 0;
         this._ttsSpeakTimer = null;
+        this._ttsWatchdog = null;
+        this._ttsStarted = false;
+        this._ttsUserStop = false;
         
         this.init();
     }
@@ -427,10 +430,13 @@ class P1Practice {
         this.updateActiveQuestion();
     }
 
-    // —— 题目朗读：Edge/Chrome 自然音；避开 cancel 竞态与 Online 音失败 ——
+    // —— 题目朗读：优先本地英音；处理 cancel 竞态 / Online 音失败 / 假启动 ——
     warmupVoices() {
         if (!window.speechSynthesis) return;
-        const pick = () => { this._preferredVoice = this.pickNaturalVoice(); };
+        const pick = () => {
+            this._preferredVoice =
+                this.pickNaturalVoice({ localOnly: true }) || this.pickNaturalVoice();
+        };
         pick();
         if (typeof speechSynthesis.addEventListener === 'function') {
             speechSynthesis.addEventListener('voiceschanged', pick);
@@ -438,12 +444,16 @@ class P1Practice {
             speechSynthesis.onvoiceschanged = pick;
         }
         try { speechSynthesis.getVoices(); } catch (_) {}
+        // 部分浏览器首次 getVoices 为空，稍后重试
+        setTimeout(pick, 250);
+        setTimeout(pick, 1000);
     }
 
     pickNaturalVoice(options = {}) {
         if (!window.speechSynthesis) return null;
         const localOnly = !!options.localOnly;
-        const voices = speechSynthesis.getVoices() || [];
+        let voices = [];
+        try { voices = speechSynthesis.getVoices() || []; } catch (_) { voices = []; }
         if (!voices.length) return null;
 
         const score = (v) => {
@@ -458,12 +468,13 @@ class P1Practice {
             const isRemote = v.localService === false;
             if (localOnly && isRemote) return -100;
 
-            // Online Natural 音质好，但国内常连不上 → 默认略降权，优先本地自然音
-            if (/natural|neural/.test(name) && !isRemote) s += 55;
-            else if (/natural|neural|online/.test(name) && !localOnly) s += 25;
-            if (/sonia|libby|aria|jenny|guy|ryan|hazel|susan|george|google|emma|michelle/.test(name)) s += 18;
+            // 本地自然音最稳；Online Natural 国内易失败，默认大幅降权
+            if (/natural|neural/.test(name) && !isRemote) s += 60;
+            else if (/online/.test(name) && !localOnly) s += 8;
+            else if (/natural|neural/.test(name) && !localOnly) s += 10;
+            if (/sonia|libby|aria|jenny|guy|ryan|hazel|susan|george|google uk|google us|emma|michelle|catherine/.test(name)) s += 18;
             if (/microsoft david|microsoft zira|microsoft mark|espeak|compact/.test(name)) s -= 45;
-            if (!isRemote) s += 12; // 本地音更稳
+            if (!isRemote) s += 20;
             return s;
         };
 
@@ -483,12 +494,22 @@ class P1Practice {
         if (icon) icon.textContent = playing ? '⏹' : '🔊';
     }
 
-    stopSpeakQuestion() {
+    _clearTtsTimers() {
         if (this._ttsSpeakTimer) {
             clearTimeout(this._ttsSpeakTimer);
             this._ttsSpeakTimer = null;
         }
+        if (this._ttsWatchdog) {
+            clearTimeout(this._ttsWatchdog);
+            this._ttsWatchdog = null;
+        }
+    }
+
+    stopSpeakQuestion() {
+        this._ttsUserStop = true;
+        this._clearTtsTimers();
         this._ttsToken = (this._ttsToken || 0) + 1;
+        this._ttsStarted = false;
         if (window.speechSynthesis) {
             try { speechSynthesis.cancel(); } catch (_) {}
         }
@@ -498,6 +519,7 @@ class P1Practice {
                 this._ttsAudio.onerror = null;
                 this._ttsAudio.onended = null;
                 this._ttsAudio.pause();
+                this._ttsAudio.src = '';
             } catch (_) {}
             this._ttsAudio = null;
         }
@@ -513,25 +535,93 @@ class P1Practice {
         this.speakCurrentQuestion();
     }
 
+    getPrebuiltAudioUrl(cat, q) {
+        if (!cat || !q) return '';
+        const manifest = (typeof P1_AUDIO_MANIFEST !== 'undefined' && P1_AUDIO_MANIFEST) || {};
+        const key = `${cat.id}:${q.id}`;
+        const rel = manifest[key] || `audio/${cat.id}/${q.id}.mp3`;
+        // 相对当前模块页面路径，兼容主站 iframe
+        try {
+            return new URL(rel, window.location.href).href;
+        } catch (_) {
+            return rel;
+        }
+    }
+
     speakCurrentQuestion() {
         const cat = this.data.categories[this.currentCategoryIndex];
         const q = cat && cat.questions[this.currentQuestionIndex];
         const text = (q && q.q || '').trim();
         if (!text) return;
 
+        // 先停旧播，再开新 token（避免 cancel 竞态吞掉新 utterance）
         this.stopSpeakQuestion();
+        this._ttsUserStop = false;
+        this._ttsStarted = false;
         const token = this._ttsToken;
 
+        // 优先播放预生成的神经英音（流畅、稳定）
+        const prebuilt = this.getPrebuiltAudioUrl(cat, q);
+        if (prebuilt) {
+            this._playPrebuiltAudio(prebuilt, text, token);
+            return;
+        }
+
+        this._speakWithBrowserFallback(text, token);
+    }
+
+    _playPrebuiltAudio(url, text, token) {
+        if (token !== this._ttsToken) return;
+        const audio = new Audio();
+        audio.preload = 'auto';
+        this._ttsAudio = audio;
+        this.setSpeakButtonPlaying(true);
+
+        let settled = false;
+        const failToBrowser = () => {
+            if (settled || token !== this._ttsToken || this._ttsUserStop) return;
+            settled = true;
+            this._ttsAudio = null;
+            this._speakWithBrowserFallback(text, token);
+        };
+
+        audio.onended = () => {
+            if (token !== this._ttsToken) return;
+            this.setSpeakButtonPlaying(false);
+        };
+        audio.onerror = () => failToBrowser();
+        audio.onloadedmetadata = () => {
+            if (token !== this._ttsToken) return;
+            if (!isFinite(audio.duration) || audio.duration === 0) failToBrowser();
+        };
+        audio.src = url;
+        audio.play().then(() => {
+            this._ttsStarted = true;
+        }).catch(() => failToBrowser());
+    }
+
+    _speakWithBrowserFallback(text, token) {
+        if (token !== this._ttsToken) return;
         if (!window.speechSynthesis) {
             this.speakViaNetworkFallback(text, token);
             return;
         }
-
-        // cancel 后立刻 speak 在 Edge/Chrome 会空失败；稍等再播
+        // cancel 后立刻 speak：Edge/Chrome 常会空失败或误报 canceled
         this._ttsSpeakTimer = setTimeout(() => {
             if (token !== this._ttsToken) return;
-            this._speakWithVoice(text, token, this.pickNaturalVoice() || this._preferredVoice, false);
-        }, 80);
+            const voice =
+                this.pickNaturalVoice({ localOnly: true }) ||
+                this._preferredVoice ||
+                this.pickNaturalVoice();
+            this._speakWithVoice(text, token, voice, false);
+        }, 180);
+    }
+
+    _clearWatchdog() {
+        if (this._ttsWatchdog) {
+            clearTimeout(this._ttsWatchdog);
+            this._ttsWatchdog = null;
+        }
     }
 
     _speakWithVoice(text, token, voice, isRetry) {
@@ -541,62 +631,116 @@ class P1Practice {
             return;
         }
 
-        try { speechSynthesis.resume(); } catch (_) {}
+        this._clearWatchdog();
+        this._ttsStarted = false;
+        let failingOver = false;
+
+        // 引擎卡在 paused 时先 resume；仍卡住再清
+        try {
+            if (speechSynthesis.paused) speechSynthesis.resume();
+        } catch (_) {}
 
         const utter = new SpeechSynthesisUtterance(text);
         utter.lang = (voice && voice.lang) || 'en-GB';
-        if (voice) utter.voice = voice;
+        if (voice) {
+            try { utter.voice = voice; } catch (_) {}
+        }
         utter.rate = 0.92;
         utter.pitch = 1.02;
         utter.volume = 1;
 
-        utter.onstart = () => {
-            if (token === this._ttsToken) this.setSpeakButtonPlaying(true);
-        };
-        utter.onend = () => {
-            if (token === this._ttsToken) this.setSpeakButtonPlaying(false);
-        };
-        utter.onerror = (e) => {
-            if (token !== this._ttsToken) return;
-            const err = (e && e.error) || '';
-            // 用户点停止 / cancel 竞态，不算失败
-            if (err === 'canceled' || err === 'interrupted') return;
-
-            this.setSpeakButtonPlaying(false);
-
-            // Online 神经音失败时，改用本地英音再试一次
-            if (!isRetry) {
+        const failOver = (forceNetwork) => {
+            if (token !== this._ttsToken || this._ttsUserStop || failingOver) return;
+            failingOver = true;
+            this._clearWatchdog();
+            try { speechSynthesis.cancel(); } catch (_) {}
+            if (!forceNetwork && !isRetry) {
                 const localVoice = this.pickNaturalVoice({ localOnly: true });
-                if (localVoice && (!voice || localVoice.name !== voice.name)) {
+                if (localVoice && (!voice || localVoice.name !== voice.name || voice.localService === false)) {
                     this._ttsSpeakTimer = setTimeout(() => {
                         if (token !== this._ttsToken) return;
                         this._speakWithVoice(text, token, localVoice, true);
-                    }, 60);
+                    }, 220);
                     return;
                 }
             }
             this.speakViaNetworkFallback(text, token);
         };
 
+        utter.onstart = () => {
+            if (token !== this._ttsToken) return;
+            this._ttsStarted = true;
+            this._clearWatchdog();
+            this.setSpeakButtonPlaying(true);
+        };
+        utter.onend = () => {
+            if (token !== this._ttsToken) return;
+            this._clearWatchdog();
+            this.setSpeakButtonPlaying(false);
+        };
+        utter.onerror = (e) => {
+            if (token !== this._ttsToken) return;
+            const err = (e && e.error) || '';
+
+            // 用户主动停止
+            if (this._ttsUserStop) {
+                this._clearWatchdog();
+                this.setSpeakButtonPlaying(false);
+                return;
+            }
+
+            // cancel 后立刻 speak 的假错误：尚未真正开始 → 重试本地音
+            if ((err === 'canceled' || err === 'interrupted') && !this._ttsStarted) {
+                failOver(false);
+                return;
+            }
+            if (err === 'canceled' || err === 'interrupted') {
+                this._clearWatchdog();
+                this.setSpeakButtonPlaying(false);
+                return;
+            }
+
+            // network / synthesis / not-allowed 等
+            failOver(err === 'not-allowed');
+        };
+
         this._ttsUtterance = utter;
         this.setSpeakButtonPlaying(true);
-        try {
-            speechSynthesis.speak(utter);
-            // Chrome/Edge 偶发 stuck paused
-            this._ttsSpeakTimer = setTimeout(() => {
-                if (token !== this._ttsToken) return;
-                if (speechSynthesis.speaking && speechSynthesis.paused) {
-                    try { speechSynthesis.resume(); } catch (_) {}
-                }
-            }, 300);
-        } catch (_) {
-            this.speakViaNetworkFallback(text, token);
-        }
+
+        // 若一直不 onstart，判定假启动
+        this._ttsWatchdog = setTimeout(() => {
+            if (token !== this._ttsToken || this._ttsUserStop) return;
+            if (this._ttsStarted) return;
+            try { speechSynthesis.cancel(); } catch (_) {}
+            failOver(false);
+        }, 900);
+
+        const doSpeak = () => {
+            if (token !== this._ttsToken) return;
+            try {
+                speechSynthesis.speak(utter);
+                // Chrome/Edge 偶发 stuck paused
+                this._ttsSpeakTimer = setTimeout(() => {
+                    if (token !== this._ttsToken) return;
+                    if (speechSynthesis.speaking && speechSynthesis.paused) {
+                        try { speechSynthesis.resume(); } catch (_) {}
+                    }
+                }, 280);
+            } catch (_) {
+                failOver(true);
+            }
+        };
+
+        // 若上面刚 cancel，再留一点空隙
+        this._ttsSpeakTimer = setTimeout(doSpeak, isRetry ? 200 : 40);
     }
 
     // 网络兜底：有道英音 → Google TTS（按句切分，避免超长 URL）
     speakViaNetworkFallback(text, token) {
         if (token != null && token !== this._ttsToken) return;
+        if (window.speechSynthesis) {
+            try { speechSynthesis.cancel(); } catch (_) {}
+        }
         const chunks = this._splitSpeakChunks(text);
         this._playAudioQueue(chunks, 0, token != null ? token : this._ttsToken);
     }
@@ -649,7 +793,8 @@ class P1Practice {
             onFail();
             return;
         }
-        const audio = new Audio(sources[i]);
+        const audio = new Audio();
+        audio.preload = 'auto';
         this._ttsAudio = audio;
         this.setSpeakButtonPlaying(true);
         let settled = false;
@@ -663,6 +808,12 @@ class P1Practice {
             onDone();
         };
         audio.onerror = () => next();
+        // 有些环境 play 成功但实际 0 时长 → 当失败
+        audio.onloadedmetadata = () => {
+            if (token !== this._ttsToken) return;
+            if (audio.duration === 0) next();
+        };
+        audio.src = sources[i];
         audio.play().then(() => {
             // playing
         }).catch(() => next());
